@@ -10,13 +10,13 @@ import MetalKit
 import simd
 
 class ViewController: UIViewController {
-    private var mtkView: MTKView!   // 用于处理 Metal 绘制并显示
-    private var device: MTLDevice!  // 用来渲染的设备（即，GPU）
-    private var commandQueue: MTLCommandQueue!  // 命令队列（控制渲染命令按部就班执行）
-    private var pipelineState: MTLRenderPipelineState!  // 图形渲染管道
-    private var vertices: MTLBuffer!    // 顶点数据缓冲
-    private var numVertices: Int = 0    // 顶点数量
-    private var texture: MTLTexture!    // 纹理对象
+    private var mtkView: MTKView!                               // 用于处理 Metal 绘制并显示
+    private var device: MTLDevice!                              // 用来渲染的设备（即，GPU）
+    private var commandQueue: MTLCommandQueue!                  // 命令队列（控制渲染命令按部就班执行）
+    private var pipelineState: MTLRenderPipelineState!          // 图形渲染管道
+    private var vertices: MTLBuffer!                            // 顶点数据缓冲
+    private var numVertices: Int = 0                            // 顶点数量
+    private var texture: MTLTexture!                            // 纹理对象
     private var viewportSize: vector_uint2 = vector_uint2(0, 0) // 当前视图大小
 
     
