@@ -17,8 +17,12 @@
 		63577A2B281BEAAF008E3037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63577A2A281BEAAF008E3037 /* Assets.xcassets */; };
 		63577A2E281BEAAF008E3037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63577A2C281BEAAF008E3037 /* LaunchScreen.storyboard */; };
 		63577A40281C09A8008E3037 /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
-		63577A4228237665008E3037 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63577A4128237665008E3037 /* Shader.metal */; };
+		63577A4228237665008E3037 /* SYShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63577A4128237665008E3037 /* SYShader.metal */; };
 		63A34326282CB425009E542A /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
+		63A34365282CED7C009E542A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A34364282CED7C009E542A /* AppDelegate.swift */; };
+		63A34369282CED7C009E542A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A34368282CED7C009E542A /* ViewController.swift */; };
+		63A3436E282CED7D009E542A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A3436D282CED7D009E542A /* Assets.xcassets */; };
+		63A34371282CED7D009E542A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A3436F282CED7D009E542A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +42,15 @@
 		63577A2D281BEAAF008E3037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63577A2F281BEAAF008E3037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LearnSwiftMetal.bundle; sourceTree = "<group>"; };
-		63577A4128237665008E3037 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
+		63577A4128237665008E3037 /* SYShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShader.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		63577A4328237716008E3037 /* SYShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderType.h; sourceTree = "<group>"; };
 		63577A462823880B008E3037 /* 01_Triangle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01_Triangle-Bridging-Header.h"; sourceTree = "<group>"; };
+		63A34362282CED7C009E542A /* 03_RenderCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 03_RenderCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A34364282CED7C009E542A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63A34368282CED7C009E542A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63A3436D282CED7D009E542A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A34370282CED7D009E542A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63A34372282CED7D009E542A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63577A1B281BEAAC008E3037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A3435F282CED7C009E542A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,15 +99,17 @@
 				63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */,
 				63577A20281BEAAC008E3037 /* 01_Triangle */,
 				630A3AB9282A4CDD00693ABB /* 02_Transformation */,
+				63A34363282CED7C009E542A /* 03_RenderCamera */,
 				63577A1F281BEAAC008E3037 /* Products */,
-            );
-            sourceTree = "<group>";
-        };
-        63577A1F281BEAAC008E3037 /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                63577A1E281BEAAC008E3037 /* 01_Triangle.app */,
-                630A3AB8282A4CDD00693ABB /* 02_Transformation.app */,
+			);
+			sourceTree = "<group>";
+		};
+		63577A1F281BEAAC008E3037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63577A1E281BEAAC008E3037 /* 01_Triangle.app */,
+				630A3AB8282A4CDD00693ABB /* 02_Transformation.app */,
+				63A34362282CED7C009E542A /* 03_RenderCamera.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,13 +120,25 @@
 				63577A21281BEAAC008E3037 /* AppDelegate.swift */,
 				63577A25281BEAAC008E3037 /* ViewController.swift */,
 				63577A4328237716008E3037 /* SYShaderType.h */,
-				63577A4128237665008E3037 /* Shader.metal */,
+				63577A4128237665008E3037 /* SYShader.metal */,
 				63577A462823880B008E3037 /* 01_Triangle-Bridging-Header.h */,
 				63577A2A281BEAAF008E3037 /* Assets.xcassets */,
 				63577A2C281BEAAF008E3037 /* LaunchScreen.storyboard */,
 				63577A2F281BEAAF008E3037 /* Info.plist */,
 			);
 			path = 01_Triangle;
+			sourceTree = "<group>";
+		};
+		63A34363282CED7C009E542A /* 03_RenderCamera */ = {
+			isa = PBXGroup;
+			children = (
+				63A34364282CED7C009E542A /* AppDelegate.swift */,
+				63A34368282CED7C009E542A /* ViewController.swift */,
+				63A3436D282CED7D009E542A /* Assets.xcassets */,
+				63A3436F282CED7D009E542A /* LaunchScreen.storyboard */,
+				63A34372282CED7D009E542A /* Info.plist */,
+			);
+			path = 03_RenderCamera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +178,23 @@
 			productReference = 63577A1E281BEAAC008E3037 /* 01_Triangle.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63A34361282CED7C009E542A /* 03_RenderCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A34375282CED7D009E542A /* Build configuration list for PBXNativeTarget "03_RenderCamera" */;
+			buildPhases = (
+				63A3435E282CED7C009E542A /* Sources */,
+				63A3435F282CED7C009E542A /* Frameworks */,
+				63A34360282CED7C009E542A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03_RenderCamera;
+			productName = 03_RenderCamera;
+			productReference = 63A34362282CED7C009E542A /* 03_RenderCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +209,9 @@
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					63577A1D281BEAAC008E3037 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					63A34361282CED7C009E542A = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
@@ -180,6 +231,7 @@
 			targets = (
 				63577A1D281BEAAC008E3037 /* 01_Triangle */,
 				630A3AB7282A4CDD00693ABB /* 02_Transformation */,
+				63A34361282CED7C009E542A /* 03_RenderCamera */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +257,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63A34360282CED7C009E542A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A34371282CED7D009E542A /* LaunchScreen.storyboard in Resources */,
+				63A3436E282CED7D009E542A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,9 +283,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63577A4228237665008E3037 /* Shader.metal in Sources */,
+				63577A4228237665008E3037 /* SYShader.metal in Sources */,
 				63577A26281BEAAC008E3037 /* ViewController.swift in Sources */,
 				63577A22281BEAAC008E3037 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A3435E282CED7C009E542A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A34369282CED7C009E542A /* ViewController.swift in Sources */,
+				63A34365282CED7C009E542A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +313,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				63577A2D281BEAAF008E3037 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63A3436F282CED7D009E542A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A34370282CED7D009E542A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -482,6 +560,66 @@
 			};
 			name = Release;
 		};
+		63A34373282CED7D009E542A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 03_RenderCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "允许使用相机进行拍摄";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-3-RenderCamera";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63A34374282CED7D009E542A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 03_RenderCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "允许使用相机进行拍摄";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-3-RenderCamera";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,6 +646,15 @@
 			buildConfigurations = (
 				63577A33281BEAAF008E3037 /* Debug */,
 				63577A34281BEAAF008E3037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A34375282CED7D009E542A /* Build configuration list for PBXNativeTarget "03_RenderCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A34373282CED7D009E542A /* Debug */,
+				63A34374282CED7D009E542A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
