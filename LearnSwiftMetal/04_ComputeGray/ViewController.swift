@@ -189,7 +189,7 @@ extension ViewController: MTKViewDelegate {
         // 创建计算指令编码器
         if let computeEncoder = commandBuffer.makeComputeCommandEncoder() {
             computeEncoder.label = "SY-ComputeEncoder"
-            // 设置「计算」管线，已调用 shaders.metal 中的内核计算函数
+            // 设置「计算」管线，以调用 shaders.metal 中的内核计算函数
             computeEncoder.setComputePipelineState(self.computePipeline)
             // 设置「输入」纹理
             computeEncoder.setTexture(self.srcTexture,

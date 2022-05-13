@@ -29,6 +29,12 @@
 		63A3438D282D2A1A009E542A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A3438B282D2A1A009E542A /* LaunchScreen.storyboard */; };
 		63A34394282D2D4B009E542A /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63A34393282D2D4B009E542A /* SYShaders.metal */; };
 		63A34396282D304A009E542A /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
+		63BFDC54282E78F2006E7909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDC53282E78F2006E7909 /* AppDelegate.swift */; };
+		63BFDC58282E78F2006E7909 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDC57282E78F2006E7909 /* ViewController.swift */; };
+		63BFDC5D282E78F4006E7909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BFDC5C282E78F4006E7909 /* Assets.xcassets */; };
+		63BFDC60282E78F4006E7909 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BFDC5E282E78F4006E7909 /* LaunchScreen.storyboard */; };
+		63BFDC66282E796A006E7909 /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDC65282E796A006E7909 /* SYShaders.metal */; };
+		63BFDC68282E7C8A006E7909 /* SYMetalAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDC67282E7C8A006E7909 /* SYMetalAdder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +72,14 @@
 		63A34392282D2D38009E542A /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
 		63A34393282D2D4B009E542A /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		63A34395282D2DC3009E542A /* 04_ComputeGray-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "04_ComputeGray-Bridging-Header.h"; sourceTree = "<group>"; };
+		63BFDC51282E78F2006E7909 /* 05_ComputeData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 05_ComputeData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63BFDC53282E78F2006E7909 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63BFDC57282E78F2006E7909 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63BFDC5C282E78F4006E7909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63BFDC5F282E78F4006E7909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63BFDC61282E78F4006E7909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BFDC65282E796A006E7909 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
+		63BFDC67282E7C8A006E7909 /* SYMetalAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYMetalAdder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +105,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63A3437B282D2A18009E542A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63BFDC4E282E78F2006E7909 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +144,7 @@
 				630A3AB9282A4CDD00693ABB /* 02_Transformation */,
 				63A34363282CED7C009E542A /* 03_RenderCamera */,
 				63A3437F282D2A18009E542A /* 04_ComputeGray */,
+				63BFDC52282E78F2006E7909 /* 05_ComputeData */,
 				63577A1F281BEAAC008E3037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +156,7 @@
 				630A3AB8282A4CDD00693ABB /* 02_Transformation.app */,
 				63A34362282CED7C009E542A /* 03_RenderCamera.app */,
 				63A3437E282D2A18009E542A /* 04_ComputeGray.app */,
+				63BFDC51282E78F2006E7909 /* 05_ComputeData.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +201,20 @@
 				63A3438E282D2A1A009E542A /* Info.plist */,
 			);
 			path = 04_ComputeGray;
+			sourceTree = "<group>";
+		};
+		63BFDC52282E78F2006E7909 /* 05_ComputeData */ = {
+			isa = PBXGroup;
+			children = (
+				63BFDC53282E78F2006E7909 /* AppDelegate.swift */,
+				63BFDC57282E78F2006E7909 /* ViewController.swift */,
+				63BFDC67282E7C8A006E7909 /* SYMetalAdder.swift */,
+				63BFDC65282E796A006E7909 /* SYShaders.metal */,
+				63BFDC5C282E78F4006E7909 /* Assets.xcassets */,
+				63BFDC5E282E78F4006E7909 /* LaunchScreen.storyboard */,
+				63BFDC61282E78F4006E7909 /* Info.plist */,
+			);
+			path = 05_ComputeData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +288,23 @@
 			productReference = 63A3437E282D2A18009E542A /* 04_ComputeGray.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63BFDC50282E78F2006E7909 /* 05_ComputeData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63BFDC64282E78F4006E7909 /* Build configuration list for PBXNativeTarget "05_ComputeData" */;
+			buildPhases = (
+				63BFDC4D282E78F2006E7909 /* Sources */,
+				63BFDC4E282E78F2006E7909 /* Frameworks */,
+				63BFDC4F282E78F2006E7909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 05_ComputeData;
+			productName = 05_ComputeData;
+			productReference = 63BFDC51282E78F2006E7909 /* 05_ComputeData.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +327,9 @@
 					63A3437D282D2A18009E542A = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					63BFDC50282E78F2006E7909 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 63577A19281BEAAC008E3037 /* Build configuration list for PBXProject "LearnSwiftMetal" */;
@@ -292,6 +349,7 @@
 				630A3AB7282A4CDD00693ABB /* 02_Transformation */,
 				63A34361282CED7C009E542A /* 03_RenderCamera */,
 				63A3437D282D2A18009E542A /* 04_ComputeGray */,
+				63BFDC50282E78F2006E7909 /* 05_ComputeData */,
 			);
 		};
 /* End PBXProject section */
@@ -333,6 +391,15 @@
 				63A3438D282D2A1A009E542A /* LaunchScreen.storyboard in Resources */,
 				63A3438A282D2A1A009E542A /* Assets.xcassets in Resources */,
 				63A34396282D304A009E542A /* LearnSwiftMetal.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63BFDC4F282E78F2006E7909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BFDC60282E78F4006E7909 /* LaunchScreen.storyboard in Resources */,
+				63BFDC5D282E78F4006E7909 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +445,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63BFDC4D282E78F2006E7909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BFDC68282E7C8A006E7909 /* SYMetalAdder.swift in Sources */,
+				63BFDC58282E78F2006E7909 /* ViewController.swift in Sources */,
+				63BFDC66282E796A006E7909 /* SYShaders.metal in Sources */,
+				63BFDC54282E78F2006E7909 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -409,6 +487,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				63A3438C282D2A1A009E542A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63BFDC5E282E78F4006E7909 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63BFDC5F282E78F4006E7909 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -766,6 +852,62 @@
 			};
 			name = Release;
 		};
+		63BFDC62282E78F4006E7909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 05_ComputeData/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-5-ComputeData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63BFDC63282E78F4006E7909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 05_ComputeData/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-5-ComputeData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -810,6 +952,15 @@
 			buildConfigurations = (
 				63A34390282D2A1A009E542A /* Debug */,
 				63A34391282D2A1A009E542A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63BFDC64282E78F4006E7909 /* Build configuration list for PBXNativeTarget "05_ComputeData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63BFDC62282E78F4006E7909 /* Debug */,
+				63BFDC63282E78F4006E7909 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
