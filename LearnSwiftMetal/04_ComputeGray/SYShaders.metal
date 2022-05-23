@@ -52,7 +52,7 @@ ComputeGray(texture2d<half, access::read>  srcTexture  [[ texture(SYFragmentInpu
             uint2                          grid        [[ thread_position_in_grid ]])
 {
     // 注意边界保护
-    if (grid.x <= destTexture.get_width() && grid.y <= destTexture.get_height()) {
+    if (grid.x < destTexture.get_width() && grid.y < destTexture.get_height()) {
         half4 originColor = srcTexture.read(grid);      // 读取输入纹理原始颜色值
         half gray = dot(originColor.rgb, kRec709Luma);  // 计算灰度值（亮度）
         destTexture.write(half4(gray, gray, gray, 1.0), grid);  // 写入输出纹理
