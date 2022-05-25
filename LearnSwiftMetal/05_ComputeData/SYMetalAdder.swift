@@ -8,7 +8,7 @@
 import Foundation
 import Metal
 
-let kArrayLen: Int = 10000
+let kArrayLen: Int = 1_000_000
 
 class SYMetalAdder {
     private var device: MTLDevice                           // 用来渲染的设备（即，GPU）
@@ -54,13 +54,13 @@ class SYMetalAdder {
             inB[i] = Float(i + 2)
         }
         // 将内容 copy 到一块新的内存区，来创建 buffer
-        self.inABuffer = self.device.makeBuffer(bytes: &self.inA,
+        self.inABuffer = self.device.makeBuffer(bytes: inA,
                                                 length: MemoryLayout<Float>.size * kArrayLen,
                                                 options: .storageModeShared)    // 使用共享内存(storageModeShared)， CPU 和 GPU都可以访问
-        self.inBBuffer = self.device.makeBuffer(bytes: &self.inB,
+        self.inBBuffer = self.device.makeBuffer(bytes: inB,
                                                 length: MemoryLayout<Float>.size * kArrayLen,
                                                 options: .storageModeShared)
-        self.resultBuffer = self.device.makeBuffer(bytes: &self.result,
+        self.resultBuffer = self.device.makeBuffer(bytes: result,
                                                    length: MemoryLayout<Float>.size * kArrayLen,
                                                    options: .storageModeShared)
     }
@@ -84,27 +84,28 @@ class SYMetalAdder {
         computeEncoder.setBuffer(self.inBBuffer, offset: 0, index: 1)
         computeEncoder.setBuffer(self.resultBuffer, offset: 0, index: 2)
         
-        let gridSize = MTLSize(width: 16 < kArrayLen ? 16 : kArrayLen, height: 1, depth: 1)   // 一维数据 height、depth 都是 1
-        
-        // 决定要创建多少线程以及如何组织这些线程
-        var threadGroupSizeWidth = self.computePipeline.maxTotalThreadsPerThreadgroup
-        if kArrayLen < threadGroupSizeWidth {
-            threadGroupSizeWidth = kArrayLen
-        }
-        let threadGroupSize = MTLSize(width: threadGroupSizeWidth, height: 1, depth: 1) // 一维数据 height、depth 都是 1
+        let executeWidth = self.computePipeline.threadExecutionWidth
+        let groupSize    = MTLSize(width: executeWidth, height: 1, depth: 1)   // 一维数据 height、depth 都是 1
+        let groupCount   = MTLSize(width: (kArrayLen + groupSize.width - 1) / groupSize.width,
+                                   height: 1, depth: 1)   // 一维数据 height、depth 都是 1
         
         // 设置计算区域（使用非均匀线程组的网格编码计算命令,该方法能够更有效的利用GPU资源， 但是该方法最低支持到A11处理器(芯片)）
-//        computeEncoder.dispatchThreads(gridSize, threadsPerThreadgroup: threadGroupSize)
+//        computeEncoder.dispatchThreads(groupCount, threadsPerThreadgroup: groupSize)
         // 使用均匀线程组边界的网格编码计算命令
-        computeEncoder.dispatchThreadgroups(gridSize, threadsPerThreadgroup: threadGroupSize)
+        computeEncoder.dispatchThreadgroups(groupCount, threadsPerThreadgroup: groupSize)
 
         // 设置处理完成回调
         commandBuffer.addCompletedHandler { buff in
-            print("Compute finish.")
             completion()
+            
+            // 拷贝数据到结果数组 result
+            if let rawPointer = self.resultBuffer?.contents() {
+                memcpy(&self.result, rawPointer, MemoryLayout<Float>.size * kArrayLen)
+            }
+
             let loop: Int = 10 < kArrayLen ? 10 : kArrayLen
             if let pA = self.inABuffer?.contents(),
-               let pB = self.inABuffer?.contents(),
+               let pB = self.inBBuffer?.contents(),
                let pR = self.resultBuffer?.contents() {
                 for i in 0..<loop {
                     let a = pA.load(fromByteOffset: MemoryLayout<Float>.size * i, as: Float.self)
