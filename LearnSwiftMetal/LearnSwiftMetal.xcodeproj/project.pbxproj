@@ -19,6 +19,11 @@
 		63292B40283DD47F00618D78 /* SYAssetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B3F283DD47F00618D78 /* SYAssetReader.swift */; };
 		63292B42283DDA1E00618D78 /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63292B41283DDA1E00618D78 /* SYShaders.metal */; };
 		63292B43283DEE4600618D78 /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
+		63292B4B283E09A900618D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B4A283E09A900618D78 /* AppDelegate.swift */; };
+		63292B4F283E09A900618D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B4E283E09A900618D78 /* ViewController.swift */; };
+		63292B54283E09AB00618D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63292B53283E09AB00618D78 /* Assets.xcassets */; };
+		63292B57283E09AB00618D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63292B55283E09AB00618D78 /* LaunchScreen.storyboard */; };
+		63292B5F283E0B9E00618D78 /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63292B5E283E0B9E00618D78 /* SYShaders.metal */; };
 		6354E9F52833CF68001AE840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354E9F42833CF68001AE840 /* AppDelegate.swift */; };
 		6354E9F92833CF68001AE840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354E9F82833CF68001AE840 /* ViewController.swift */; };
 		6354E9FE2833CF69001AE840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6354E9FD2833CF69001AE840 /* Assets.xcassets */; };
@@ -77,6 +82,15 @@
 		63292B3E283DD3DA00618D78 /* 07_RenderVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "07_RenderVideo-Bridging-Header.h"; sourceTree = "<group>"; };
 		63292B3F283DD47F00618D78 /* SYAssetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYAssetReader.swift; sourceTree = "<group>"; };
 		63292B41283DDA1E00618D78 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
+		63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 08_SobelEdgeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63292B4A283E09A900618D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63292B4E283E09A900618D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63292B53283E09AB00618D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63292B56283E09AB00618D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63292B58283E09AB00618D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63292B5C283E0A3500618D78 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
+		63292B5D283E0B2400618D78 /* 08_SobelEdgeDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "08_SobelEdgeDetector-Bridging-Header.h"; sourceTree = "<group>"; };
+		63292B5E283E0B9E00618D78 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		6354E9F22833CF68001AE840 /* 06_ImageProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 06_ImageProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6354E9F42833CF68001AE840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6354E9F82833CF68001AE840 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +151,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63292B26283DD30800618D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63292B45283E09A900618D78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +233,21 @@
 			path = 07_RenderVideo;
 			sourceTree = "<group>";
 		};
+		63292B49283E09A900618D78 /* 08_SobelEdgeDetector */ = {
+			isa = PBXGroup;
+			children = (
+				63292B4A283E09A900618D78 /* AppDelegate.swift */,
+				63292B4E283E09A900618D78 /* ViewController.swift */,
+				63292B5C283E0A3500618D78 /* SYShaderTypes.h */,
+				63292B5E283E0B9E00618D78 /* SYShaders.metal */,
+				63292B5D283E0B2400618D78 /* 08_SobelEdgeDetector-Bridging-Header.h */,
+				63292B53283E09AB00618D78 /* Assets.xcassets */,
+				63292B55283E09AB00618D78 /* LaunchScreen.storyboard */,
+				63292B58283E09AB00618D78 /* Info.plist */,
+			);
+			path = 08_SobelEdgeDetector;
+			sourceTree = "<group>";
+		};
 		6354E9F32833CF68001AE840 /* 06_ImageProcessing */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +297,7 @@
 				63BFDC52282E78F2006E7909 /* 05_ComputeData */,
 				6354E9F32833CF68001AE840 /* 06_ImageProcessing */,
 				63292B2A283DD30800618D78 /* 07_RenderVideo */,
+				63292B49283E09A900618D78 /* 08_SobelEdgeDetector */,
 				63577A1F281BEAAC008E3037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -275,6 +312,7 @@
 				63BFDC51282E78F2006E7909 /* 05_ComputeData.app */,
 				6354E9F22833CF68001AE840 /* 06_ImageProcessing.app */,
 				63292B29283DD30800618D78 /* 07_RenderVideo.app */,
+				63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -370,6 +408,23 @@
 			name = 07_RenderVideo;
 			productName = 07_RenderVideo;
 			productReference = 63292B29283DD30800618D78 /* 07_RenderVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63292B47283E09A900618D78 /* 08_SobelEdgeDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63292B5B283E09AB00618D78 /* Build configuration list for PBXNativeTarget "08_SobelEdgeDetector" */;
+			buildPhases = (
+				63292B44283E09A900618D78 /* Sources */,
+				63292B45283E09A900618D78 /* Frameworks */,
+				63292B46283E09A900618D78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08_SobelEdgeDetector;
+			productName = 08_Sobel;
+			productReference = 63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6354E9F12833CF68001AE840 /* 06_ImageProcessing */ = {
@@ -473,6 +528,9 @@
 					63292B28283DD30800618D78 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					63292B47283E09A900618D78 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 					6354E9F12833CF68001AE840 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -510,6 +568,7 @@
 				63BFDC50282E78F2006E7909 /* 05_ComputeData */,
 				6354E9F12833CF68001AE840 /* 06_ImageProcessing */,
 				63292B28283DD30800618D78 /* 07_RenderVideo */,
+				63292B47283E09A900618D78 /* 08_SobelEdgeDetector */,
 			);
 		};
 /* End PBXProject section */
@@ -532,6 +591,15 @@
 				63292B38283DD30A00618D78 /* LaunchScreen.storyboard in Resources */,
 				63292B35283DD30A00618D78 /* Assets.xcassets in Resources */,
 				63292B43283DEE4600618D78 /* LearnSwiftMetal.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63292B46283E09A900618D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63292B57283E09AB00618D78 /* LaunchScreen.storyboard in Resources */,
+				63292B54283E09AB00618D78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +675,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63292B44283E09A900618D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63292B4F283E09A900618D78 /* ViewController.swift in Sources */,
+				63292B5F283E0B9E00618D78 /* SYShaders.metal in Sources */,
+				63292B4B283E09A900618D78 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6354E9EE2833CF68001AE840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,6 +757,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				63292B37283DD30A00618D78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63292B55283E09AB00618D78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63292B56283E09AB00618D78 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -837,6 +923,64 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "07_RenderVideo/07_RenderVideo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63292B59283E09AB00618D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 08_SobelEdgeDetector/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-Sobel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "08_SobelEdgeDetector/08_SobelEdgeDetector-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63292B5A283E09AB00618D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 08_SobelEdgeDetector/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-Sobel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "08_SobelEdgeDetector/08_SobelEdgeDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1265,6 +1409,15 @@
 			buildConfigurations = (
 				63292B3A283DD30A00618D78 /* Debug */,
 				63292B3B283DD30A00618D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63292B5B283E09AB00618D78 /* Build configuration list for PBXNativeTarget "08_SobelEdgeDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63292B59283E09AB00618D78 /* Debug */,
+				63292B5A283E09AB00618D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
