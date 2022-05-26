@@ -129,7 +129,8 @@ class ViewController: UIViewController {
     // MARK: 设置线程组
     private func setupThreadGroup() {
         let width              = self.computePipeline.threadExecutionWidth
-        self.groupSize         = MTLSize(width: width, height: width, depth: 1)
+        let height             = self.computePipeline.maxTotalThreadsPerThreadgroup / width
+        self.groupSize         = MTLSize(width: width, height: height, depth: 1)
         self.groupCount.width  = (Int(self.viewportSize.width)  + self.groupSize.width  - 1) / self.groupSize.width     // 确保每个像素都处理到
         self.groupCount.height = (Int(self.viewportSize.height) + self.groupSize.height - 1) / self.groupSize.height    // 确保每个像素都处理到
         self.groupCount.depth  = 1  // 2D 纹理，深度值为 1

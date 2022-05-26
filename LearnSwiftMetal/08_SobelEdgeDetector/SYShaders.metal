@@ -42,7 +42,7 @@ FragmentShader(RasterizerData input [[ stage_in ]], // stage_in 表示数据来�
 }
 
 
-constant half kSobelStep = 2.0;  //
+constant half kSobelStep = 1.0;  //
 constant half3 kRec709Luma = half3(0.2126, 0.7152, 0.0722); // BT.709 标准：RGB 转成亮度值
 
 
@@ -61,20 +61,78 @@ SobelCompute(texture2d<half, access::read>  textureSrc  [[ texture(SYFragmentTex
     half4 topLeft      = textureSrc.read(uint2(grid.x - kSobelStep, grid.y - kSobelStep));  // 左上
     half4 top          = textureSrc.read(uint2(grid.x,              grid.y - kSobelStep));  // 上
     half4 topRight     = textureSrc.read(uint2(grid.x + kSobelStep, grid.y - kSobelStep));  // 右上
-    half4 centerLeft   = textureSrc.read(uint2(grid.x - kSobelStep, grid.y             ));  // 左
-    half4 centerRight  = textureSrc.read(uint2(grid.x + kSobelStep, grid.y             ));  // 右
+    half4 left         = textureSrc.read(uint2(grid.x - kSobelStep, grid.y             ));  // 左
+    half4 center       = textureSrc.read(uint2(grid.x,              grid.y             ));  // 中
+    half4 right        = textureSrc.read(uint2(grid.x + kSobelStep, grid.y             ));  // 右
     half4 bottomLeft   = textureSrc.read(uint2(grid.x + kSobelStep, grid.y + kSobelStep));  // 下左
     half4 bottom       = textureSrc.read(uint2(grid.x,              grid.y + kSobelStep));  // 下
     half4 bottomRight  = textureSrc.read(uint2(grid.x + kSobelStep, grid.y + kSobelStep));  // 下右
+
+    // 计算出周围各个点的灰度值
+    half3x3 A;
+    A[0][0] = dot(topLeft.rgb,     kRec709Luma);
+    A[0][1] = dot(top.rgb,         kRec709Luma);
+    A[0][2] = dot(topRight.rgb,    kRec709Luma);
+    A[1][0] = dot(left.rgb,        kRec709Luma);
+    A[1][1] = dot(center.rgb,      kRec709Luma);
+    A[1][2] = dot(right.rgb,       kRec709Luma);
+    A[2][0] = dot(bottomLeft.rgb,  kRec709Luma);
+    A[2][1] = dot(bottom.rgb,      kRec709Luma);
+    A[2][2] = dot(bottomRight.rgb, kRec709Luma);
     
-    half4 hori = -topLeft    - 2.0 * top        - topRight + bottomLeft  + 2.0 * bottom      + bottomRight;// 水平方向差别
-    half4 vert = -bottomLeft - 2.0 * centerLeft - topLeft  + bottomRight + 2.0 * centerRight + topRight;   // 垂直方向差别
+    /*
+     Soobel 卷积因子
+          Gx                  Gy
+     | -1, 0, 1 |       | -1, -2, -1 |
+     | -2, 0, 2 |       |  0,  0,  0 |
+     | -1, 0, 1 |       |  1,  2,  1 |
+     */
     
-    half grayHori = dot(hori.rgb, kRec709Luma); // 转成亮度值
-    half grayVert = dot(vert.rgb, kRec709Luma); // 转成亮度值
+    // 构建 Gx 卷积因子矩阵
+    half3x3 Gx;
+    /* 不可以直接静态初始化，暂原因未知
+    = {
+        -1, 0, 1,
+        -2, 0, 2,
+        -1, 0, 1
+    }*/
+    Gx[0][0] = -1;
+    Gx[0][1] =  0;
+    Gx[0][2] =  1;
+    Gx[1][0] = -2;
+    Gx[1][1] =  0;
+    Gx[1][2] =  2;
+    Gx[2][0] = -1;
+    Gx[2][1] =  0;
+    Gx[2][2] =  1;
+
+    // 构建 Gy 卷积因子矩阵
+    half3x3 Gy;
+    /* 不可以直接静态初始化，暂原因未知
+    = {
+        -1, -2, -1 ,
+         0,  0,  0,
+         1,  2,  1
+    }*/
+    Gy[0][0] = -1;
+    Gy[0][1] = -2;
+    Gy[0][2] = -1;
+    Gy[1][0] =  0;
+    Gy[1][1] =  0;
+    Gy[1][2] =  0;
+    Gy[2][0] =  1;
+    Gy[2][1] =  2;
+    Gy[2][2] =  1;
+
+    
+    half gx = Gx[0][0] * A[0][0]  +  Gx[0][1] * A[0][1]  +  Gx[0][2] * A[0][2] +
+              Gx[1][0] * A[1][0]  +  Gx[1][1] * A[1][1]  +  Gx[1][2] * A[1][2] +
+              Gx[2][0] * A[2][0]  +  Gx[2][1] * A[2][1]  +  Gx[2][2] * A[2][2];
+    half gy = Gy[0][0] * A[0][0]  +  Gy[0][1] * A[0][1]  +  Gy[0][2] * A[0][2] +
+              Gy[1][0] * A[1][0]  +  Gy[1][1] * A[1][1]  +  Gy[1][2] * A[1][2] +
+              Gy[2][0] * A[2][0]  +  Gy[2][1] * A[2][1]  +  Gy[2][2] * A[2][2];
     
     // sqrt(hori^2 + vert^2)，相当于求点到(hori, vert)的距离，所以可以用length
-    half color = length(half2(grayVert, grayHori));
-    
+    half color = length(half2(gx, gy));
     textureDest.write(half4(color, color, color, 1.0), grid); // 写回对应纹理
 }
