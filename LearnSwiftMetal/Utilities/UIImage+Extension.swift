@@ -1,14 +1,15 @@
 //
-//  UIImage+TextureUtilities.swift
-//  06_ImageProcessing
+//  UIImage+Extension.swift
+//  10_MetalInteractGLES
 //
-//  Created by ShenYuanLuo on 2022/5/18.
+//  Created by 罗深源 on 2022/5/29.
 //
 
 import UIKit
 
+
 extension UIImage {
-    // MAKR: 纹理转图片
+    // MAKR: Metal-纹理转图片
     class func imageWith(texture: MTLTexture) -> UIImage? {
         let imageSize      = CGSize(width: texture.width, height: texture.height)
         let bytesPerPixel  = 4
@@ -47,7 +48,40 @@ extension UIImage {
                 return image
             }
         }
+        return nil
+    }
+    
+    // MAKR: 像素缓存转图片
+    class func imageWith(pixelBuffer: CVPixelBuffer) -> UIImage? {
+        CVPixelBufferLockBaseAddress(pixelBuffer, .readOnly)
         
+        let baseAddress = CVPixelBufferGetBaseAddress(pixelBuffer)
+        let width       = CVPixelBufferGetWidth(pixelBuffer)
+        let height      = CVPixelBufferGetHeight(pixelBuffer)
+        let buffSize    = CVPixelBufferGetDataSize(pixelBuffer)
+        let bytesPerRow = CVPixelBufferGetBytesPerRow(pixelBuffer)
+        let bitmapInfo  = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue | CGBitmapInfo.byteOrder32Big.rawValue)
+        let provider    = CGDataProvider(dataInfo: nil, data: baseAddress!, size: buffSize) { info, data, size in }!
+        let cgImage     = CGImage(width: width,
+                                  height: height,
+                                  bitsPerComponent: 8,
+                                  bitsPerPixel: 32,
+                                  bytesPerRow: bytesPerRow,
+                                  space: CGColorSpaceCreateDeviceRGB(),
+                                  bitmapInfo: bitmapInfo,
+                                  provider: provider,
+                                  decode: nil,
+                                  shouldInterpolate: true,
+                                  intent: .defaultIntent)
+        if let cgImage = cgImage {
+            let image = UIImage(cgImage: cgImage)
+            CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly)
+            return image
+        } else {
+            print("Create CG Image failed.")
+        }
+        
+        CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly)
         return nil
     }
 }
