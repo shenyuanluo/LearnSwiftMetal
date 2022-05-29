@@ -299,12 +299,12 @@
 			path = 08_SobelEdgeDetector;
 			sourceTree = "<group>";
 		};
-		63463BBE2842896B004E15CC /* Utilities */ = {
+		63463BBE2842896B004E15CC /* 00_Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				63463BBF28428992004E15CC /* UIImage+Extension.swift */,
 			);
-			path = Utilities;
+			path = 00_Utilities;
 			sourceTree = "<group>";
 		};
 		6354E9F32833CF68001AE840 /* 06_ImageProcessing */ = {
@@ -347,8 +347,8 @@
 		63577A15281BEAAC008E3037 = {
 			isa = PBXGroup;
 			children = (
-				63463BBE2842896B004E15CC /* Utilities */,
 				63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */,
+				63463BBE2842896B004E15CC /* 00_Utilities */,
 				63577A20281BEAAC008E3037 /* 01_Triangle */,
 				630A3AB9282A4CDD00693ABB /* 02_Transformation */,
 				63A34363282CED7C009E542A /* 03_RenderCamera */,
@@ -1550,6 +1550,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 10_MetalInteractGLES/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
