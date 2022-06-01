@@ -2,7 +2,7 @@
 //  UIImage+Extension.swift
 //  10_MetalInteractGLES
 //
-//  Created by 罗深源 on 2022/5/29.
+//  Created by ShenYuanLuo on 2022/5/29.
 //
 
 import UIKit

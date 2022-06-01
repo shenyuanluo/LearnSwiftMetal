@@ -45,6 +45,12 @@
 		63577A2E281BEAAF008E3037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63577A2C281BEAAF008E3037 /* LaunchScreen.storyboard */; };
 		63577A40281C09A8008E3037 /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
 		63577A4228237665008E3037 /* SYShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63577A4128237665008E3037 /* SYShader.metal */; };
+		63988A1C2844EF050007917D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63988A1B2844EF050007917D /* AppDelegate.swift */; };
+		63988A202844EF050007917D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63988A1F2844EF050007917D /* ViewController.swift */; };
+		63988A252844EF070007917D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63988A242844EF070007917D /* Assets.xcassets */; };
+		63988A282844EF070007917D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63988A262844EF070007917D /* LaunchScreen.storyboard */; };
+		63988A2F2844F08A0007917D /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63988A2E2844F08A0007917D /* SYShaders.metal */; };
+		63988A54284710D90007917D /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
 		63A34326282CB425009E542A /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
 		63A34365282CED7C009E542A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A34364282CED7C009E542A /* AppDelegate.swift */; };
 		63A34369282CED7C009E542A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A34368282CED7C009E542A /* ViewController.swift */; };
@@ -134,6 +140,15 @@
 		63577A4128237665008E3037 /* SYShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShader.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		63577A4328237716008E3037 /* SYShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderType.h; sourceTree = "<group>"; };
 		63577A462823880B008E3037 /* 01_Triangle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01_Triangle-Bridging-Header.h"; sourceTree = "<group>"; };
+		63988A192844EF050007917D /* 11_HistogramEqualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_HistogramEqualization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63988A1B2844EF050007917D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63988A1F2844EF050007917D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63988A242844EF070007917D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63988A272844EF070007917D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63988A292844EF070007917D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63988A2D2844F0620007917D /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
+		63988A2E2844F08A0007917D /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
+		63988A302844F0CF0007917D /* HistogramEqualization-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HistogramEqualization-Bridging-Header.h"; sourceTree = "<group>"; };
 		63A34362282CED7C009E542A /* 03_RenderCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 03_RenderCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A34364282CED7C009E542A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A34368282CED7C009E542A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +224,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63577A1B281BEAAC008E3037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63988A162844EF050007917D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,6 +381,7 @@
 				63292B49283E09A900618D78 /* 08_SobelEdgeDetector */,
 				63E096D2283F57FE006FD641 /* 09_SkyBox2D */,
 				63A4FE0B2840732C009E1A28 /* 10_MetalInteractGLES */,
+				63988A1A2844EF050007917D /* 11_HistogramEqualization */,
 				63577A1F281BEAAC008E3037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -376,6 +399,7 @@
 				63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */,
 				63E096D1283F57FE006FD641 /* 09_SkyBox2D.app */,
 				63A4FE0A2840732C009E1A28 /* 10_MetalInteractGLES.app */,
+				63988A192844EF050007917D /* 11_HistogramEqualization.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -393,6 +417,21 @@
 				63577A2F281BEAAF008E3037 /* Info.plist */,
 			);
 			path = 01_Triangle;
+			sourceTree = "<group>";
+		};
+		63988A1A2844EF050007917D /* 11_HistogramEqualization */ = {
+			isa = PBXGroup;
+			children = (
+				63988A1B2844EF050007917D /* AppDelegate.swift */,
+				63988A1F2844EF050007917D /* ViewController.swift */,
+				63988A2D2844F0620007917D /* SYShaderTypes.h */,
+				63988A2E2844F08A0007917D /* SYShaders.metal */,
+				63988A302844F0CF0007917D /* HistogramEqualization-Bridging-Header.h */,
+				63988A242844EF070007917D /* Assets.xcassets */,
+				63988A262844EF070007917D /* LaunchScreen.storyboard */,
+				63988A292844EF070007917D /* Info.plist */,
+			);
+			path = 11_HistogramEqualization;
 			sourceTree = "<group>";
 		};
 		63A34363282CED7C009E542A /* 03_RenderCamera */ = {
@@ -565,6 +604,23 @@
 			productReference = 63577A1E281BEAAC008E3037 /* 01_Triangle.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63988A182844EF050007917D /* 11_HistogramEqualization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63988A2C2844EF070007917D /* Build configuration list for PBXNativeTarget "11_HistogramEqualization" */;
+			buildPhases = (
+				63988A152844EF050007917D /* Sources */,
+				63988A162844EF050007917D /* Frameworks */,
+				63988A172844EF050007917D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 11_HistogramEqualization;
+			productName = 11_HistogramEqualization;
+			productReference = 63988A192844EF050007917D /* 11_HistogramEqualization.app */;
+			productType = "com.apple.product-type.application";
+		};
 		63A34361282CED7C009E542A /* 03_RenderCamera */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63A34375282CED7D009E542A /* Build configuration list for PBXNativeTarget "03_RenderCamera" */;
@@ -675,6 +731,9 @@
 					63577A1D281BEAAC008E3037 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					63988A182844EF050007917D = {
+						CreatedOnToolsVersion = 13.4;
+					};
 					63A34361282CED7C009E542A = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -715,6 +774,7 @@
 				63292B47283E09A900618D78 /* 08_SobelEdgeDetector */,
 				63E096D0283F57FE006FD641 /* 09_SkyBox2D */,
 				63A4FE092840732C009E1A28 /* 10_MetalInteractGLES */,
+				63988A182844EF050007917D /* 11_HistogramEqualization */,
 			);
 		};
 /* End PBXProject section */
@@ -766,6 +826,16 @@
 				63577A40281C09A8008E3037 /* LearnSwiftMetal.bundle in Resources */,
 				63577A2E281BEAAF008E3037 /* LaunchScreen.storyboard in Resources */,
 				63577A2B281BEAAF008E3037 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63988A172844EF050007917D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63988A282844EF070007917D /* LaunchScreen.storyboard in Resources */,
+				63988A252844EF070007917D /* Assets.xcassets in Resources */,
+				63988A54284710D90007917D /* LearnSwiftMetal.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,6 +950,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63988A152844EF050007917D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63988A202844EF050007917D /* ViewController.swift in Sources */,
+				63988A2F2844F08A0007917D /* SYShaders.metal in Sources */,
+				63988A1C2844EF050007917D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63A3435E282CED7C009E542A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -971,6 +1051,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				63577A2D281BEAAF008E3037 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63988A262844EF070007917D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63988A272844EF070007917D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1424,6 +1512,64 @@
 			};
 			name = Release;
 		};
+		63988A2A2844EF070007917D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 11_HistogramEqualization/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-1-HistogramEqualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "11_HistogramEqualization/HistogramEqualization-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63988A2B2844EF070007917D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 11_HistogramEqualization/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-1-HistogramEqualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "11_HistogramEqualization/HistogramEqualization-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		63A34373282CED7D009E542A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1773,6 +1919,15 @@
 			buildConfigurations = (
 				63577A33281BEAAF008E3037 /* Debug */,
 				63577A34281BEAAF008E3037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63988A2C2844EF070007917D /* Build configuration list for PBXNativeTarget "11_HistogramEqualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63988A2A2844EF070007917D /* Debug */,
+				63988A2B2844EF070007917D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

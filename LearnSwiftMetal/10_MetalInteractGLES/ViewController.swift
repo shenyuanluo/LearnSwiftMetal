@@ -183,8 +183,8 @@ class ViewController: UIViewController {
     
     // MARK: 设置线程组
     private func setupThreadGroup() {
-        let width              = 16//self.computePipeline.threadExecutionWidth
-        let height             = 16//self.computePipeline.maxTotalThreadsPerThreadgroup / width
+        let width              = self.computePipeline.threadExecutionWidth
+        let height             = self.computePipeline.maxTotalThreadsPerThreadgroup / width
         self.groupSize         = MTLSize(width: width, height: height, depth: 1)
         self.groupCount.width  = (self.srcTexture.width  + self.groupSize.width  - 1) / self.groupSize.width     // 确保每个像素都处理到
         self.groupCount.height = (self.srcTexture.height + self.groupSize.height - 1) / self.groupSize.height    // 确保每个像素都处理到
