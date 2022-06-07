@@ -142,7 +142,7 @@ class ViewController: UIViewController {
         let region = MTLRegion(origin: MTLOrigin(x: 0, y: 0, z: 0),
                                size: MTLSize(width: Int(img.size.width), height: Int(img.size.height), depth: 1))
         // UIImage 的数据需要转成二进制才能上传，且不用 jpg、png 的 NSData
-        guard let data = self.loadImage(img) else {
+        guard let data = UIImage.loadImage(img) else {
             print("Load image data failure.")
             return
         }
@@ -153,32 +153,6 @@ class ViewController: UIViewController {
                                 bytesPerRow: Int(img.size.width) * 4)
         
         self.setupRenderTarget(with: img.size)
-    }
-    
-    // MARK: 加载图片数据（转成二进制）
-    private func loadImage(_ image: UIImage) -> UnsafeMutableRawPointer? {
-        guard let cgImage = image.cgImage else {
-            return nil
-        }
-        let width  = cgImage.width
-        let height = cgImage.height
-        let data   = UnsafeMutableRawPointer.allocate(byteCount: width * height * 4, alignment: 8)
-        
-        UIGraphicsBeginImageContext(CGSize(width: width, height: height))
-        // 创建画布
-        let context = CGContext(data: data,
-                                width: width,
-                                height: height,
-                                bitsPerComponent: 8,
-                                bytesPerRow: width * 4,
-                                space: cgImage.colorSpace!,
-                                bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)
-        // 在画布上绘制图片数据
-        context?.draw(cgImage,
-                      in: CGRect(x: 0, y: 0, width: width, height: height), byTiling: true)
-        UIGraphicsEndImageContext()
-        
-        return data
     }
     
     // MARK: 设置线程组

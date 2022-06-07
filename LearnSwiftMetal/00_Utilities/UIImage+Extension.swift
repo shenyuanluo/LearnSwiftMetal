@@ -84,4 +84,30 @@ extension UIImage {
         CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly)
         return nil
     }
+    
+    // MARK: 加载图片数据（转成二进制）
+    class func loadImage(_ image: UIImage) -> UnsafeMutableRawPointer? {
+        guard let spriteImage = image.cgImage else {
+            return nil
+        }
+        let width      = spriteImage.width
+        let height     = spriteImage.height
+        let spriteData = UnsafeMutableRawPointer.allocate(byteCount: width * height * 4, alignment: 8)
+        
+        UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+        // 创建画布
+        let context = CGContext(data: spriteData,
+                                width: width,
+                                height: height,
+                                bitsPerComponent: 8,
+                                bytesPerRow: width * 4,
+                                space: spriteImage.colorSpace!,
+                                bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)
+        // 在画布上绘制图片数据
+        context?.draw(spriteImage,
+                      in: CGRect(x: 0, y: 0, width: width, height: height), byTiling: true)
+        UIGraphicsEndImageContext()
+        
+        return spriteData
+    }
 }

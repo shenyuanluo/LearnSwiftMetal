@@ -12,6 +12,11 @@
 		630A3AC4282A4CDE00693ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630A3AC3282A4CDE00693ABB /* Assets.xcassets */; };
 		630A3AC7282A4CDE00693ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630A3AC5282A4CDE00693ABB /* LaunchScreen.storyboard */; };
 		630A3ACE282A533900693ABB /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 630A3ACD282A533900693ABB /* SYShaders.metal */; };
+		6314C3CC284F1B2100EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
+		6314C3CD284F1B5500EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
+		6314C3CE284F1B7800EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
+		6314C3D0284F1C2200EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
+		6314C3D1284F1C6000EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
 		63292B2C283DD30800618D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B2B283DD30800618D78 /* AppDelegate.swift */; };
 		63292B30283DD30800618D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B2F283DD30800618D78 /* ViewController.swift */; };
 		63292B35283DD30A00618D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63292B34283DD30A00618D78 /* Assets.xcassets */; };
@@ -899,6 +904,7 @@
 				630A3ABF282A4CDD00693ABB /* ViewController.swift in Sources */,
 				630A3ACE282A533900693ABB /* SYShaders.metal in Sources */,
 				630A3ABB282A4CDD00693ABB /* AppDelegate.swift in Sources */,
+				6314C3CC284F1B2100EF2C13 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,6 +953,7 @@
 				63577A4228237665008E3037 /* SYShader.metal in Sources */,
 				63577A26281BEAAC008E3037 /* ViewController.swift in Sources */,
 				63577A22281BEAAC008E3037 /* AppDelegate.swift in Sources */,
+				6314C3CD284F1B5500EF2C13 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -957,6 +964,7 @@
 				63988A202844EF050007917D /* ViewController.swift in Sources */,
 				63988A2F2844F08A0007917D /* SYShaders.metal in Sources */,
 				63988A1C2844EF050007917D /* AppDelegate.swift in Sources */,
+				6314C3D1284F1C6000EF2C13 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +984,7 @@
 				63A34385282D2A18009E542A /* ViewController.swift in Sources */,
 				63A34394282D2D4B009E542A /* SYShaders.metal in Sources */,
 				63A34381282D2A18009E542A /* AppDelegate.swift in Sources */,
+				6314C3CE284F1B7800EF2C13 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,6 +1018,7 @@
 				63E096D8283F57FE006FD641 /* ViewController.swift in Sources */,
 				63E096E9283F5B9D006FD641 /* SYShaders.metal in Sources */,
 				63E096D4283F57FE006FD641 /* AppDelegate.swift in Sources */,
+				6314C3D0284F1C2200EF2C13 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
