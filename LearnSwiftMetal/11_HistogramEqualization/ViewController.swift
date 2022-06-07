@@ -34,7 +34,10 @@ class ViewController: UIViewController {
         return view
     }()
     
-    private var cpuColorBuffer = SYLocalBuffer()
+    // SYLocalBuffer() Swift 默认将 C fixed-size array 转为 tuple，
+    // Swift 中对元组的「读写」不是很友好，因此直接使用「二维数组」
+    private var cpuColorBuffer: [[Int32]] = Array<Array<Int32>>(repeating: Array<Int32>(repeating: 0, count: Int(SY_CHANNEL_SIZE)),
+                                                                count: Int(SY_CHANNEL_NUM))
     private var isDrawing: Bool = false // 是否正在绘制（毕淼多次 compute 的影响）
 
     override func viewDidLoad() {
@@ -107,13 +110,14 @@ class ViewController: UIViewController {
     // MARk: 设置顶点
     private func setupVertex() {
         let quadVertices: [SYVertex] = [
-            SYVertex(position: [ 0.5, -0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [0.0, 1.0]),
-            SYVertex(position: [-0.5, -0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [0.0, 1.0]),
-            SYVertex(position: [-0.5,  0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [0.0, 0.0]),
-            
-            SYVertex(position: [ 0.5, -0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [1.0, 1.0]),
-            SYVertex(position: [-0.5,  0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [0.0, 0.0]),
-            SYVertex(position: [ 0.5,  0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [1.0, 0.0]),
+            // 第一个三角形
+            SYVertex(position: [ 0.5, -0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [1.0, 1.0]),   // 右下
+            SYVertex(position: [-0.5, -0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [0.0, 1.0]),   // 左下
+            SYVertex(position: [-0.5,  0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [0.0, 0.0]),   // 左上
+            // 第二个三角形
+            SYVertex(position: [ 0.5, -0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [1.0, 1.0]),   // 右下
+            SYVertex(position: [-0.5,  0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [0.0, 0.0]),   // 左上
+            SYVertex(position: [ 0.5,  0.5 / Float(self.viewportSize.height) * Float(self.viewportSize.width), 0.0, 1.0], textureCoordinate: [1.0, 0.0]),   // 右上
         ];
         // 创建顶点数据缓存
         self.vertices = self.device.makeBuffer(bytes: quadVertices,
@@ -212,28 +216,19 @@ class ViewController: UIViewController {
         // 在 context 上绘图
         context.draw(spriteImage, in: CGRect(x: 0, y: 0, width: width, height: height), byTiling: true)    // 在画布上绘制
         
-        var cpuColorBuffArray  = [] as! [[Int32]]
-        let cpuColorBuffMirror = Mirror.init(reflecting: self.cpuColorBuffer.channel)
-        let cpuColorTupleArray = cpuColorBuffMirror.children.map(\.value)
-        for tuple in cpuColorTupleArray {
-            let mirror = Mirror.init(reflecting: tuple)
-            let array  = mirror.children.map(\.value) as! [Int32]
-            cpuColorBuffArray.append(array)
-        }
         let pixelCount = Int(width * height)    // 总像素点数
         // CPU 进行统计
         for i in 0..<pixelCount {  // 遍历所有像素点
             for j in 0..<Int(SY_CHANNEL_NUM) {  // 遍历每个 RGB 通道值
                 let c: UInt8 = data.load(fromByteOffset: i * 4 + j, as: UInt8.self) // 原始图片像素有 RGBA 4 个通道
-                cpuColorBuffArray[j][Int(c)] += 1   // 累计当前像素点对应通道的值
+                self.cpuColorBuffer[j][Int(c)] += 1 // 累计当前像素点对应通道的值
             }
         }
-        // TODO: Write result to self.cpuColorBuffer
 #if DEBUG
         // 打印统计结果
         for i in 0..<Int(SY_CHANNEL_NUM) {
             for j in 0..<Int(SY_CHANNEL_SIZE) {
-                print("\(cpuColorBuffArray[i][j]) ", terminator: "")
+                print("\(self.cpuColorBuffer[i][j]) ", terminator: "")
             }
             print("\n------")
         }
@@ -244,7 +239,7 @@ class ViewController: UIViewController {
         // 颜色映射
         for i in 0..<Int(SY_CHANNEL_NUM) {
             for j in 0..<Int(SY_CHANNEL_SIZE) {
-                val[i]   += cpuColorBuffArray[i][j]
+                val[i]   += self.cpuColorBuffer[i][j]
                 rgb[i][j] = Int32(Float(val[i]) * Float(SY_CHANNEL_SIZE - 1) / Float(pixelCount))
             }
         }
@@ -314,53 +309,26 @@ class ViewController: UIViewController {
         }
         commandBuffer.addCompletedHandler { [weak self] buffer in
             guard let self = self else { return }
-            
-            let colorBuff    = self.colorBuffer.contents().assumingMemoryBound(to: SYLocalBuffer.self)   // GPU 统计结果
-            let convertBuff  = self.convertBuffer.contents().assumingMemoryBound(to: SYLocalBuffer.self) // 颜色转换结果
-            let sum          = Int32(self.sourceTexture.width * self.sourceTexture.height)  // 总像素点
-            var val          = Array<Int32>(repeating: 0, count: 3)    // 累计和
-            
-            var colorBuffArray  = [] as! [[Int32]]
-            let colorBuffMirror = Mirror.init(reflecting: colorBuff.pointee.channel)
-            let colorTupleArray = colorBuffMirror.children.map(\.value)
-            for tuple in colorTupleArray {
-                let mirror = Mirror.init(reflecting: tuple)
-                let array  = mirror.children.map(\.value) as! [Int32]
-                colorBuffArray.append(array)
-            }
-            
-            var convertBuffArray  = [] as! [[Int32]]
-            let convertBuffMirror = Mirror.init(reflecting: convertBuff.pointee.channel)
-            let convertTupleArray = convertBuffMirror.children.map(\.value)
-            for tuple in convertTupleArray {
-                let mirror = Mirror.init(reflecting: tuple)
-                let array  = mirror.children.map(\.value) as! [Int32]
-                convertBuffArray.append(array)
-            }
-            
-            var cpuColorBuffArray  = [] as! [[Int32]]
-            let cpuColorBuffMirror = Mirror.init(reflecting: self.cpuColorBuffer.channel)
-            let cpuColorTupleArray = cpuColorBuffMirror.children.map(\.value)
-            for tuple in cpuColorTupleArray {
-                let mirror = Mirror.init(reflecting: tuple)
-                let array  = mirror.children.map(\.value) as! [Int32]
-                cpuColorBuffArray.append(array)
-            }
-            
+            let colorPtr   = self.colorBuffer.contents()   // GPU 统计结果
+            let convertPtr = self.convertBuffer.contents() // 颜色转换结果
+            let sum        = Int32(self.sourceTexture.width * self.sourceTexture.height)  // 总像素点
+            var val        = Array<Int32>(repeating: 0, count: 3)    // 累计和
             for i in 0..<Int(SY_CHANNEL_NUM) {
                 for j in 0..<Int(SY_CHANNEL_SIZE) {
-                    val[i] += colorBuffArray[i][j]  // 当前 [0, j] 累计出现的总次数
-                    convertBuffArray[i][j] = Int32(Float(val[i]) * Float(SY_CHANNEL_SIZE - 1) / Float(sum))
-                    
+                    let offset = MemoryLayout<Int32>.size * (i * Int(SY_CHANNEL_SIZE) + j)
+                    val[i]    += colorPtr.load(fromByteOffset: offset, as: Int32.self)    // 当前 [0, j] 累计出现的总次数
+                    convertPtr.storeBytes(of: Int32(Float(val[i]) * Float(SY_CHANNEL_SIZE - 1) / Float(sum)),
+                                          toByteOffset: offset,
+                                          as: Int32.self)
+                    let gpuValue = colorPtr.load(fromByteOffset: offset, as: Int32.self)
+                    let cpuValue = self.cpuColorBuffer[i][j]
                     // 对比 CPU 和 GPU 处理的结果
-                    if colorBuffArray[i][j] != cpuColorBuffArray[i][j] {
-                        // 如果不同，把对应的结果输出
-//                        print("cpuBuff[\(i)][\(j) = \(cpuColorBuffArray[i][j]), gpuBuff[\(i)][\(j)] = \(colorBuffArray[i][j])", terminator: "")
+                    if gpuValue != cpuValue {   // 如果不同，把对应的结果输出
+                        print("\(i), \(j), GPU: \(gpuValue), CPU: \(cpuValue)")
                     }
                 }
             }
-            // TODO: Write result to self.convertBuff
-            memset(colorBuff, 0, self.colorBuffer.length)
+            memset(colorPtr, 0, self.colorBuffer.length)
             self.renderNewImage()
         }
         commandBuffer.commit()  // 提交
