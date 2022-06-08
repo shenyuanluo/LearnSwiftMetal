@@ -195,7 +195,7 @@ class ViewController: UIViewController {
         for i in 0..<pixelCount {  // 遍历所有像素点
             for j in 0..<Int(SY_CHANNEL_NUM) {  // 遍历每个 RGB 通道值
                 let c: UInt8 = data.load(fromByteOffset: i * 4 + j, as: UInt8.self) // 原始图片像素有 RGBA 4 个通道
-                self.cpuColorBuffer[j][Int(c)] += 1 // 累计当前像素点对应通道的值
+                self.cpuColorBuffer[j][Int(c)] += 1 // 统计当前像素点对应通道的值（统计直方图）
             }
         }
 #if DEBUG
@@ -213,12 +213,12 @@ class ViewController: UIViewController {
         // 颜色映射
         for i in 0..<Int(SY_CHANNEL_NUM) {
             for j in 0..<Int(SY_CHANNEL_SIZE) {
-                val[i]   += self.cpuColorBuffer[i][j]
-                rgb[i][j] = Int32(Float(val[i]) * Float(SY_CHANNEL_SIZE - 1) / Float(pixelCount))
+                val[i]   += self.cpuColorBuffer[i][j]   // （累计直方图）
+                rgb[i][j] = Int32(Float(val[i]) * Float(SY_CHANNEL_SIZE - 1) / Float(pixelCount))   // 累计直方图（百分比）
             }
         }
         
-        // 值修改
+        // 图片像素值修改
         for i in 0..<pixelCount {
             for j in 0..<Int(SY_CHANNEL_NUM) {
                 let offset = i * 4 + Int(j)

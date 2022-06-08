@@ -32,7 +32,7 @@ constant float SIZE = float(SY_CHANNEL_SIZE - 1);
 /// 顶点着色器
 vertex RasterizerData
 VertexShader(uint vertexID[[ vertex_id ]],  // vertex_id 修饰表示这个是着色器每次处理的顶点下标（用于定位当前顶点）
-             constant SYVertex* vertexArray [[ buffer(SYVertexBufferIndexVertices) ]])  // buffer 表面是缓冲数据（SYVertexBufferIndexVertices 是索引）
+             constant SYVertex* vertexArray [[ buffer(SYVertexBufferIndexVertices) ]])  // buffer 表明是缓冲数据（SYVertexBufferIndexVertices 是索引）
 {
     RasterizerData out;
     out.clipSpacePosition = vertexArray[vertexID].position;

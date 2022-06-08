@@ -17,11 +17,18 @@
 		6314C3CE284F1B7800EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
 		6314C3D0284F1C2200EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
 		6314C3D1284F1C6000EF2C13 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63463BBF28428992004E15CC /* UIImage+Extension.swift */; };
+		6314C3D92850398F00EF2C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314C3D82850398F00EF2C13 /* AppDelegate.swift */; };
+		6314C3DD2850398F00EF2C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314C3DC2850398F00EF2C13 /* ViewController.swift */; };
+		6314C3E22850399100EF2C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6314C3E12850399100EF2C13 /* Assets.xcassets */; };
+		6314C3E52850399100EF2C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6314C3E32850399100EF2C13 /* LaunchScreen.storyboard */; };
+		6314C3ED28503BB500EF2C13 /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6314C3EC28503BB500EF2C13 /* SYShaders.metal */; };
+		6314C3EF2850637500EF2C13 /* SYAssetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314C3EE2850637500EF2C13 /* SYAssetReader.swift */; };
+		6314C3F02850637500EF2C13 /* SYAssetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314C3EE2850637500EF2C13 /* SYAssetReader.swift */; };
+		6314C3F128506A0100EF2C13 /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
 		63292B2C283DD30800618D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B2B283DD30800618D78 /* AppDelegate.swift */; };
 		63292B30283DD30800618D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B2F283DD30800618D78 /* ViewController.swift */; };
 		63292B35283DD30A00618D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63292B34283DD30A00618D78 /* Assets.xcassets */; };
 		63292B38283DD30A00618D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63292B36283DD30A00618D78 /* LaunchScreen.storyboard */; };
-		63292B40283DD47F00618D78 /* SYAssetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B3F283DD47F00618D78 /* SYAssetReader.swift */; };
 		63292B42283DDA1E00618D78 /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63292B41283DDA1E00618D78 /* SYShaders.metal */; };
 		63292B43283DEE4600618D78 /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
 		63292B4B283E09A900618D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63292B4A283E09A900618D78 /* AppDelegate.swift */; };
@@ -99,6 +106,16 @@
 		630A3ACC282A52FB00693ABB /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
 		630A3ACD282A533900693ABB /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		630A3ACF282A537300693ABB /* 02_Transformation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02_Transformation-Bridging-Header.h"; sourceTree = "<group>"; };
+		6314C3D62850398F00EF2C13 /* 12_VideoCompositing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 12_VideoCompositing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6314C3D82850398F00EF2C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6314C3DC2850398F00EF2C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6314C3E12850399100EF2C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6314C3E42850399100EF2C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6314C3E62850399100EF2C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6314C3EA28503A6000EF2C13 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
+		6314C3EB28503B7600EF2C13 /* VideoCompositing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoCompositing-Bridging-Header.h"; sourceTree = "<group>"; };
+		6314C3EC28503BB500EF2C13 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
+		6314C3EE2850637500EF2C13 /* SYAssetReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYAssetReader.swift; sourceTree = "<group>"; };
 		63292B29283DD30800618D78 /* 07_RenderVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 07_RenderVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63292B2B283DD30800618D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63292B2F283DD30800618D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +124,6 @@
 		63292B39283DD30A00618D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63292B3D283DD3B800618D78 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
 		63292B3E283DD3DA00618D78 /* 07_RenderVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "07_RenderVideo-Bridging-Header.h"; sourceTree = "<group>"; };
-		63292B3F283DD47F00618D78 /* SYAssetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYAssetReader.swift; sourceTree = "<group>"; };
 		63292B41283DDA1E00618D78 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 08_SobelEdgeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63292B4A283E09A900618D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +223,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6314C3D32850398F00EF2C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63292B26283DD30800618D78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,12 +318,26 @@
 			path = 02_Transformation;
 			sourceTree = "<group>";
 		};
+		6314C3D72850398F00EF2C13 /* 12_VideoCompositing */ = {
+			isa = PBXGroup;
+			children = (
+				6314C3D82850398F00EF2C13 /* AppDelegate.swift */,
+				6314C3DC2850398F00EF2C13 /* ViewController.swift */,
+				6314C3EA28503A6000EF2C13 /* SYShaderTypes.h */,
+				6314C3EC28503BB500EF2C13 /* SYShaders.metal */,
+				6314C3EB28503B7600EF2C13 /* VideoCompositing-Bridging-Header.h */,
+				6314C3E12850399100EF2C13 /* Assets.xcassets */,
+				6314C3E32850399100EF2C13 /* LaunchScreen.storyboard */,
+				6314C3E62850399100EF2C13 /* Info.plist */,
+			);
+			path = 12_VideoCompositing;
+			sourceTree = "<group>";
+		};
 		63292B2A283DD30800618D78 /* 07_RenderVideo */ = {
 			isa = PBXGroup;
 			children = (
 				63292B2B283DD30800618D78 /* AppDelegate.swift */,
 				63292B2F283DD30800618D78 /* ViewController.swift */,
-				63292B3F283DD47F00618D78 /* SYAssetReader.swift */,
 				63292B3D283DD3B800618D78 /* SYShaderTypes.h */,
 				63292B41283DDA1E00618D78 /* SYShaders.metal */,
 				63292B3E283DD3DA00618D78 /* 07_RenderVideo-Bridging-Header.h */,
@@ -329,6 +366,7 @@
 		63463BBE2842896B004E15CC /* 00_Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6314C3EE2850637500EF2C13 /* SYAssetReader.swift */,
 				63463BBF28428992004E15CC /* UIImage+Extension.swift */,
 			);
 			path = 00_Utilities;
@@ -387,24 +425,26 @@
 				63E096D2283F57FE006FD641 /* 09_SkyBox2D */,
 				63A4FE0B2840732C009E1A28 /* 10_MetalInteractGLES */,
 				63988A1A2844EF050007917D /* 11_HistogramEqualization */,
+				6314C3D72850398F00EF2C13 /* 12_VideoCompositing */,
 				63577A1F281BEAAC008E3037 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		63577A1F281BEAAC008E3037 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				63577A1E281BEAAC008E3037 /* 01_Triangle.app */,
-				630A3AB8282A4CDD00693ABB /* 02_Transformation.app */,
-				63A34362282CED7C009E542A /* 03_RenderCamera.app */,
-				63A3437E282D2A18009E542A /* 04_ComputeGray.app */,
-				63BFDC51282E78F2006E7909 /* 05_ComputeData.app */,
-				6354E9F22833CF68001AE840 /* 06_ImageProcessing.app */,
-				63292B29283DD30800618D78 /* 07_RenderVideo.app */,
-				63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */,
-				63E096D1283F57FE006FD641 /* 09_SkyBox2D.app */,
-				63A4FE0A2840732C009E1A28 /* 10_MetalInteractGLES.app */,
-				63988A192844EF050007917D /* 11_HistogramEqualization.app */,
+            );
+            sourceTree = "<group>";
+        };
+        63577A1F281BEAAC008E3037 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                63577A1E281BEAAC008E3037 /* 01_Triangle.app */,
+                630A3AB8282A4CDD00693ABB /* 02_Transformation.app */,
+                63A34362282CED7C009E542A /* 03_RenderCamera.app */,
+                63A3437E282D2A18009E542A /* 04_ComputeGray.app */,
+                63BFDC51282E78F2006E7909 /* 05_ComputeData.app */,
+                6354E9F22833CF68001AE840 /* 06_ImageProcessing.app */,
+                63292B29283DD30800618D78 /* 07_RenderVideo.app */,
+                63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */,
+                63E096D1283F57FE006FD641 /* 09_SkyBox2D.app */,
+                63A4FE0A2840732C009E1A28 /* 10_MetalInteractGLES.app */,
+                63988A192844EF050007917D /* 11_HistogramEqualization.app */,
+                6314C3D62850398F00EF2C13 /* 12_VideoCompositing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -539,6 +579,23 @@
 			name = 02_Transformation;
 			productName = 02_Tranformation;
 			productReference = 630A3AB8282A4CDD00693ABB /* 02_Transformation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6314C3D52850398F00EF2C13 /* 12_VideoCompositing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6314C3E72850399100EF2C13 /* Build configuration list for PBXNativeTarget "12_VideoCompositing" */;
+			buildPhases = (
+				6314C3D22850398F00EF2C13 /* Sources */,
+				6314C3D32850398F00EF2C13 /* Frameworks */,
+				6314C3D42850398F00EF2C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 12_VideoCompositing;
+			productName = 12_VideoCompositing;
+			productReference = 6314C3D62850398F00EF2C13 /* 12_VideoCompositing.app */;
 			productType = "com.apple.product-type.application";
 		};
 		63292B28283DD30800618D78 /* 07_RenderVideo */ = {
@@ -724,6 +781,9 @@
 					630A3AB7282A4CDD00693ABB = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					6314C3D52850398F00EF2C13 = {
+						CreatedOnToolsVersion = 13.4;
+					};
 					63292B28283DD30800618D78 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -780,6 +840,7 @@
 				63E096D0283F57FE006FD641 /* 09_SkyBox2D */,
 				63A4FE092840732C009E1A28 /* 10_MetalInteractGLES */,
 				63988A182844EF050007917D /* 11_HistogramEqualization */,
+				6314C3D52850398F00EF2C13 /* 12_VideoCompositing */,
 			);
 		};
 /* End PBXProject section */
@@ -792,6 +853,16 @@
 				630A3AC7282A4CDE00693ABB /* LaunchScreen.storyboard in Resources */,
 				630A3AC4282A4CDE00693ABB /* Assets.xcassets in Resources */,
 				63A34326282CB425009E542A /* LearnSwiftMetal.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6314C3D42850398F00EF2C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6314C3E52850399100EF2C13 /* LaunchScreen.storyboard in Resources */,
+				6314C3E22850399100EF2C13 /* Assets.xcassets in Resources */,
+				6314C3F128506A0100EF2C13 /* LearnSwiftMetal.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,14 +979,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6314C3D22850398F00EF2C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6314C3DD2850398F00EF2C13 /* ViewController.swift in Sources */,
+				6314C3F02850637500EF2C13 /* SYAssetReader.swift in Sources */,
+				6314C3ED28503BB500EF2C13 /* SYShaders.metal in Sources */,
+				6314C3D92850398F00EF2C13 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63292B25283DD30800618D78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				63292B30283DD30800618D78 /* ViewController.swift in Sources */,
+				6314C3EF2850637500EF2C13 /* SYAssetReader.swift in Sources */,
 				63292B2C283DD30800618D78 /* AppDelegate.swift in Sources */,
 				63292B42283DDA1E00618D78 /* SYShaders.metal in Sources */,
-				63292B40283DD47F00618D78 /* SYAssetReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1029,6 +1111,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				630A3AC6282A4CDE00693ABB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6314C3E32850399100EF2C13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6314C3E42850399100EF2C13 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1169,6 +1259,64 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "02_Transformation/02_Transformation-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6314C3E82850399100EF2C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 12_VideoCompositing/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-2-VideoCompositing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "12_VideoCompositing/VideoCompositing-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6314C3E92850399100EF2C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 12_VideoCompositing/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-2-VideoCompositing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "12_VideoCompositing/VideoCompositing-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1884,6 +2032,15 @@
 			buildConfigurations = (
 				630A3AC9282A4CDE00693ABB /* Debug */,
 				630A3ACA282A4CDE00693ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6314C3E72850399100EF2C13 /* Build configuration list for PBXNativeTarget "12_VideoCompositing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6314C3E82850399100EF2C13 /* Debug */,
+				6314C3E92850399100EF2C13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
