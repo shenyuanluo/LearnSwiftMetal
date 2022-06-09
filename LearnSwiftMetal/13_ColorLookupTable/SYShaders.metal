@@ -49,12 +49,12 @@ FragmentShader(RasterizerData input [[ stage_in ]], // stage_in 表示这个数�
     float blueColor = textureColor.b * 63.0;
     
     // 为了有更好的过渡效果，每次计算的时候用相邻的结果进行线性结合
-    // 第一个正方形位置（例如：blueColor = 22.5，则 y = 22/8 = 2, x = 22 - 2*2 = 6；即第 2 行，第 6 个正方形；y 是纵坐标）
+    // 第 1 个正方形位置（例如：blueColor = 22.5，则 y = 22/8 = 2, x = 22 - 2*2 = 6；即第 2 行，第 6 个正方形；y 是纵坐标）
     float2 quad1;
     quad1.y = floor(floor(blueColor) * 0.125);      // 1/8（每行 8 个小正方形）
     quad1.x = floor(blueColor) - (quad1.y * 8.0);   // 每行 8 个小正方形
     
-    // 第二个正方形位置（同上）
+    // 第 2 个正方形位置（同上）
     float2 quad2;
     quad2.y = floor(ceil(blueColor) * 0.125);       // 1/8（每行 8 个小正方形）
     quad2.x = ceil(blueColor) - (quad2.y * 8.0);   // （每行 8 个小正方形）
@@ -74,7 +74,7 @@ FragmentShader(RasterizerData input [[ stage_in ]], // stage_in 表示这个数�
     texPos2.y = (quad2.y * 0.125) + (SquareSize * textureColor.g);
     
     float4 newColor1 = lookupTableTexture.sample(textureSampler, texPos1);  // 正方形 1 的颜色值
-    float4 newColor2 = lookupTableTexture.sample(textureSampler, texPos2);  // 正方形 1 的颜色值
+    float4 newColor2 = lookupTableTexture.sample(textureSampler, texPos2);  // 正方形 2 的颜色值
     float4 newColor  = mix(newColor1, newColor2, fract(blueColor));         // 根据小数点的部分进行 mix
     
     return float4(newColor.rgb, textureColor.w);    // 不修改 Alpha 值
