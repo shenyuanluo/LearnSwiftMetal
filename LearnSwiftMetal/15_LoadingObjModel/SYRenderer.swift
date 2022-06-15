@@ -24,6 +24,8 @@ class SYRenderer: NSObject {
         descriptor.attributes[Int(SYVertexAttributeTexCoord.rawValue)].offset      = 12
         descriptor.attributes[Int(SYVertexAttributeTexCoord.rawValue)].bufferIndex = 0
         // 内存布局
+        // 模型中每个顶点包含 position(float3)、uv(float2)、normal(half4)、tangent(half4)、bitangent(half4)五个属性，
+        // 数据长度为: 3x4 + 2x4 + 4x2 + 4x2 + 4x2 = 44
         descriptor.layouts[0].stride       = 44
         descriptor.layouts[0].stepRate     = 1
         descriptor.layouts[0].stepFunction = .perVertex

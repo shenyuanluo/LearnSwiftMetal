@@ -10,7 +10,7 @@
 
 using namespace metal;
 
-/// 顶点结构体
+/// 顶点结构体（和 VertexDescriptor 中描述的一致）
 typedef struct {
     /// 位置
     float3 position [[ attribute(0) ]];
