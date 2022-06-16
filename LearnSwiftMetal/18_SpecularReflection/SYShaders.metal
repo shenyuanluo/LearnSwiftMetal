@@ -71,7 +71,7 @@ FragmentShader(RasterizerData input [[stage_in ]],
     float3 V = normalize(uniforms.cameraPos - input.worldPos.xyz);  // 观察向量
     
     // Lamber 漫反射
-    float diffuse = uniforms.IL * uniforms.Kd * max(dot(N, L), 0.0);    // 计算漫反射光强
+    float diffuse = uniforms.IL * uniforms.Ks * max(dot(N, L), 0.0);    // 计算漫反射光强
     // 镜面反射
     float specular = uniforms.IL * uniforms.Kd * pow(fmax(dot(V, R), 0), uniforms.shininess);   // 计算镜面反射
     // 冯氏光照模型: 环境光照 + 漫反射光照 + 镜面反射光照

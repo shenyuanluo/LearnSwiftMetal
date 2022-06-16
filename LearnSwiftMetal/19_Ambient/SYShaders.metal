@@ -73,7 +73,7 @@ FragmentShader(RasterizerData input [[stage_in ]],
     // Lamber 漫反射
     float diffuse = uniforms.IL * uniforms.Kd * max(dot(N, L), 0.0);    // 计算漫反射光强
     // 镜面反射
-    float specular = uniforms.IL * uniforms.Kd * pow(fmax(dot(V, R), 0), uniforms.shininess);   // 计算镜面反射
+    float specular = uniforms.IL * uniforms.Ks * pow(fmax(dot(V, R), 0), uniforms.shininess);   // 计算镜面反射
     // 环境光
     float amblient = uniforms.Ia * uniforms.Ka;
     
