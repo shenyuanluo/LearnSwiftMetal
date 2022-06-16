@@ -66,7 +66,7 @@ FragmentShader(RasterizerData input [[stage_in ]],
     
     // Lamber 漫反射
     float diffuse = uniforms.IL * uniforms.Kd * max(dot(N, L), 0.0);    // 计算漫反射光强
-    float3 out    = float3(uniforms.directionalLightColor) * float3(colorSample.xyz) * diffuse;
+    float3 out    = float3(uniforms.directionalLightColor) * float3(colorSample.xyz) * diffuse; // 物体反射颜色 = 光照颜色 * 物体颜色 * 反射强度
     
     return half4(half3(out.xyz), 1.0);
 }

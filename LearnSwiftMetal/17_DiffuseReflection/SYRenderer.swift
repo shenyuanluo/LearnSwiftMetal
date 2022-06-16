@@ -127,13 +127,13 @@ class SYRenderer: NSObject {
         let moveToZ     = SYTransform.translationMatrix(SIMD3<Float>(0, 0, 1000))  // 往 Z 轴方向平移，将相机拉远（以容下整个场景）
         let radian      = SYTransform.radian(-30)   // 旋转弧度
         let rotateX     = SYTransform.rotationMatrix(radians: radian, axis: SIMD3<Float>(1, 0, 0)) // 绕 X 轴逆时针旋转（略微抬高相机俯视原点）
-        let modelMatrix = moveToZ * rotateX // matrix_multiply(moveToZ, rotateX)
-        let viewMatrix  = SYTransform.rotationMatrix(radians: SYTransform.radian(self.rotationAngle),
+        let viewMatrix  = moveToZ * rotateX // matrix_multiply(moveToZ, rotateX)
+        let modelMatrix = SYTransform.rotationMatrix(radians: SYTransform.radian(self.rotationAngle),
                                                      axis: SIMD3<Float>(0, 1, 0))    // 持续绕 Y 轴旋转
         // 更新 MVP 矩阵
         uniforms.pointee.modelMatrix      = modelMatrix
         uniforms.pointee.viewMatrix       = viewMatrix
-        uniforms.pointee.modelViewMatrix  = modelMatrix * viewMatrix  // matrix_multiply(modelMatrix, viewMatrix)
+        uniforms.pointee.modelViewMatrix  = viewMatrix * modelMatrix  // matrix_multiply(viewMatrix, modelMatrix)
         uniforms.pointee.projectionMatrix = self.projectionMatrix
         // 更新平行光照
         uniforms.pointee.directionalLightDirection = vector_float3(-1.0, -1.0, -1.0)    // 光照方向向量

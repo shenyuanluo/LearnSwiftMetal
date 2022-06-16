@@ -78,6 +78,17 @@
 		635949EA285AEDDD00A8AF6F /* SYMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF7285830B900E0E4A5 /* SYMaterial.swift */; };
 		635949EB285AEDEB00A8AF6F /* SYTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDB4F2859D14F00E0E4A5 /* SYTransform.swift */; };
 		635949EC285AEDEE00A8AF6F /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
+		635949F4285B301E00A8AF6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635949F3285B301E00A8AF6F /* AppDelegate.swift */; };
+		635949F8285B301E00A8AF6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635949F7285B301E00A8AF6F /* ViewController.swift */; };
+		635949FD285B301F00A8AF6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635949FC285B301F00A8AF6F /* Assets.xcassets */; };
+		63594A00285B301F00A8AF6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635949FE285B301F00A8AF6F /* LaunchScreen.storyboard */; };
+		63594A08285B30F700A8AF6F /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63594A07285B30F700A8AF6F /* SYShaders.metal */; };
+		63594A0A285B340E00A8AF6F /* SYRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63594A09285B340E00A8AF6F /* SYRenderer.swift */; };
+		63594A0B285B343400A8AF6F /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
+		63594A0C285B343700A8AF6F /* SYMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF3285822AF00E0E4A5 /* SYMesh.swift */; };
+		63594A0D285B343900A8AF6F /* SYSubMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF528582FAC00E0E4A5 /* SYSubMesh.swift */; };
+		63594A0E285B343C00A8AF6F /* SYMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF7285830B900E0E4A5 /* SYMaterial.swift */; };
+		63594A0F285B344A00A8AF6F /* SYTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDB4F2859D14F00E0E4A5 /* SYTransform.swift */; };
 		63988A1C2844EF050007917D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63988A1B2844EF050007917D /* AppDelegate.swift */; };
 		63988A202844EF050007917D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63988A1F2844EF050007917D /* ViewController.swift */; };
 		63988A252844EF070007917D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63988A242844EF070007917D /* Assets.xcassets */; };
@@ -229,6 +240,16 @@
 		635949E3285AD9A900A8AF6F /* DiffuseReflection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiffuseReflection-Bridging-Header.h"; sourceTree = "<group>"; };
 		635949E4285AD9DC00A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		635949E6285AEDAA00A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
+		635949F1285B301E00A8AF6F /* 18_SpecularReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 18_SpecularReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		635949F3285B301E00A8AF6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		635949F7285B301E00A8AF6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		635949FC285B301F00A8AF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		635949FF285B301F00A8AF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63594A01285B301F00A8AF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63594A05285B309100A8AF6F /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
+		63594A06285B30DD00A8AF6F /* SpecularReflection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecularReflection-Bridging-Header.h"; sourceTree = "<group>"; };
+		63594A07285B30F700A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
+		63594A09285B340E00A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
 		63988A192844EF050007917D /* 11_HistogramEqualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_HistogramEqualization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63988A1B2844EF050007917D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63988A1F2844EF050007917D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +385,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63577A1B281BEAAC008E3037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635949EE285B301E00A8AF6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -596,8 +624,8 @@
 				63EEDADA2857629700E0E4A5 /* 15_LoadingObjModel */,
 				63EEDB2F2859BE5F00E0E4A5 /* 16_UniformBuffer */,
 				63EEDB7C285AD7C500E0E4A5 /* 17_DiffuseReflection */,
+				635949F2285B301E00A8AF6F /* 18_SpecularReflection */,
 				63577A1F281BEAAC008E3037 /* Products */,
-				63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -620,6 +648,8 @@
 				6314C41A2851C6CC00EF2C13 /* 14_HexagonMosaic.app */,
 				63EEDAD92857629700E0E4A5 /* 15_LoadingObjModel.app */,
 				63EEDB2E2859BE5F00E0E4A5 /* 16_UniformBuffer.app */,
+				63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */,
+				635949F1285B301E00A8AF6F /* 18_SpecularReflection.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -637,6 +667,22 @@
 				63577A2F281BEAAF008E3037 /* Info.plist */,
 			);
 			path = 01_Triangle;
+			sourceTree = "<group>";
+		};
+		635949F2285B301E00A8AF6F /* 18_SpecularReflection */ = {
+			isa = PBXGroup;
+			children = (
+				635949F3285B301E00A8AF6F /* AppDelegate.swift */,
+				635949F7285B301E00A8AF6F /* ViewController.swift */,
+				63594A09285B340E00A8AF6F /* SYRenderer.swift */,
+				63594A07285B30F700A8AF6F /* SYShaders.metal */,
+				63594A05285B309100A8AF6F /* SYShaderTypes.h */,
+				63594A06285B30DD00A8AF6F /* SpecularReflection-Bridging-Header.h */,
+				635949FC285B301F00A8AF6F /* Assets.xcassets */,
+				635949FE285B301F00A8AF6F /* LaunchScreen.storyboard */,
+				63594A01285B301F00A8AF6F /* Info.plist */,
+			);
+			path = 18_SpecularReflection;
 			sourceTree = "<group>";
 		};
 		63988A1A2844EF050007917D /* 11_HistogramEqualization */ = {
@@ -933,6 +979,23 @@
 			productReference = 63577A1E281BEAAC008E3037 /* 01_Triangle.app */;
 			productType = "com.apple.product-type.application";
 		};
+		635949F0285B301E00A8AF6F /* 18_SpecularReflection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63594A02285B301F00A8AF6F /* Build configuration list for PBXNativeTarget "18_SpecularReflection" */;
+			buildPhases = (
+				635949ED285B301E00A8AF6F /* Sources */,
+				635949EE285B301E00A8AF6F /* Frameworks */,
+				635949EF285B301E00A8AF6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 18_SpecularReflection;
+			productName = 18_SpecularReflection;
+			productReference = 635949F1285B301E00A8AF6F /* 18_SpecularReflection.app */;
+			productType = "com.apple.product-type.application";
+		};
 		63988A182844EF050007917D /* 11_HistogramEqualization */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63988A2C2844EF070007917D /* Build configuration list for PBXNativeTarget "11_HistogramEqualization" */;
@@ -1120,6 +1183,9 @@
 					63577A1D281BEAAC008E3037 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					635949F0285B301E00A8AF6F = {
+						CreatedOnToolsVersion = 13.4;
+					};
 					63988A182844EF050007917D = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -1179,6 +1245,7 @@
 				63EEDAD82857629700E0E4A5 /* 15_LoadingObjModel */,
 				63EEDB2D2859BE5F00E0E4A5 /* 16_UniformBuffer */,
 				63EEDB7A285AD7C500E0E4A5 /* 17_DiffuseReflection */,
+				635949F0285B301E00A8AF6F /* 18_SpecularReflection */,
 			);
 		};
 /* End PBXProject section */
@@ -1260,6 +1327,16 @@
 				63577A40281C09A8008E3037 /* LearnSwiftMetal.bundle in Resources */,
 				63577A2E281BEAAF008E3037 /* LaunchScreen.storyboard in Resources */,
 				63577A2B281BEAAF008E3037 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635949EF285B301E00A8AF6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63594A00285B301F00A8AF6F /* LaunchScreen.storyboard in Resources */,
+				635949FD285B301F00A8AF6F /* Assets.xcassets in Resources */,
+				63594A0B285B343400A8AF6F /* LearnSwiftMetal.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1449,6 +1526,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		635949ED285B301E00A8AF6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635949F8285B301E00A8AF6F /* ViewController.swift in Sources */,
+				63594A0D285B343900A8AF6F /* SYSubMesh.swift in Sources */,
+				63594A0E285B343C00A8AF6F /* SYMaterial.swift in Sources */,
+				63594A0C285B343700A8AF6F /* SYMesh.swift in Sources */,
+				63594A0F285B344A00A8AF6F /* SYTransform.swift in Sources */,
+				63594A08285B30F700A8AF6F /* SYShaders.metal in Sources */,
+				63594A0A285B340E00A8AF6F /* SYRenderer.swift in Sources */,
+				635949F4285B301E00A8AF6F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63988A152844EF050007917D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1621,6 +1713,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				63577A2D281BEAAF008E3037 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		635949FE285B301F00A8AF6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				635949FF285B301F00A8AF6F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2280,6 +2380,64 @@
 			};
 			name = Release;
 		};
+		63594A03285B301F00A8AF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 18_SpecularReflection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-SpecularReflection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "18_SpecularReflection/SpecularReflection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63594A04285B301F00A8AF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 18_SpecularReflection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-SpecularReflection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "18_SpecularReflection/SpecularReflection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		63988A2A2844EF070007917D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2888,6 +3046,15 @@
 			buildConfigurations = (
 				63577A33281BEAAF008E3037 /* Debug */,
 				63577A34281BEAAF008E3037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63594A02285B301F00A8AF6F /* Build configuration list for PBXNativeTarget "18_SpecularReflection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63594A03285B301F00A8AF6F /* Debug */,
+				63594A04285B301F00A8AF6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
