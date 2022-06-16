@@ -71,6 +71,13 @@
 		63577A2E281BEAAF008E3037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63577A2C281BEAAF008E3037 /* LaunchScreen.storyboard */; };
 		63577A40281C09A8008E3037 /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
 		63577A4228237665008E3037 /* SYShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63577A4128237665008E3037 /* SYShader.metal */; };
+		635949E5285AD9DC00A8AF6F /* SYShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 635949E4285AD9DC00A8AF6F /* SYShaders.metal */; };
+		635949E7285AEDAA00A8AF6F /* SYRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635949E6285AEDAA00A8AF6F /* SYRenderer.swift */; };
+		635949E8285AEDD700A8AF6F /* SYMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF3285822AF00E0E4A5 /* SYMesh.swift */; };
+		635949E9285AEDDA00A8AF6F /* SYSubMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF528582FAC00E0E4A5 /* SYSubMesh.swift */; };
+		635949EA285AEDDD00A8AF6F /* SYMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF7285830B900E0E4A5 /* SYMaterial.swift */; };
+		635949EB285AEDEB00A8AF6F /* SYTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDB4F2859D14F00E0E4A5 /* SYTransform.swift */; };
+		635949EC285AEDEE00A8AF6F /* LearnSwiftMetal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */; };
 		63988A1C2844EF050007917D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63988A1B2844EF050007917D /* AppDelegate.swift */; };
 		63988A202844EF050007917D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63988A1F2844EF050007917D /* ViewController.swift */; };
 		63988A252844EF070007917D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63988A242844EF070007917D /* Assets.xcassets */; };
@@ -129,6 +136,10 @@
 		63EEDB522859F4DE00E0E4A5 /* SYMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF3285822AF00E0E4A5 /* SYMesh.swift */; };
 		63EEDB532859F57C00E0E4A5 /* SYMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF7285830B900E0E4A5 /* SYMaterial.swift */; };
 		63EEDB542859F58300E0E4A5 /* SYSubMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDAF528582FAC00E0E4A5 /* SYSubMesh.swift */; };
+		63EEDB7E285AD7C500E0E4A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDB7D285AD7C500E0E4A5 /* AppDelegate.swift */; };
+		63EEDB82285AD7C500E0E4A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEDB81285AD7C500E0E4A5 /* ViewController.swift */; };
+		63EEDB87285AD7C600E0E4A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EEDB86285AD7C600E0E4A5 /* Assets.xcassets */; };
+		63EEDB8A285AD7C600E0E4A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EEDB88285AD7C600E0E4A5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -214,6 +225,10 @@
 		63577A4128237665008E3037 /* SYShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShader.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		63577A4328237716008E3037 /* SYShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderType.h; sourceTree = "<group>"; };
 		63577A462823880B008E3037 /* 01_Triangle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01_Triangle-Bridging-Header.h"; sourceTree = "<group>"; };
+		635949E2285AD95800A8AF6F /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
+		635949E3285AD9A900A8AF6F /* DiffuseReflection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiffuseReflection-Bridging-Header.h"; sourceTree = "<group>"; };
+		635949E4285AD9DC00A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
+		635949E6285AEDAA00A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
 		63988A192844EF050007917D /* 11_HistogramEqualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_HistogramEqualization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63988A1B2844EF050007917D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63988A1F2844EF050007917D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +305,12 @@
 		63EEDB442859BFD700E0E4A5 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63EEDB4C2859CA2600E0E4A5 /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
 		63EEDB4F2859D14F00E0E4A5 /* SYTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYTransform.swift; sourceTree = "<group>"; };
+		63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 17_DiffuseReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EEDB7D285AD7C500E0E4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63EEDB81285AD7C500E0E4A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63EEDB86285AD7C600E0E4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63EEDB89285AD7C600E0E4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63EEDB8B285AD7C600E0E4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,6 +420,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63EEDB2B2859BE5F00E0E4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63EEDB78285AD7C500E0E4A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -567,7 +595,9 @@
 				6314C41B2851C6CC00EF2C13 /* 14_HexagonMosaic */,
 				63EEDADA2857629700E0E4A5 /* 15_LoadingObjModel */,
 				63EEDB2F2859BE5F00E0E4A5 /* 16_UniformBuffer */,
+				63EEDB7C285AD7C500E0E4A5 /* 17_DiffuseReflection */,
 				63577A1F281BEAAC008E3037 /* Products */,
+				63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -746,6 +776,22 @@
 				63EEDAF7285830B900E0E4A5 /* SYMaterial.swift */,
 			);
 			path = Mesh;
+			sourceTree = "<group>";
+		};
+		63EEDB7C285AD7C500E0E4A5 /* 17_DiffuseReflection */ = {
+			isa = PBXGroup;
+			children = (
+				63EEDB7D285AD7C500E0E4A5 /* AppDelegate.swift */,
+				63EEDB81285AD7C500E0E4A5 /* ViewController.swift */,
+				635949E6285AEDAA00A8AF6F /* SYRenderer.swift */,
+				635949E4285AD9DC00A8AF6F /* SYShaders.metal */,
+				635949E2285AD95800A8AF6F /* SYShaderTypes.h */,
+				635949E3285AD9A900A8AF6F /* DiffuseReflection-Bridging-Header.h */,
+				63EEDB86285AD7C600E0E4A5 /* Assets.xcassets */,
+				63EEDB88285AD7C600E0E4A5 /* LaunchScreen.storyboard */,
+				63EEDB8B285AD7C600E0E4A5 /* Info.plist */,
+			);
+			path = 17_DiffuseReflection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1023,6 +1069,23 @@
 			productReference = 63EEDB2E2859BE5F00E0E4A5 /* 16_UniformBuffer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63EEDB7A285AD7C500E0E4A5 /* 17_DiffuseReflection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63EEDB8C285AD7C600E0E4A5 /* Build configuration list for PBXNativeTarget "17_DiffuseReflection" */;
+			buildPhases = (
+				63EEDB77285AD7C500E0E4A5 /* Sources */,
+				63EEDB78285AD7C500E0E4A5 /* Frameworks */,
+				63EEDB79285AD7C500E0E4A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 17_DiffuseReflection;
+			productName = 17_DiffuseReflection;
+			productReference = 63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1081,6 +1144,9 @@
 					63EEDB2D2859BE5F00E0E4A5 = {
 						CreatedOnToolsVersion = 13.4;
 					};
+					63EEDB7A285AD7C500E0E4A5 = {
+						CreatedOnToolsVersion = 13.4;
+					};
 				};
 			};
 			buildConfigurationList = 63577A19281BEAAC008E3037 /* Build configuration list for PBXProject "LearnSwiftMetal" */;
@@ -1112,6 +1178,7 @@
 				6314C4192851C6CC00EF2C13 /* 14_HexagonMosaic */,
 				63EEDAD82857629700E0E4A5 /* 15_LoadingObjModel */,
 				63EEDB2D2859BE5F00E0E4A5 /* 16_UniformBuffer */,
+				63EEDB7A285AD7C500E0E4A5 /* 17_DiffuseReflection */,
 			);
 		};
 /* End PBXProject section */
@@ -1273,6 +1340,16 @@
 				63EEDB3D2859BE6100E0E4A5 /* LaunchScreen.storyboard in Resources */,
 				63EEDB3A2859BE6100E0E4A5 /* Assets.xcassets in Resources */,
 				63EEDB4E2859CE3700E0E4A5 /* LearnSwiftMetal.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63EEDB79285AD7C500E0E4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63EEDB8A285AD7C600E0E4A5 /* LaunchScreen.storyboard in Resources */,
+				63EEDB87285AD7C600E0E4A5 /* Assets.xcassets in Resources */,
+				635949EC285AEDEE00A8AF6F /* LearnSwiftMetal.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1466,6 +1543,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63EEDB77285AD7C500E0E4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63EEDB82285AD7C500E0E4A5 /* ViewController.swift in Sources */,
+				635949E9285AEDDA00A8AF6F /* SYSubMesh.swift in Sources */,
+				635949EA285AEDDD00A8AF6F /* SYMaterial.swift in Sources */,
+				635949E8285AEDD700A8AF6F /* SYMesh.swift in Sources */,
+				635949EB285AEDEB00A8AF6F /* SYTransform.swift in Sources */,
+				635949E5285AD9DC00A8AF6F /* SYShaders.metal in Sources */,
+				635949E7285AEDAA00A8AF6F /* SYRenderer.swift in Sources */,
+				63EEDB7E285AD7C500E0E4A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -1593,6 +1685,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				63EEDB3C2859BE6100E0E4A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63EEDB88285AD7C600E0E4A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EEDB89285AD7C600E0E4A5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2650,6 +2750,64 @@
 			};
 			name = Release;
 		};
+		63EEDB8D285AD7C600E0E4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 17_DiffuseReflection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-7-DiffuseReflection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "17_DiffuseReflection/DiffuseReflection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63EEDB8E285AD7C600E0E4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJDQ5R465;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 17_DiffuseReflection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-7-DiffuseReflection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "17_DiffuseReflection/DiffuseReflection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2802,6 +2960,15 @@
 			buildConfigurations = (
 				63EEDB402859BE6100E0E4A5 /* Debug */,
 				63EEDB412859BE6100E0E4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63EEDB8C285AD7C600E0E4A5 /* Build configuration list for PBXNativeTarget "17_DiffuseReflection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63EEDB8D285AD7C600E0E4A5 /* Debug */,
+				63EEDB8E285AD7C600E0E4A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
