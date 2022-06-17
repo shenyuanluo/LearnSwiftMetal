@@ -41,7 +41,7 @@ VertexShader(SYVertex input [[ stage_in ]],
     RasterizerData out;
     out.position = uniforms.projectionMatrix * uniforms.modelViewMatrix * float4(input.position, 1.0);  // MVP 变换
     out.texCoord = input.texCoord;
-    out.normal   = normalize(uniforms.modelMatrix * float4(input.normal));  // 将法线从模型空间转到世界空间
+    out.normal   = normalize(uniforms.modelMatrix * float4(float3(input.normal.xyz), 0));  // 将法线从模型空间转到世界空间
     return out;
 }
 
