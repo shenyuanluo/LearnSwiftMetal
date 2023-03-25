@@ -19,7 +19,7 @@ typedef struct
 } RasterizerData;
 
 
-// vertex 修饰，表示该函数是一个「顶点着色去」
+// vertex 修饰，表示该函数是一个「顶点着色器」
 vertex RasterizerData // 返回给片元着色器的结构体
 VertexShader(uint vertexID [[ vertex_id ]], // vertex_id 是顶点 shader 每次处理的 index，用于定位当前的顶点
              constant SYVertex *vertexArray [[ buffer(0) ]]) { // buffer 表明是缓存数据，0 是索引

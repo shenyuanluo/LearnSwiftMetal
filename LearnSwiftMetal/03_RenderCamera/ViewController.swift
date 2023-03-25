@@ -85,7 +85,10 @@ class ViewController: UIViewController {
         if let connection = self.captureOutput.connection(with: .video) {
             connection.videoOrientation = .portrait    // 设置相机方向
         }
-        self.captureSession.startRunning()  // 启动相机
+        DispatchQueue.global().async {
+            self.captureSession.startRunning()  // 启动相机
+            
+        }
     }
 }
 

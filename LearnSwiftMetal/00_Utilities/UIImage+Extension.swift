@@ -102,7 +102,7 @@ extension UIImage {
                                 bitsPerComponent: 8,
                                 bytesPerRow: width * 4,
                                 space: spriteImage.colorSpace!,
-                                bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)
+                                bitmapInfo: spriteImage.bitmapInfo.rawValue)
         // 在画布上绘制图片数据
         context?.draw(spriteImage,
                       in: CGRect(x: 0, y: 0, width: width, height: height), byTiling: true)
