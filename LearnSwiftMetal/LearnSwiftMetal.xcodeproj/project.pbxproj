@@ -187,7 +187,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		630A3AB8282A4CDD00693ABB /* 02_Transformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 02_Transformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630A3AB8282A4CDD00693ABB /* Sec02_Transformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec02_Transformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		630A3ABA282A4CDD00693ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		630A3ABE282A4CDD00693ABB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		630A3AC3282A4CDE00693ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,56 +195,56 @@
 		630A3AC8282A4CDE00693ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630A3ACC282A52FB00693ABB /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
 		630A3ACD282A533900693ABB /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
-		630A3ACF282A537300693ABB /* 02_Transformation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02_Transformation-Bridging-Header.h"; sourceTree = "<group>"; };
-		6314C3D62850398F00EF2C13 /* 12_VideoCompositing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 12_VideoCompositing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630A3ACF282A537300693ABB /* Sec02_Transformation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec02_Transformation-Bridging-Header.h"; sourceTree = "<group>"; };
+		6314C3D62850398F00EF2C13 /* Sec12_VideoCompositing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec12_VideoCompositing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6314C3D82850398F00EF2C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6314C3DC2850398F00EF2C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6314C3E12850399100EF2C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6314C3E42850399100EF2C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6314C3E62850399100EF2C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6314C3EA28503A6000EF2C13 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		6314C3EB28503B7600EF2C13 /* VideoCompositing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoCompositing-Bridging-Header.h"; sourceTree = "<group>"; };
+		6314C3EB28503B7600EF2C13 /* Sec12_VideoCompositing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec12_VideoCompositing-Bridging-Header.h"; sourceTree = "<group>"; };
 		6314C3EC28503BB500EF2C13 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		6314C3EE2850637500EF2C13 /* SYAssetReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYAssetReader.swift; sourceTree = "<group>"; };
-		6314C3F62850C64300EF2C13 /* 13_ColorLookupTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 13_ColorLookupTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6314C3F62850C64300EF2C13 /* Sec13_ColorLookupTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec13_ColorLookupTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6314C3F82850C64300EF2C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6314C3FC2850C64300EF2C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6314C4012850C64500EF2C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6314C4042850C64500EF2C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6314C4062850C64500EF2C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6314C40A2850C6E500EF2C13 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		6314C40B2850C7A100EF2C13 /* ColorLookupTable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorLookupTable-Bridging-Header.h"; sourceTree = "<group>"; };
+		6314C40B2850C7A100EF2C13 /* Sec13_ColorLookupTable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec13_ColorLookupTable-Bridging-Header.h"; sourceTree = "<group>"; };
 		6314C40C2850C7EC00EF2C13 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
-		6314C41A2851C6CC00EF2C13 /* 14_HexagonMosaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 14_HexagonMosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6314C41A2851C6CC00EF2C13 /* Sec14_HexagonMosaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec14_HexagonMosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6314C41C2851C6CC00EF2C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6314C4202851C6CC00EF2C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6314C4252851C6CE00EF2C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6314C4282851C6CE00EF2C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6314C42A2851C6CE00EF2C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6314C42E2851C82200EF2C13 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		6314C42F2851C84A00EF2C13 /* HexagonMosaic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexagonMosaic-Bridging-Header.h"; sourceTree = "<group>"; };
+		6314C42F2851C84A00EF2C13 /* Sec14_HexagonMosaic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec14_HexagonMosaic-Bridging-Header.h"; sourceTree = "<group>"; };
 		6314C4302851C88600EF2C13 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
-		63292B29283DD30800618D78 /* 07_RenderVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 07_RenderVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63292B29283DD30800618D78 /* Sec07_RenderVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec07_RenderVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63292B2B283DD30800618D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63292B2F283DD30800618D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63292B34283DD30A00618D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63292B37283DD30A00618D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63292B39283DD30A00618D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63292B3D283DD3B800618D78 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63292B3E283DD3DA00618D78 /* 07_RenderVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "07_RenderVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		63292B3E283DD3DA00618D78 /* Sec07_RenderVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec07_RenderVideo-Bridging-Header.h"; sourceTree = "<group>"; };
 		63292B41283DDA1E00618D78 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
-		63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 08_SobelEdgeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63292B48283E09A900618D78 /* Sec08_SobelEdgeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec08_SobelEdgeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63292B4A283E09A900618D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63292B4E283E09A900618D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63292B53283E09AB00618D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63292B56283E09AB00618D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63292B58283E09AB00618D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63292B5C283E0A3500618D78 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63292B5D283E0B2400618D78 /* 08_SobelEdgeDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "08_SobelEdgeDetector-Bridging-Header.h"; sourceTree = "<group>"; };
+		63292B5D283E0B2400618D78 /* Sec08_SobelEdgeDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec08_SobelEdgeDetector-Bridging-Header.h"; sourceTree = "<group>"; };
 		63292B5E283E0B9E00618D78 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		63463BBC28425FBB004E15CC /* SYOpenGLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYOpenGLView.swift; sourceTree = "<group>"; };
 		63463BBF28428992004E15CC /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		6354E9F22833CF68001AE840 /* 06_ImageProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 06_ImageProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6354E9F22833CF68001AE840 /* Sec06_ImageProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec06_ImageProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6354E9F42833CF68001AE840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6354E9F82833CF68001AE840 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6354E9FD2833CF69001AE840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -256,10 +256,10 @@
 		6354EA1028349926001AE840 /* SYImageFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYImageFilter.swift; sourceTree = "<group>"; };
 		6354EA122834A093001AE840 /* SYGaussianBlurFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYGaussianBlurFilter.swift; sourceTree = "<group>"; };
 		6354EA142834B542001AE840 /* SYSaturationFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYSaturationFilter.swift; sourceTree = "<group>"; };
-		6354EA182834B65E001AE840 /* 06_ImageProcessing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "06_ImageProcessing-Bridging-Header.h"; sourceTree = "<group>"; };
+		6354EA182834B65E001AE840 /* Sec06_ImageProcessing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec06_ImageProcessing-Bridging-Header.h"; sourceTree = "<group>"; };
 		6354EA192834B753001AE840 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
 		6354EA1A2834B98C001AE840 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
-		63577A1E281BEAAC008E3037 /* 01_Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63577A1E281BEAAC008E3037 /* Sec01_Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec01_Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63577A21281BEAAC008E3037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63577A25281BEAAC008E3037 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63577A2A281BEAAF008E3037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -268,52 +268,52 @@
 		63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LearnSwiftMetal.bundle; sourceTree = "<group>"; };
 		63577A4128237665008E3037 /* SYShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShader.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		63577A4328237716008E3037 /* SYShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderType.h; sourceTree = "<group>"; };
-		63577A462823880B008E3037 /* 01_Triangle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01_Triangle-Bridging-Header.h"; sourceTree = "<group>"; };
+		63577A462823880B008E3037 /* Sec01_Triangle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec01_Triangle-Bridging-Header.h"; sourceTree = "<group>"; };
 		635949E2285AD95800A8AF6F /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		635949E3285AD9A900A8AF6F /* DiffuseReflection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiffuseReflection-Bridging-Header.h"; sourceTree = "<group>"; };
+		635949E3285AD9A900A8AF6F /* Sec17_DiffuseReflection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec17_DiffuseReflection-Bridging-Header.h"; sourceTree = "<group>"; };
 		635949E4285AD9DC00A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		635949E6285AEDAA00A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
-		635949F1285B301E00A8AF6F /* 18_SpecularReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 18_SpecularReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		635949F1285B301E00A8AF6F /* Sec18_SpecularReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec18_SpecularReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635949F3285B301E00A8AF6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		635949F7285B301E00A8AF6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		635949FC285B301F00A8AF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		635949FF285B301F00A8AF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63594A01285B301F00A8AF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63594A05285B309100A8AF6F /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63594A06285B30DD00A8AF6F /* SpecularReflection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecularReflection-Bridging-Header.h"; sourceTree = "<group>"; };
+		63594A06285B30DD00A8AF6F /* Sec18_SpecularReflection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec18_SpecularReflection-Bridging-Header.h"; sourceTree = "<group>"; };
 		63594A07285B30F700A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63594A09285B340E00A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
-		63594A14285B4CF000A8AF6F /* 19_Ambient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 19_Ambient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63594A14285B4CF000A8AF6F /* Sec19_Ambient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec19_Ambient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63594A16285B4CF000A8AF6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63594A1A285B4CF000A8AF6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63594A1F285B4CF100A8AF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63594A22285B4CF100A8AF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63594A24285B4CF100A8AF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63594A28285B4DD600A8AF6F /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63594A29285B4DEE00A8AF6F /* Ambient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ambient-Bridging-Header.h"; sourceTree = "<group>"; };
+		63594A29285B4DEE00A8AF6F /* Sec19_Ambient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec19_Ambient-Bridging-Header.h"; sourceTree = "<group>"; };
 		63594A2A285B4DFB00A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63594A2C285B4E1000A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
-		63594A37285C134A00A8AF6F /* 20_BlinnPhong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20_BlinnPhong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63594A37285C134A00A8AF6F /* Sec20_BlinnPhong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec20_BlinnPhong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63594A39285C134A00A8AF6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63594A3D285C134A00A8AF6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63594A42285C134C00A8AF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63594A45285C134C00A8AF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63594A47285C134C00A8AF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63594A4B285C144A00A8AF6F /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63594A4C285C146500A8AF6F /* BlinnPhong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlinnPhong-Bridging-Header.h"; sourceTree = "<group>"; };
+		63594A4C285C146500A8AF6F /* Sec20_BlinnPhong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec20_BlinnPhong-Bridging-Header.h"; sourceTree = "<group>"; };
 		63594A4D285C148C00A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63594A4F285C14CD00A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
-		63594A5A285C24DE00A8AF6F /* 21_CookTorrance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21_CookTorrance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63594A5A285C24DE00A8AF6F /* Sec21_CookTorrance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec21_CookTorrance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63594A5C285C24DE00A8AF6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63594A60285C24DE00A8AF6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63594A65285C24DF00A8AF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63594A68285C24DF00A8AF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63594A6A285C24DF00A8AF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63594A6E285C257A00A8AF6F /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63594A6F285C259E00A8AF6F /* CookTorrance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CookTorrance-Bridging-Header.h"; sourceTree = "<group>"; };
+		63594A6F285C259E00A8AF6F /* Sec21_CookTorrance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec21_CookTorrance-Bridging-Header.h"; sourceTree = "<group>"; };
 		63594A70285C25D300A8AF6F /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63594A72285C25EB00A8AF6F /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
-		63988A192844EF050007917D /* 11_HistogramEqualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_HistogramEqualization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63988A192844EF050007917D /* Sec11_HistogramEqualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec11_HistogramEqualization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63988A1B2844EF050007917D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63988A1F2844EF050007917D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63988A242844EF070007917D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -321,14 +321,14 @@
 		63988A292844EF070007917D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63988A2D2844F0620007917D /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
 		63988A2E2844F08A0007917D /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
-		63988A302844F0CF0007917D /* HistogramEqualization-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HistogramEqualization-Bridging-Header.h"; sourceTree = "<group>"; };
-		63A34362282CED7C009E542A /* 03_RenderCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 03_RenderCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63988A302844F0CF0007917D /* Sec11_HistogramEqualization-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec11_HistogramEqualization-Bridging-Header.h"; sourceTree = "<group>"; };
+		63A34362282CED7C009E542A /* Sec03_RenderCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec03_RenderCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A34364282CED7C009E542A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A34368282CED7C009E542A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63A3436D282CED7D009E542A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63A34370282CED7D009E542A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A34372282CED7D009E542A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63A3437E282D2A18009E542A /* 04_ComputeGray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 04_ComputeGray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A3437E282D2A18009E542A /* Sec04_ComputeGray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec04_ComputeGray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A34380282D2A18009E542A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A34384282D2A18009E542A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63A34389282D2A1A009E542A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -336,19 +336,19 @@
 		63A3438E282D2A1A009E542A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A34392282D2D38009E542A /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
 		63A34393282D2D4B009E542A /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
-		63A34395282D2DC3009E542A /* 04_ComputeGray-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "04_ComputeGray-Bridging-Header.h"; sourceTree = "<group>"; };
-		63A4FE0A2840732C009E1A28 /* 10_MetalInteractGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10_MetalInteractGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A34395282D2DC3009E542A /* Sec04_ComputeGray-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec04_ComputeGray-Bridging-Header.h"; sourceTree = "<group>"; };
+		63A4FE0A2840732C009E1A28 /* Sec10_MetalInteractGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec10_MetalInteractGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A4FE0C2840732C009E1A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A4FE102840732C009E1A28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63A4FE152840732E009E1A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63A4FE182840732E009E1A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A4FE1A2840732E009E1A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A4FE1E28407440009E1A28 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63A4FE1F2840747E009E1A28 /* 10_MetalInteractGLES-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "10_MetalInteractGLES-Bridging-Header.h"; sourceTree = "<group>"; };
+		63A4FE1F2840747E009E1A28 /* Sec10_MetalInteractGLES-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec10_MetalInteractGLES-Bridging-Header.h"; sourceTree = "<group>"; };
 		63A4FE20284074A6009E1A28 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
 		63A4FE242840AB94009E1A28 /* VertexShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = VertexShader.vsh; sourceTree = "<group>"; };
 		63A4FE262840ABA4009E1A28 /* FragmentShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FragmentShader.fsh; sourceTree = "<group>"; };
-		63BFDC51282E78F2006E7909 /* 05_ComputeData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 05_ComputeData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63BFDC51282E78F2006E7909 /* Sec05_ComputeData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec05_ComputeData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BFDC53282E78F2006E7909 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63BFDC57282E78F2006E7909 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63BFDC5C282E78F4006E7909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -356,40 +356,40 @@
 		63BFDC61282E78F4006E7909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63BFDC65282E796A006E7909 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63BFDC67282E7C8A006E7909 /* SYMetalAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYMetalAdder.swift; sourceTree = "<group>"; };
-		63E096D1283F57FE006FD641 /* 09_SkyBox2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 09_SkyBox2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E096D1283F57FE006FD641 /* Sec09_SkyBox2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec09_SkyBox2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E096D3283F57FE006FD641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E096D7283F57FE006FD641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63E096DC283F57FF006FD641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E096DF283F57FF006FD641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E096E1283F57FF006FD641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E096E5283F5AE5006FD641 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63E096E6283F5B0A006FD641 /* 09_SkyBox2D-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "09_SkyBox2D-Bridging-Header.h"; sourceTree = "<group>"; };
+		63E096E6283F5B0A006FD641 /* Sec09_SkyBox2D-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec09_SkyBox2D-Bridging-Header.h"; sourceTree = "<group>"; };
 		63E096E8283F5B9D006FD641 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
-		63EEDAD92857629700E0E4A5 /* 15_LoadingObjModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 15_LoadingObjModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EEDAD92857629700E0E4A5 /* Sec15_LoadingObjModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec15_LoadingObjModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EEDADB2857629700E0E4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EEDADF2857629700E0E4A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63EEDAE42857629900E0E4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63EEDAE72857629900E0E4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63EEDAE92857629900E0E4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63EEDAED2857631C00E0E4A5 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63EEDAEE2857634D00E0E4A5 /* LoadingObjModel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadingObjModel-Bridging-Header.h"; sourceTree = "<group>"; };
+		63EEDAEE2857634D00E0E4A5 /* Sec15_LoadingObjModel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec15_LoadingObjModel-Bridging-Header.h"; sourceTree = "<group>"; };
 		63EEDAEF2857638300E0E4A5 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63EEDAF1285767A200E0E4A5 /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
 		63EEDAF3285822AF00E0E4A5 /* SYMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYMesh.swift; sourceTree = "<group>"; };
 		63EEDAF528582FAC00E0E4A5 /* SYSubMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYSubMesh.swift; sourceTree = "<group>"; };
 		63EEDAF7285830B900E0E4A5 /* SYMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYMaterial.swift; sourceTree = "<group>"; };
-		63EEDB2E2859BE5F00E0E4A5 /* 16_UniformBuffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 16_UniformBuffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EEDB2E2859BE5F00E0E4A5 /* Sec16_UniformBuffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec16_UniformBuffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EEDB302859BE5F00E0E4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EEDB342859BE5F00E0E4A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63EEDB392859BE6100E0E4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63EEDB3C2859BE6100E0E4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63EEDB3E2859BE6100E0E4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63EEDB422859BEFF00E0E4A5 /* SYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShaderTypes.h; sourceTree = "<group>"; };
-		63EEDB432859BFBC00E0E4A5 /* UniformBuffer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniformBuffer-Bridging-Header.h"; sourceTree = "<group>"; };
+		63EEDB432859BFBC00E0E4A5 /* Sec16_UniformBuffer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sec16_UniformBuffer-Bridging-Header.h"; sourceTree = "<group>"; };
 		63EEDB442859BFD700E0E4A5 /* SYShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SYShaders.metal; sourceTree = "<group>"; };
 		63EEDB4C2859CA2600E0E4A5 /* SYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRenderer.swift; sourceTree = "<group>"; };
 		63EEDB4F2859D14F00E0E4A5 /* SYTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYTransform.swift; sourceTree = "<group>"; };
-		63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 17_DiffuseReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EEDB7B285AD7C500E0E4A5 /* Sec17_DiffuseReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sec17_DiffuseReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EEDB7D285AD7C500E0E4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EEDB81285AD7C500E0E4A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63EEDB86285AD7C600E0E4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -548,97 +548,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		630A3AB9282A4CDD00693ABB /* 02_Transformation */ = {
+		630A3AB9282A4CDD00693ABB /* Sec02_Transformation */ = {
 			isa = PBXGroup;
 			children = (
 				630A3ABA282A4CDD00693ABB /* AppDelegate.swift */,
 				630A3ABE282A4CDD00693ABB /* ViewController.swift */,
 				630A3ACC282A52FB00693ABB /* SYShaderTypes.h */,
 				630A3ACD282A533900693ABB /* SYShaders.metal */,
-				630A3ACF282A537300693ABB /* 02_Transformation-Bridging-Header.h */,
+				630A3ACF282A537300693ABB /* Sec02_Transformation-Bridging-Header.h */,
 				630A3AC3282A4CDE00693ABB /* Assets.xcassets */,
 				630A3AC5282A4CDE00693ABB /* LaunchScreen.storyboard */,
 				630A3AC8282A4CDE00693ABB /* Info.plist */,
 			);
-			path = 02_Transformation;
+			path = Sec02_Transformation;
 			sourceTree = "<group>";
 		};
-		6314C3D72850398F00EF2C13 /* 12_VideoCompositing */ = {
+		6314C3D72850398F00EF2C13 /* Sec12_VideoCompositing */ = {
 			isa = PBXGroup;
 			children = (
 				6314C3D82850398F00EF2C13 /* AppDelegate.swift */,
 				6314C3DC2850398F00EF2C13 /* ViewController.swift */,
 				6314C3EA28503A6000EF2C13 /* SYShaderTypes.h */,
 				6314C3EC28503BB500EF2C13 /* SYShaders.metal */,
-				6314C3EB28503B7600EF2C13 /* VideoCompositing-Bridging-Header.h */,
+				6314C3EB28503B7600EF2C13 /* Sec12_VideoCompositing-Bridging-Header.h */,
 				6314C3E12850399100EF2C13 /* Assets.xcassets */,
 				6314C3E32850399100EF2C13 /* LaunchScreen.storyboard */,
 				6314C3E62850399100EF2C13 /* Info.plist */,
 			);
-			path = 12_VideoCompositing;
+			path = Sec12_VideoCompositing;
 			sourceTree = "<group>";
 		};
-		6314C3F72850C64300EF2C13 /* 13_ColorLookupTable */ = {
+		6314C3F72850C64300EF2C13 /* Sec13_ColorLookupTable */ = {
 			isa = PBXGroup;
 			children = (
 				6314C3F82850C64300EF2C13 /* AppDelegate.swift */,
 				6314C3FC2850C64300EF2C13 /* ViewController.swift */,
 				6314C40A2850C6E500EF2C13 /* SYShaderTypes.h */,
 				6314C40C2850C7EC00EF2C13 /* SYShaders.metal */,
-				6314C40B2850C7A100EF2C13 /* ColorLookupTable-Bridging-Header.h */,
+				6314C40B2850C7A100EF2C13 /* Sec13_ColorLookupTable-Bridging-Header.h */,
 				6314C4012850C64500EF2C13 /* Assets.xcassets */,
 				6314C4032850C64500EF2C13 /* LaunchScreen.storyboard */,
 				6314C4062850C64500EF2C13 /* Info.plist */,
 			);
-			path = 13_ColorLookupTable;
+			path = Sec13_ColorLookupTable;
 			sourceTree = "<group>";
 		};
-		6314C41B2851C6CC00EF2C13 /* 14_HexagonMosaic */ = {
+		6314C41B2851C6CC00EF2C13 /* Sec14_HexagonMosaic */ = {
 			isa = PBXGroup;
 			children = (
 				6314C41C2851C6CC00EF2C13 /* AppDelegate.swift */,
 				6314C4202851C6CC00EF2C13 /* ViewController.swift */,
 				6314C42E2851C82200EF2C13 /* SYShaderTypes.h */,
 				6314C4302851C88600EF2C13 /* SYShaders.metal */,
-				6314C42F2851C84A00EF2C13 /* HexagonMosaic-Bridging-Header.h */,
+				6314C42F2851C84A00EF2C13 /* Sec14_HexagonMosaic-Bridging-Header.h */,
 				6314C4252851C6CE00EF2C13 /* Assets.xcassets */,
 				6314C4272851C6CE00EF2C13 /* LaunchScreen.storyboard */,
 				6314C42A2851C6CE00EF2C13 /* Info.plist */,
 			);
-			path = 14_HexagonMosaic;
+			path = Sec14_HexagonMosaic;
 			sourceTree = "<group>";
 		};
-		63292B2A283DD30800618D78 /* 07_RenderVideo */ = {
+		63292B2A283DD30800618D78 /* Sec07_RenderVideo */ = {
 			isa = PBXGroup;
 			children = (
 				63292B2B283DD30800618D78 /* AppDelegate.swift */,
 				63292B2F283DD30800618D78 /* ViewController.swift */,
 				63292B3D283DD3B800618D78 /* SYShaderTypes.h */,
 				63292B41283DDA1E00618D78 /* SYShaders.metal */,
-				63292B3E283DD3DA00618D78 /* 07_RenderVideo-Bridging-Header.h */,
+				63292B3E283DD3DA00618D78 /* Sec07_RenderVideo-Bridging-Header.h */,
 				63292B34283DD30A00618D78 /* Assets.xcassets */,
 				63292B36283DD30A00618D78 /* LaunchScreen.storyboard */,
 				63292B39283DD30A00618D78 /* Info.plist */,
 			);
-			path = 07_RenderVideo;
+			path = Sec07_RenderVideo;
 			sourceTree = "<group>";
 		};
-		63292B49283E09A900618D78 /* 08_SobelEdgeDetector */ = {
+		63292B49283E09A900618D78 /* Sec08_SobelEdgeDetector */ = {
 			isa = PBXGroup;
 			children = (
 				63292B4A283E09A900618D78 /* AppDelegate.swift */,
 				63292B4E283E09A900618D78 /* ViewController.swift */,
 				63292B5C283E0A3500618D78 /* SYShaderTypes.h */,
 				63292B5E283E0B9E00618D78 /* SYShaders.metal */,
-				63292B5D283E0B2400618D78 /* 08_SobelEdgeDetector-Bridging-Header.h */,
+				63292B5D283E0B2400618D78 /* Sec08_SobelEdgeDetector-Bridging-Header.h */,
 				63292B53283E09AB00618D78 /* Assets.xcassets */,
 				63292B55283E09AB00618D78 /* LaunchScreen.storyboard */,
 				63292B58283E09AB00618D78 /* Info.plist */,
 			);
-			path = 08_SobelEdgeDetector;
+			path = Sec08_SobelEdgeDetector;
 			sourceTree = "<group>";
 		};
-		63463BBE2842896B004E15CC /* 00_Utilities */ = {
+		63463BBE2842896B004E15CC /* Sec00_Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				63EEDB512859F3AC00E0E4A5 /* Mesh */,
@@ -646,10 +646,10 @@
 				63463BBF28428992004E15CC /* UIImage+Extension.swift */,
 				63EEDB4F2859D14F00E0E4A5 /* SYTransform.swift */,
 			);
-			path = 00_Utilities;
+			path = Sec00_Utilities;
 			sourceTree = "<group>";
 		};
-		6354E9F32833CF68001AE840 /* 06_ImageProcessing */ = {
+		6354E9F32833CF68001AE840 /* Sec06_ImageProcessing */ = {
 			isa = PBXGroup;
 			children = (
 				6354E9F42833CF68001AE840 /* AppDelegate.swift */,
@@ -660,7 +660,7 @@
 				6354E9FF2833CF69001AE840 /* LaunchScreen.storyboard */,
 				6354EA022833CF69001AE840 /* Info.plist */,
 			);
-			path = 06_ImageProcessing;
+			path = Sec06_ImageProcessing;
 			sourceTree = "<group>";
 		};
 		6354EA062833D007001AE840 /* ImageProcessing */ = {
@@ -681,7 +681,7 @@
 				6354EA142834B542001AE840 /* SYSaturationFilter.swift */,
 				6354EA192834B753001AE840 /* SYShaderTypes.h */,
 				6354EA1A2834B98C001AE840 /* SYShaders.metal */,
-				6354EA182834B65E001AE840 /* 06_ImageProcessing-Bridging-Header.h */,
+				6354EA182834B65E001AE840 /* Sec06_ImageProcessing-Bridging-Header.h */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -690,28 +690,28 @@
 			isa = PBXGroup;
 			children = (
 				63577A3F281C09A8008E3037 /* LearnSwiftMetal.bundle */,
-				63463BBE2842896B004E15CC /* 00_Utilities */,
-				63577A20281BEAAC008E3037 /* 01_Triangle */,
-				630A3AB9282A4CDD00693ABB /* 02_Transformation */,
-				63A34363282CED7C009E542A /* 03_RenderCamera */,
-				63A3437F282D2A18009E542A /* 04_ComputeGray */,
-				63BFDC52282E78F2006E7909 /* 05_ComputeData */,
-				6354E9F32833CF68001AE840 /* 06_ImageProcessing */,
-				63292B2A283DD30800618D78 /* 07_RenderVideo */,
-				63292B49283E09A900618D78 /* 08_SobelEdgeDetector */,
-				63E096D2283F57FE006FD641 /* 09_SkyBox2D */,
-				63A4FE0B2840732C009E1A28 /* 10_MetalInteractGLES */,
-				63988A1A2844EF050007917D /* 11_HistogramEqualization */,
-				6314C3D72850398F00EF2C13 /* 12_VideoCompositing */,
-				6314C3F72850C64300EF2C13 /* 13_ColorLookupTable */,
-				6314C41B2851C6CC00EF2C13 /* 14_HexagonMosaic */,
-				63EEDADA2857629700E0E4A5 /* 15_LoadingObjModel */,
-				63EEDB2F2859BE5F00E0E4A5 /* 16_UniformBuffer */,
-				63EEDB7C285AD7C500E0E4A5 /* 17_DiffuseReflection */,
-				635949F2285B301E00A8AF6F /* 18_SpecularReflection */,
-				63594A15285B4CF000A8AF6F /* 19_Ambient */,
-				63594A38285C134A00A8AF6F /* 20_BlinnPhong */,
-				63594A5B285C24DE00A8AF6F /* 21_CookTorrance */,
+				63463BBE2842896B004E15CC /* Sec00_Utilities */,
+				63577A20281BEAAC008E3037 /* Sec01_Triangle */,
+				630A3AB9282A4CDD00693ABB /* Sec02_Transformation */,
+				63A34363282CED7C009E542A /* Sec03_RenderCamera */,
+				63A3437F282D2A18009E542A /* Sec04_ComputeGray */,
+				63BFDC52282E78F2006E7909 /* Sec05_ComputeData */,
+				6354E9F32833CF68001AE840 /* Sec06_ImageProcessing */,
+				63292B2A283DD30800618D78 /* Sec07_RenderVideo */,
+				63292B49283E09A900618D78 /* Sec08_SobelEdgeDetector */,
+				63E096D2283F57FE006FD641 /* Sec09_SkyBox2D */,
+				63A4FE0B2840732C009E1A28 /* Sec10_MetalInteractGLES */,
+				63988A1A2844EF050007917D /* Sec11_HistogramEqualization */,
+				6314C3D72850398F00EF2C13 /* Sec12_VideoCompositing */,
+				6314C3F72850C64300EF2C13 /* Sec13_ColorLookupTable */,
+				6314C41B2851C6CC00EF2C13 /* Sec14_HexagonMosaic */,
+				63EEDADA2857629700E0E4A5 /* Sec15_LoadingObjModel */,
+				63EEDB2F2859BE5F00E0E4A5 /* Sec16_UniformBuffer */,
+				63EEDB7C285AD7C500E0E4A5 /* Sec17_DiffuseReflection */,
+				635949F2285B301E00A8AF6F /* Sec18_SpecularReflection */,
+				63594A15285B4CF000A8AF6F /* Sec19_Ambient */,
+				63594A38285C134A00A8AF6F /* Sec20_BlinnPhong */,
+				63594A5B285C24DE00A8AF6F /* Sec21_CookTorrance */,
 				63577A1F281BEAAC008E3037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -719,47 +719,47 @@
 		63577A1F281BEAAC008E3037 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63577A1E281BEAAC008E3037 /* 01_Triangle.app */,
-				630A3AB8282A4CDD00693ABB /* 02_Transformation.app */,
-				63A34362282CED7C009E542A /* 03_RenderCamera.app */,
-				63A3437E282D2A18009E542A /* 04_ComputeGray.app */,
-				63BFDC51282E78F2006E7909 /* 05_ComputeData.app */,
-				6354E9F22833CF68001AE840 /* 06_ImageProcessing.app */,
-				63292B29283DD30800618D78 /* 07_RenderVideo.app */,
-				63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */,
-				63E096D1283F57FE006FD641 /* 09_SkyBox2D.app */,
-				63A4FE0A2840732C009E1A28 /* 10_MetalInteractGLES.app */,
-				63988A192844EF050007917D /* 11_HistogramEqualization.app */,
-				6314C3D62850398F00EF2C13 /* 12_VideoCompositing.app */,
-				6314C3F62850C64300EF2C13 /* 13_ColorLookupTable.app */,
-				6314C41A2851C6CC00EF2C13 /* 14_HexagonMosaic.app */,
-				63EEDAD92857629700E0E4A5 /* 15_LoadingObjModel.app */,
-				63EEDB2E2859BE5F00E0E4A5 /* 16_UniformBuffer.app */,
-				63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */,
-				635949F1285B301E00A8AF6F /* 18_SpecularReflection.app */,
-				63594A14285B4CF000A8AF6F /* 19_Ambient.app */,
-				63594A37285C134A00A8AF6F /* 20_BlinnPhong.app */,
-				63594A5A285C24DE00A8AF6F /* 21_CookTorrance.app */,
+				63577A1E281BEAAC008E3037 /* Sec01_Triangle.app */,
+				630A3AB8282A4CDD00693ABB /* Sec02_Transformation.app */,
+				63A34362282CED7C009E542A /* Sec03_RenderCamera.app */,
+				63A3437E282D2A18009E542A /* Sec04_ComputeGray.app */,
+				63BFDC51282E78F2006E7909 /* Sec05_ComputeData.app */,
+				6354E9F22833CF68001AE840 /* Sec06_ImageProcessing.app */,
+				63292B29283DD30800618D78 /* Sec07_RenderVideo.app */,
+				63292B48283E09A900618D78 /* Sec08_SobelEdgeDetector.app */,
+				63E096D1283F57FE006FD641 /* Sec09_SkyBox2D.app */,
+				63A4FE0A2840732C009E1A28 /* Sec10_MetalInteractGLES.app */,
+				63988A192844EF050007917D /* Sec11_HistogramEqualization.app */,
+				6314C3D62850398F00EF2C13 /* Sec12_VideoCompositing.app */,
+				6314C3F62850C64300EF2C13 /* Sec13_ColorLookupTable.app */,
+				6314C41A2851C6CC00EF2C13 /* Sec14_HexagonMosaic.app */,
+				63EEDAD92857629700E0E4A5 /* Sec15_LoadingObjModel.app */,
+				63EEDB2E2859BE5F00E0E4A5 /* Sec16_UniformBuffer.app */,
+				63EEDB7B285AD7C500E0E4A5 /* Sec17_DiffuseReflection.app */,
+				635949F1285B301E00A8AF6F /* Sec18_SpecularReflection.app */,
+				63594A14285B4CF000A8AF6F /* Sec19_Ambient.app */,
+				63594A37285C134A00A8AF6F /* Sec20_BlinnPhong.app */,
+				63594A5A285C24DE00A8AF6F /* Sec21_CookTorrance.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		63577A20281BEAAC008E3037 /* 01_Triangle */ = {
+		63577A20281BEAAC008E3037 /* Sec01_Triangle */ = {
 			isa = PBXGroup;
 			children = (
 				63577A21281BEAAC008E3037 /* AppDelegate.swift */,
 				63577A25281BEAAC008E3037 /* ViewController.swift */,
 				63577A4328237716008E3037 /* SYShaderType.h */,
 				63577A4128237665008E3037 /* SYShader.metal */,
-				63577A462823880B008E3037 /* 01_Triangle-Bridging-Header.h */,
+				63577A462823880B008E3037 /* Sec01_Triangle-Bridging-Header.h */,
 				63577A2A281BEAAF008E3037 /* Assets.xcassets */,
 				63577A2C281BEAAF008E3037 /* LaunchScreen.storyboard */,
 				63577A2F281BEAAF008E3037 /* Info.plist */,
 			);
-			path = 01_Triangle;
+			path = Sec01_Triangle;
 			sourceTree = "<group>";
 		};
-		635949F2285B301E00A8AF6F /* 18_SpecularReflection */ = {
+		635949F2285B301E00A8AF6F /* Sec18_SpecularReflection */ = {
 			isa = PBXGroup;
 			children = (
 				635949F3285B301E00A8AF6F /* AppDelegate.swift */,
@@ -767,15 +767,15 @@
 				63594A09285B340E00A8AF6F /* SYRenderer.swift */,
 				63594A07285B30F700A8AF6F /* SYShaders.metal */,
 				63594A05285B309100A8AF6F /* SYShaderTypes.h */,
-				63594A06285B30DD00A8AF6F /* SpecularReflection-Bridging-Header.h */,
+				63594A06285B30DD00A8AF6F /* Sec18_SpecularReflection-Bridging-Header.h */,
 				635949FC285B301F00A8AF6F /* Assets.xcassets */,
 				635949FE285B301F00A8AF6F /* LaunchScreen.storyboard */,
 				63594A01285B301F00A8AF6F /* Info.plist */,
 			);
-			path = 18_SpecularReflection;
+			path = Sec18_SpecularReflection;
 			sourceTree = "<group>";
 		};
-		63594A15285B4CF000A8AF6F /* 19_Ambient */ = {
+		63594A15285B4CF000A8AF6F /* Sec19_Ambient */ = {
 			isa = PBXGroup;
 			children = (
 				63594A16285B4CF000A8AF6F /* AppDelegate.swift */,
@@ -783,15 +783,15 @@
 				63594A2C285B4E1000A8AF6F /* SYRenderer.swift */,
 				63594A2A285B4DFB00A8AF6F /* SYShaders.metal */,
 				63594A28285B4DD600A8AF6F /* SYShaderTypes.h */,
-				63594A29285B4DEE00A8AF6F /* Ambient-Bridging-Header.h */,
+				63594A29285B4DEE00A8AF6F /* Sec19_Ambient-Bridging-Header.h */,
 				63594A1F285B4CF100A8AF6F /* Assets.xcassets */,
 				63594A21285B4CF100A8AF6F /* LaunchScreen.storyboard */,
 				63594A24285B4CF100A8AF6F /* Info.plist */,
 			);
-			path = 19_Ambient;
+			path = Sec19_Ambient;
 			sourceTree = "<group>";
 		};
-		63594A38285C134A00A8AF6F /* 20_BlinnPhong */ = {
+		63594A38285C134A00A8AF6F /* Sec20_BlinnPhong */ = {
 			isa = PBXGroup;
 			children = (
 				63594A39285C134A00A8AF6F /* AppDelegate.swift */,
@@ -799,15 +799,15 @@
 				63594A4F285C14CD00A8AF6F /* SYRenderer.swift */,
 				63594A4D285C148C00A8AF6F /* SYShaders.metal */,
 				63594A4B285C144A00A8AF6F /* SYShaderTypes.h */,
-				63594A4C285C146500A8AF6F /* BlinnPhong-Bridging-Header.h */,
+				63594A4C285C146500A8AF6F /* Sec20_BlinnPhong-Bridging-Header.h */,
 				63594A42285C134C00A8AF6F /* Assets.xcassets */,
 				63594A44285C134C00A8AF6F /* LaunchScreen.storyboard */,
 				63594A47285C134C00A8AF6F /* Info.plist */,
 			);
-			path = 20_BlinnPhong;
+			path = Sec20_BlinnPhong;
 			sourceTree = "<group>";
 		};
-		63594A5B285C24DE00A8AF6F /* 21_CookTorrance */ = {
+		63594A5B285C24DE00A8AF6F /* Sec21_CookTorrance */ = {
 			isa = PBXGroup;
 			children = (
 				63594A5C285C24DE00A8AF6F /* AppDelegate.swift */,
@@ -815,30 +815,30 @@
 				63594A72285C25EB00A8AF6F /* SYRenderer.swift */,
 				63594A70285C25D300A8AF6F /* SYShaders.metal */,
 				63594A6E285C257A00A8AF6F /* SYShaderTypes.h */,
-				63594A6F285C259E00A8AF6F /* CookTorrance-Bridging-Header.h */,
+				63594A6F285C259E00A8AF6F /* Sec21_CookTorrance-Bridging-Header.h */,
 				63594A65285C24DF00A8AF6F /* Assets.xcassets */,
 				63594A67285C24DF00A8AF6F /* LaunchScreen.storyboard */,
 				63594A6A285C24DF00A8AF6F /* Info.plist */,
 			);
-			path = 21_CookTorrance;
+			path = Sec21_CookTorrance;
 			sourceTree = "<group>";
 		};
-		63988A1A2844EF050007917D /* 11_HistogramEqualization */ = {
+		63988A1A2844EF050007917D /* Sec11_HistogramEqualization */ = {
 			isa = PBXGroup;
 			children = (
 				63988A1B2844EF050007917D /* AppDelegate.swift */,
 				63988A1F2844EF050007917D /* ViewController.swift */,
 				63988A2D2844F0620007917D /* SYShaderTypes.h */,
 				63988A2E2844F08A0007917D /* SYShaders.metal */,
-				63988A302844F0CF0007917D /* HistogramEqualization-Bridging-Header.h */,
+				63988A302844F0CF0007917D /* Sec11_HistogramEqualization-Bridging-Header.h */,
 				63988A242844EF070007917D /* Assets.xcassets */,
 				63988A262844EF070007917D /* LaunchScreen.storyboard */,
 				63988A292844EF070007917D /* Info.plist */,
 			);
-			path = 11_HistogramEqualization;
+			path = Sec11_HistogramEqualization;
 			sourceTree = "<group>";
 		};
-		63A34363282CED7C009E542A /* 03_RenderCamera */ = {
+		63A34363282CED7C009E542A /* Sec03_RenderCamera */ = {
 			isa = PBXGroup;
 			children = (
 				63A34364282CED7C009E542A /* AppDelegate.swift */,
@@ -847,25 +847,25 @@
 				63A3436F282CED7D009E542A /* LaunchScreen.storyboard */,
 				63A34372282CED7D009E542A /* Info.plist */,
 			);
-			path = 03_RenderCamera;
+			path = Sec03_RenderCamera;
 			sourceTree = "<group>";
 		};
-		63A3437F282D2A18009E542A /* 04_ComputeGray */ = {
+		63A3437F282D2A18009E542A /* Sec04_ComputeGray */ = {
 			isa = PBXGroup;
 			children = (
 				63A34380282D2A18009E542A /* AppDelegate.swift */,
 				63A34384282D2A18009E542A /* ViewController.swift */,
 				63A34392282D2D38009E542A /* SYShaderTypes.h */,
 				63A34393282D2D4B009E542A /* SYShaders.metal */,
-				63A34395282D2DC3009E542A /* 04_ComputeGray-Bridging-Header.h */,
+				63A34395282D2DC3009E542A /* Sec04_ComputeGray-Bridging-Header.h */,
 				63A34389282D2A1A009E542A /* Assets.xcassets */,
 				63A3438B282D2A1A009E542A /* LaunchScreen.storyboard */,
 				63A3438E282D2A1A009E542A /* Info.plist */,
 			);
-			path = 04_ComputeGray;
+			path = Sec04_ComputeGray;
 			sourceTree = "<group>";
 		};
-		63A4FE0B2840732C009E1A28 /* 10_MetalInteractGLES */ = {
+		63A4FE0B2840732C009E1A28 /* Sec10_MetalInteractGLES */ = {
 			isa = PBXGroup;
 			children = (
 				63A4FE282840AD31009E1A28 /* GLES */,
@@ -873,12 +873,12 @@
 				63A4FE102840732C009E1A28 /* ViewController.swift */,
 				63A4FE1E28407440009E1A28 /* SYShaderTypes.h */,
 				63A4FE20284074A6009E1A28 /* SYShaders.metal */,
-				63A4FE1F2840747E009E1A28 /* 10_MetalInteractGLES-Bridging-Header.h */,
+				63A4FE1F2840747E009E1A28 /* Sec10_MetalInteractGLES-Bridging-Header.h */,
 				63A4FE152840732E009E1A28 /* Assets.xcassets */,
 				63A4FE172840732E009E1A28 /* LaunchScreen.storyboard */,
 				63A4FE1A2840732E009E1A28 /* Info.plist */,
 			);
-			path = 10_MetalInteractGLES;
+			path = Sec10_MetalInteractGLES;
 			sourceTree = "<group>";
 		};
 		63A4FE282840AD31009E1A28 /* GLES */ = {
@@ -891,7 +891,7 @@
 			path = GLES;
 			sourceTree = "<group>";
 		};
-		63BFDC52282E78F2006E7909 /* 05_ComputeData */ = {
+		63BFDC52282E78F2006E7909 /* Sec05_ComputeData */ = {
 			isa = PBXGroup;
 			children = (
 				63BFDC53282E78F2006E7909 /* AppDelegate.swift */,
@@ -902,25 +902,25 @@
 				63BFDC5E282E78F4006E7909 /* LaunchScreen.storyboard */,
 				63BFDC61282E78F4006E7909 /* Info.plist */,
 			);
-			path = 05_ComputeData;
+			path = Sec05_ComputeData;
 			sourceTree = "<group>";
 		};
-		63E096D2283F57FE006FD641 /* 09_SkyBox2D */ = {
+		63E096D2283F57FE006FD641 /* Sec09_SkyBox2D */ = {
 			isa = PBXGroup;
 			children = (
 				63E096D3283F57FE006FD641 /* AppDelegate.swift */,
 				63E096D7283F57FE006FD641 /* ViewController.swift */,
 				63E096E5283F5AE5006FD641 /* SYShaderTypes.h */,
 				63E096E8283F5B9D006FD641 /* SYShaders.metal */,
-				63E096E6283F5B0A006FD641 /* 09_SkyBox2D-Bridging-Header.h */,
+				63E096E6283F5B0A006FD641 /* Sec09_SkyBox2D-Bridging-Header.h */,
 				63E096DC283F57FF006FD641 /* Assets.xcassets */,
 				63E096DE283F57FF006FD641 /* LaunchScreen.storyboard */,
 				63E096E1283F57FF006FD641 /* Info.plist */,
 			);
-			path = 09_SkyBox2D;
+			path = Sec09_SkyBox2D;
 			sourceTree = "<group>";
 		};
-		63EEDADA2857629700E0E4A5 /* 15_LoadingObjModel */ = {
+		63EEDADA2857629700E0E4A5 /* Sec15_LoadingObjModel */ = {
 			isa = PBXGroup;
 			children = (
 				63EEDADB2857629700E0E4A5 /* AppDelegate.swift */,
@@ -928,15 +928,15 @@
 				63EEDAF1285767A200E0E4A5 /* SYRenderer.swift */,
 				63EEDAEF2857638300E0E4A5 /* SYShaders.metal */,
 				63EEDAED2857631C00E0E4A5 /* SYShaderTypes.h */,
-				63EEDAEE2857634D00E0E4A5 /* LoadingObjModel-Bridging-Header.h */,
+				63EEDAEE2857634D00E0E4A5 /* Sec15_LoadingObjModel-Bridging-Header.h */,
 				63EEDAE42857629900E0E4A5 /* Assets.xcassets */,
 				63EEDAE62857629900E0E4A5 /* LaunchScreen.storyboard */,
 				63EEDAE92857629900E0E4A5 /* Info.plist */,
 			);
-			path = 15_LoadingObjModel;
+			path = Sec15_LoadingObjModel;
 			sourceTree = "<group>";
 		};
-		63EEDB2F2859BE5F00E0E4A5 /* 16_UniformBuffer */ = {
+		63EEDB2F2859BE5F00E0E4A5 /* Sec16_UniformBuffer */ = {
 			isa = PBXGroup;
 			children = (
 				63EEDB302859BE5F00E0E4A5 /* AppDelegate.swift */,
@@ -944,12 +944,12 @@
 				63EEDB4C2859CA2600E0E4A5 /* SYRenderer.swift */,
 				63EEDB442859BFD700E0E4A5 /* SYShaders.metal */,
 				63EEDB422859BEFF00E0E4A5 /* SYShaderTypes.h */,
-				63EEDB432859BFBC00E0E4A5 /* UniformBuffer-Bridging-Header.h */,
+				63EEDB432859BFBC00E0E4A5 /* Sec16_UniformBuffer-Bridging-Header.h */,
 				63EEDB392859BE6100E0E4A5 /* Assets.xcassets */,
 				63EEDB3B2859BE6100E0E4A5 /* LaunchScreen.storyboard */,
 				63EEDB3E2859BE6100E0E4A5 /* Info.plist */,
 			);
-			path = 16_UniformBuffer;
+			path = Sec16_UniformBuffer;
 			sourceTree = "<group>";
 		};
 		63EEDB512859F3AC00E0E4A5 /* Mesh */ = {
@@ -962,7 +962,7 @@
 			path = Mesh;
 			sourceTree = "<group>";
 		};
-		63EEDB7C285AD7C500E0E4A5 /* 17_DiffuseReflection */ = {
+		63EEDB7C285AD7C500E0E4A5 /* Sec17_DiffuseReflection */ = {
 			isa = PBXGroup;
 			children = (
 				63EEDB7D285AD7C500E0E4A5 /* AppDelegate.swift */,
@@ -970,20 +970,20 @@
 				635949E6285AEDAA00A8AF6F /* SYRenderer.swift */,
 				635949E4285AD9DC00A8AF6F /* SYShaders.metal */,
 				635949E2285AD95800A8AF6F /* SYShaderTypes.h */,
-				635949E3285AD9A900A8AF6F /* DiffuseReflection-Bridging-Header.h */,
+				635949E3285AD9A900A8AF6F /* Sec17_DiffuseReflection-Bridging-Header.h */,
 				63EEDB86285AD7C600E0E4A5 /* Assets.xcassets */,
 				63EEDB88285AD7C600E0E4A5 /* LaunchScreen.storyboard */,
 				63EEDB8B285AD7C600E0E4A5 /* Info.plist */,
 			);
-			path = 17_DiffuseReflection;
+			path = Sec17_DiffuseReflection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		630A3AB7282A4CDD00693ABB /* 02_Transformation */ = {
+		630A3AB7282A4CDD00693ABB /* Sec02_Transformation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 630A3ACB282A4CDE00693ABB /* Build configuration list for PBXNativeTarget "02_Transformation" */;
+			buildConfigurationList = 630A3ACB282A4CDE00693ABB /* Build configuration list for PBXNativeTarget "Sec02_Transformation" */;
 			buildPhases = (
 				630A3AB4282A4CDD00693ABB /* Sources */,
 				630A3AB5282A4CDD00693ABB /* Frameworks */,
@@ -993,14 +993,14 @@
 			);
 			dependencies = (
 			);
-			name = 02_Transformation;
+			name = Sec02_Transformation;
 			productName = 02_Tranformation;
-			productReference = 630A3AB8282A4CDD00693ABB /* 02_Transformation.app */;
+			productReference = 630A3AB8282A4CDD00693ABB /* Sec02_Transformation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6314C3D52850398F00EF2C13 /* 12_VideoCompositing */ = {
+		6314C3D52850398F00EF2C13 /* Sec12_VideoCompositing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6314C3E72850399100EF2C13 /* Build configuration list for PBXNativeTarget "12_VideoCompositing" */;
+			buildConfigurationList = 6314C3E72850399100EF2C13 /* Build configuration list for PBXNativeTarget "Sec12_VideoCompositing" */;
 			buildPhases = (
 				6314C3D22850398F00EF2C13 /* Sources */,
 				6314C3D32850398F00EF2C13 /* Frameworks */,
@@ -1010,14 +1010,14 @@
 			);
 			dependencies = (
 			);
-			name = 12_VideoCompositing;
+			name = Sec12_VideoCompositing;
 			productName = 12_VideoCompositing;
-			productReference = 6314C3D62850398F00EF2C13 /* 12_VideoCompositing.app */;
+			productReference = 6314C3D62850398F00EF2C13 /* Sec12_VideoCompositing.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6314C3F52850C64300EF2C13 /* 13_ColorLookupTable */ = {
+		6314C3F52850C64300EF2C13 /* Sec13_ColorLookupTable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6314C4092850C64500EF2C13 /* Build configuration list for PBXNativeTarget "13_ColorLookupTable" */;
+			buildConfigurationList = 6314C4092850C64500EF2C13 /* Build configuration list for PBXNativeTarget "Sec13_ColorLookupTable" */;
 			buildPhases = (
 				6314C3F22850C64300EF2C13 /* Sources */,
 				6314C3F32850C64300EF2C13 /* Frameworks */,
@@ -1027,14 +1027,14 @@
 			);
 			dependencies = (
 			);
-			name = 13_ColorLookupTable;
+			name = Sec13_ColorLookupTable;
 			productName = 13_ColorLookupTable;
-			productReference = 6314C3F62850C64300EF2C13 /* 13_ColorLookupTable.app */;
+			productReference = 6314C3F62850C64300EF2C13 /* Sec13_ColorLookupTable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6314C4192851C6CC00EF2C13 /* 14_HexagonMosaic */ = {
+		6314C4192851C6CC00EF2C13 /* Sec14_HexagonMosaic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6314C42D2851C6CE00EF2C13 /* Build configuration list for PBXNativeTarget "14_HexagonMosaic" */;
+			buildConfigurationList = 6314C42D2851C6CE00EF2C13 /* Build configuration list for PBXNativeTarget "Sec14_HexagonMosaic" */;
 			buildPhases = (
 				6314C4162851C6CC00EF2C13 /* Sources */,
 				6314C4172851C6CC00EF2C13 /* Frameworks */,
@@ -1044,14 +1044,14 @@
 			);
 			dependencies = (
 			);
-			name = 14_HexagonMosaic;
+			name = Sec14_HexagonMosaic;
 			productName = 14_HexagonMosaic;
-			productReference = 6314C41A2851C6CC00EF2C13 /* 14_HexagonMosaic.app */;
+			productReference = 6314C41A2851C6CC00EF2C13 /* Sec14_HexagonMosaic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63292B28283DD30800618D78 /* 07_RenderVideo */ = {
+		63292B28283DD30800618D78 /* Sec07_RenderVideo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63292B3C283DD30A00618D78 /* Build configuration list for PBXNativeTarget "07_RenderVideo" */;
+			buildConfigurationList = 63292B3C283DD30A00618D78 /* Build configuration list for PBXNativeTarget "Sec07_RenderVideo" */;
 			buildPhases = (
 				63292B25283DD30800618D78 /* Sources */,
 				63292B26283DD30800618D78 /* Frameworks */,
@@ -1061,14 +1061,14 @@
 			);
 			dependencies = (
 			);
-			name = 07_RenderVideo;
+			name = Sec07_RenderVideo;
 			productName = 07_RenderVideo;
-			productReference = 63292B29283DD30800618D78 /* 07_RenderVideo.app */;
+			productReference = 63292B29283DD30800618D78 /* Sec07_RenderVideo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63292B47283E09A900618D78 /* 08_SobelEdgeDetector */ = {
+		63292B47283E09A900618D78 /* Sec08_SobelEdgeDetector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63292B5B283E09AB00618D78 /* Build configuration list for PBXNativeTarget "08_SobelEdgeDetector" */;
+			buildConfigurationList = 63292B5B283E09AB00618D78 /* Build configuration list for PBXNativeTarget "Sec08_SobelEdgeDetector" */;
 			buildPhases = (
 				63292B44283E09A900618D78 /* Sources */,
 				63292B45283E09A900618D78 /* Frameworks */,
@@ -1078,14 +1078,14 @@
 			);
 			dependencies = (
 			);
-			name = 08_SobelEdgeDetector;
+			name = Sec08_SobelEdgeDetector;
 			productName = 08_Sobel;
-			productReference = 63292B48283E09A900618D78 /* 08_SobelEdgeDetector.app */;
+			productReference = 63292B48283E09A900618D78 /* Sec08_SobelEdgeDetector.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6354E9F12833CF68001AE840 /* 06_ImageProcessing */ = {
+		6354E9F12833CF68001AE840 /* Sec06_ImageProcessing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6354EA052833CF69001AE840 /* Build configuration list for PBXNativeTarget "06_ImageProcessing" */;
+			buildConfigurationList = 6354EA052833CF69001AE840 /* Build configuration list for PBXNativeTarget "Sec06_ImageProcessing" */;
 			buildPhases = (
 				6354E9EE2833CF68001AE840 /* Sources */,
 				6354E9EF2833CF68001AE840 /* Frameworks */,
@@ -1095,14 +1095,14 @@
 			);
 			dependencies = (
 			);
-			name = 06_ImageProcessing;
+			name = Sec06_ImageProcessing;
 			productName = 06_ImageProcessing;
-			productReference = 6354E9F22833CF68001AE840 /* 06_ImageProcessing.app */;
+			productReference = 6354E9F22833CF68001AE840 /* Sec06_ImageProcessing.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63577A1D281BEAAC008E3037 /* 01_Triangle */ = {
+		63577A1D281BEAAC008E3037 /* Sec01_Triangle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63577A32281BEAAF008E3037 /* Build configuration list for PBXNativeTarget "01_Triangle" */;
+			buildConfigurationList = 63577A32281BEAAF008E3037 /* Build configuration list for PBXNativeTarget "Sec01_Triangle" */;
 			buildPhases = (
 				63577A1A281BEAAC008E3037 /* Sources */,
 				63577A1B281BEAAC008E3037 /* Frameworks */,
@@ -1112,14 +1112,14 @@
 			);
 			dependencies = (
 			);
-			name = 01_Triangle;
+			name = Sec01_Triangle;
 			productName = LearnSwiftMetal;
-			productReference = 63577A1E281BEAAC008E3037 /* 01_Triangle.app */;
+			productReference = 63577A1E281BEAAC008E3037 /* Sec01_Triangle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		635949F0285B301E00A8AF6F /* 18_SpecularReflection */ = {
+		635949F0285B301E00A8AF6F /* Sec18_SpecularReflection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63594A02285B301F00A8AF6F /* Build configuration list for PBXNativeTarget "18_SpecularReflection" */;
+			buildConfigurationList = 63594A02285B301F00A8AF6F /* Build configuration list for PBXNativeTarget "Sec18_SpecularReflection" */;
 			buildPhases = (
 				635949ED285B301E00A8AF6F /* Sources */,
 				635949EE285B301E00A8AF6F /* Frameworks */,
@@ -1129,14 +1129,14 @@
 			);
 			dependencies = (
 			);
-			name = 18_SpecularReflection;
+			name = Sec18_SpecularReflection;
 			productName = 18_SpecularReflection;
-			productReference = 635949F1285B301E00A8AF6F /* 18_SpecularReflection.app */;
+			productReference = 635949F1285B301E00A8AF6F /* Sec18_SpecularReflection.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63594A13285B4CF000A8AF6F /* 19_Ambient */ = {
+		63594A13285B4CF000A8AF6F /* Sec19_Ambient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63594A27285B4CF100A8AF6F /* Build configuration list for PBXNativeTarget "19_Ambient" */;
+			buildConfigurationList = 63594A27285B4CF100A8AF6F /* Build configuration list for PBXNativeTarget "Sec19_Ambient" */;
 			buildPhases = (
 				63594A10285B4CF000A8AF6F /* Sources */,
 				63594A11285B4CF000A8AF6F /* Frameworks */,
@@ -1146,14 +1146,14 @@
 			);
 			dependencies = (
 			);
-			name = 19_Ambient;
+			name = Sec19_Ambient;
 			productName = 19_Ambient;
-			productReference = 63594A14285B4CF000A8AF6F /* 19_Ambient.app */;
+			productReference = 63594A14285B4CF000A8AF6F /* Sec19_Ambient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63594A36285C134A00A8AF6F /* 20_BlinnPhong */ = {
+		63594A36285C134A00A8AF6F /* Sec20_BlinnPhong */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63594A48285C134C00A8AF6F /* Build configuration list for PBXNativeTarget "20_BlinnPhong" */;
+			buildConfigurationList = 63594A48285C134C00A8AF6F /* Build configuration list for PBXNativeTarget "Sec20_BlinnPhong" */;
 			buildPhases = (
 				63594A33285C134A00A8AF6F /* Sources */,
 				63594A34285C134A00A8AF6F /* Frameworks */,
@@ -1163,14 +1163,14 @@
 			);
 			dependencies = (
 			);
-			name = 20_BlinnPhong;
+			name = Sec20_BlinnPhong;
 			productName = 20_BlinnPhong;
-			productReference = 63594A37285C134A00A8AF6F /* 20_BlinnPhong.app */;
+			productReference = 63594A37285C134A00A8AF6F /* Sec20_BlinnPhong.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63594A59285C24DE00A8AF6F /* 21_CookTorrance */ = {
+		63594A59285C24DE00A8AF6F /* Sec21_CookTorrance */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63594A6B285C24DF00A8AF6F /* Build configuration list for PBXNativeTarget "21_CookTorrance" */;
+			buildConfigurationList = 63594A6B285C24DF00A8AF6F /* Build configuration list for PBXNativeTarget "Sec21_CookTorrance" */;
 			buildPhases = (
 				63594A56285C24DE00A8AF6F /* Sources */,
 				63594A57285C24DE00A8AF6F /* Frameworks */,
@@ -1180,14 +1180,14 @@
 			);
 			dependencies = (
 			);
-			name = 21_CookTorrance;
+			name = Sec21_CookTorrance;
 			productName = 21_CookTorrance;
-			productReference = 63594A5A285C24DE00A8AF6F /* 21_CookTorrance.app */;
+			productReference = 63594A5A285C24DE00A8AF6F /* Sec21_CookTorrance.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63988A182844EF050007917D /* 11_HistogramEqualization */ = {
+		63988A182844EF050007917D /* Sec11_HistogramEqualization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63988A2C2844EF070007917D /* Build configuration list for PBXNativeTarget "11_HistogramEqualization" */;
+			buildConfigurationList = 63988A2C2844EF070007917D /* Build configuration list for PBXNativeTarget "Sec11_HistogramEqualization" */;
 			buildPhases = (
 				63988A152844EF050007917D /* Sources */,
 				63988A162844EF050007917D /* Frameworks */,
@@ -1197,14 +1197,14 @@
 			);
 			dependencies = (
 			);
-			name = 11_HistogramEqualization;
+			name = Sec11_HistogramEqualization;
 			productName = 11_HistogramEqualization;
-			productReference = 63988A192844EF050007917D /* 11_HistogramEqualization.app */;
+			productReference = 63988A192844EF050007917D /* Sec11_HistogramEqualization.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63A34361282CED7C009E542A /* 03_RenderCamera */ = {
+		63A34361282CED7C009E542A /* Sec03_RenderCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63A34375282CED7D009E542A /* Build configuration list for PBXNativeTarget "03_RenderCamera" */;
+			buildConfigurationList = 63A34375282CED7D009E542A /* Build configuration list for PBXNativeTarget "Sec03_RenderCamera" */;
 			buildPhases = (
 				63A3435E282CED7C009E542A /* Sources */,
 				63A3435F282CED7C009E542A /* Frameworks */,
@@ -1214,14 +1214,14 @@
 			);
 			dependencies = (
 			);
-			name = 03_RenderCamera;
+			name = Sec03_RenderCamera;
 			productName = 03_RenderCamera;
-			productReference = 63A34362282CED7C009E542A /* 03_RenderCamera.app */;
+			productReference = 63A34362282CED7C009E542A /* Sec03_RenderCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63A3437D282D2A18009E542A /* 04_ComputeGray */ = {
+		63A3437D282D2A18009E542A /* Sec04_ComputeGray */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63A3438F282D2A1A009E542A /* Build configuration list for PBXNativeTarget "04_ComputeGray" */;
+			buildConfigurationList = 63A3438F282D2A1A009E542A /* Build configuration list for PBXNativeTarget "Sec04_ComputeGray" */;
 			buildPhases = (
 				63A3437A282D2A18009E542A /* Sources */,
 				63A3437B282D2A18009E542A /* Frameworks */,
@@ -1231,14 +1231,14 @@
 			);
 			dependencies = (
 			);
-			name = 04_ComputeGray;
+			name = Sec04_ComputeGray;
 			productName = 04_ComputeGray;
-			productReference = 63A3437E282D2A18009E542A /* 04_ComputeGray.app */;
+			productReference = 63A3437E282D2A18009E542A /* Sec04_ComputeGray.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63A4FE092840732C009E1A28 /* 10_MetalInteractGLES */ = {
+		63A4FE092840732C009E1A28 /* Sec10_MetalInteractGLES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63A4FE1D2840732E009E1A28 /* Build configuration list for PBXNativeTarget "10_MetalInteractGLES" */;
+			buildConfigurationList = 63A4FE1D2840732E009E1A28 /* Build configuration list for PBXNativeTarget "Sec10_MetalInteractGLES" */;
 			buildPhases = (
 				63A4FE062840732C009E1A28 /* Sources */,
 				63A4FE072840732C009E1A28 /* Frameworks */,
@@ -1248,14 +1248,14 @@
 			);
 			dependencies = (
 			);
-			name = 10_MetalInteractGLES;
+			name = Sec10_MetalInteractGLES;
 			productName = 10_MetalInteractGLES;
-			productReference = 63A4FE0A2840732C009E1A28 /* 10_MetalInteractGLES.app */;
+			productReference = 63A4FE0A2840732C009E1A28 /* Sec10_MetalInteractGLES.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63BFDC50282E78F2006E7909 /* 05_ComputeData */ = {
+		63BFDC50282E78F2006E7909 /* Sec05_ComputeData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63BFDC64282E78F4006E7909 /* Build configuration list for PBXNativeTarget "05_ComputeData" */;
+			buildConfigurationList = 63BFDC64282E78F4006E7909 /* Build configuration list for PBXNativeTarget "Sec05_ComputeData" */;
 			buildPhases = (
 				63BFDC4D282E78F2006E7909 /* Sources */,
 				63BFDC4E282E78F2006E7909 /* Frameworks */,
@@ -1265,14 +1265,14 @@
 			);
 			dependencies = (
 			);
-			name = 05_ComputeData;
+			name = Sec05_ComputeData;
 			productName = 05_ComputeData;
-			productReference = 63BFDC51282E78F2006E7909 /* 05_ComputeData.app */;
+			productReference = 63BFDC51282E78F2006E7909 /* Sec05_ComputeData.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63E096D0283F57FE006FD641 /* 09_SkyBox2D */ = {
+		63E096D0283F57FE006FD641 /* Sec09_SkyBox2D */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63E096E4283F57FF006FD641 /* Build configuration list for PBXNativeTarget "09_SkyBox2D" */;
+			buildConfigurationList = 63E096E4283F57FF006FD641 /* Build configuration list for PBXNativeTarget "Sec09_SkyBox2D" */;
 			buildPhases = (
 				63E096CD283F57FE006FD641 /* Sources */,
 				63E096CE283F57FE006FD641 /* Frameworks */,
@@ -1282,14 +1282,14 @@
 			);
 			dependencies = (
 			);
-			name = 09_SkyBox2D;
+			name = Sec09_SkyBox2D;
 			productName = 09_SkyBox2D;
-			productReference = 63E096D1283F57FE006FD641 /* 09_SkyBox2D.app */;
+			productReference = 63E096D1283F57FE006FD641 /* Sec09_SkyBox2D.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63EEDAD82857629700E0E4A5 /* 15_LoadingObjModel */ = {
+		63EEDAD82857629700E0E4A5 /* Sec15_LoadingObjModel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63EEDAEC2857629900E0E4A5 /* Build configuration list for PBXNativeTarget "15_LoadingObjModel" */;
+			buildConfigurationList = 63EEDAEC2857629900E0E4A5 /* Build configuration list for PBXNativeTarget "Sec15_LoadingObjModel" */;
 			buildPhases = (
 				63EEDAD52857629700E0E4A5 /* Sources */,
 				63EEDAD62857629700E0E4A5 /* Frameworks */,
@@ -1299,14 +1299,14 @@
 			);
 			dependencies = (
 			);
-			name = 15_LoadingObjModel;
+			name = Sec15_LoadingObjModel;
 			productName = 15_LoadingObjModel;
-			productReference = 63EEDAD92857629700E0E4A5 /* 15_LoadingObjModel.app */;
+			productReference = 63EEDAD92857629700E0E4A5 /* Sec15_LoadingObjModel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63EEDB2D2859BE5F00E0E4A5 /* 16_UniformBuffer */ = {
+		63EEDB2D2859BE5F00E0E4A5 /* Sec16_UniformBuffer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63EEDB3F2859BE6100E0E4A5 /* Build configuration list for PBXNativeTarget "16_UniformBuffer" */;
+			buildConfigurationList = 63EEDB3F2859BE6100E0E4A5 /* Build configuration list for PBXNativeTarget "Sec16_UniformBuffer" */;
 			buildPhases = (
 				63EEDB2A2859BE5F00E0E4A5 /* Sources */,
 				63EEDB2B2859BE5F00E0E4A5 /* Frameworks */,
@@ -1316,14 +1316,14 @@
 			);
 			dependencies = (
 			);
-			name = 16_UniformBuffer;
+			name = Sec16_UniformBuffer;
 			productName = 16_UniformBuffer;
-			productReference = 63EEDB2E2859BE5F00E0E4A5 /* 16_UniformBuffer.app */;
+			productReference = 63EEDB2E2859BE5F00E0E4A5 /* Sec16_UniformBuffer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63EEDB7A285AD7C500E0E4A5 /* 17_DiffuseReflection */ = {
+		63EEDB7A285AD7C500E0E4A5 /* Sec17_DiffuseReflection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63EEDB8C285AD7C600E0E4A5 /* Build configuration list for PBXNativeTarget "17_DiffuseReflection" */;
+			buildConfigurationList = 63EEDB8C285AD7C600E0E4A5 /* Build configuration list for PBXNativeTarget "Sec17_DiffuseReflection" */;
 			buildPhases = (
 				63EEDB77285AD7C500E0E4A5 /* Sources */,
 				63EEDB78285AD7C500E0E4A5 /* Frameworks */,
@@ -1333,9 +1333,9 @@
 			);
 			dependencies = (
 			);
-			name = 17_DiffuseReflection;
+			name = Sec17_DiffuseReflection;
 			productName = 17_DiffuseReflection;
-			productReference = 63EEDB7B285AD7C500E0E4A5 /* 17_DiffuseReflection.app */;
+			productReference = 63EEDB7B285AD7C500E0E4A5 /* Sec17_DiffuseReflection.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1426,27 +1426,27 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63577A1D281BEAAC008E3037 /* 01_Triangle */,
-				630A3AB7282A4CDD00693ABB /* 02_Transformation */,
-				63A34361282CED7C009E542A /* 03_RenderCamera */,
-				63A3437D282D2A18009E542A /* 04_ComputeGray */,
-				63BFDC50282E78F2006E7909 /* 05_ComputeData */,
-				6354E9F12833CF68001AE840 /* 06_ImageProcessing */,
-				63292B28283DD30800618D78 /* 07_RenderVideo */,
-				63292B47283E09A900618D78 /* 08_SobelEdgeDetector */,
-				63E096D0283F57FE006FD641 /* 09_SkyBox2D */,
-				63A4FE092840732C009E1A28 /* 10_MetalInteractGLES */,
-				63988A182844EF050007917D /* 11_HistogramEqualization */,
-				6314C3D52850398F00EF2C13 /* 12_VideoCompositing */,
-				6314C3F52850C64300EF2C13 /* 13_ColorLookupTable */,
-				6314C4192851C6CC00EF2C13 /* 14_HexagonMosaic */,
-				63EEDAD82857629700E0E4A5 /* 15_LoadingObjModel */,
-				63EEDB2D2859BE5F00E0E4A5 /* 16_UniformBuffer */,
-				63EEDB7A285AD7C500E0E4A5 /* 17_DiffuseReflection */,
-				635949F0285B301E00A8AF6F /* 18_SpecularReflection */,
-				63594A13285B4CF000A8AF6F /* 19_Ambient */,
-				63594A36285C134A00A8AF6F /* 20_BlinnPhong */,
-				63594A59285C24DE00A8AF6F /* 21_CookTorrance */,
+				63577A1D281BEAAC008E3037 /* Sec01_Triangle */,
+				630A3AB7282A4CDD00693ABB /* Sec02_Transformation */,
+				63A34361282CED7C009E542A /* Sec03_RenderCamera */,
+				63A3437D282D2A18009E542A /* Sec04_ComputeGray */,
+				63BFDC50282E78F2006E7909 /* Sec05_ComputeData */,
+				6354E9F12833CF68001AE840 /* Sec06_ImageProcessing */,
+				63292B28283DD30800618D78 /* Sec07_RenderVideo */,
+				63292B47283E09A900618D78 /* Sec08_SobelEdgeDetector */,
+				63E096D0283F57FE006FD641 /* Sec09_SkyBox2D */,
+				63A4FE092840732C009E1A28 /* Sec10_MetalInteractGLES */,
+				63988A182844EF050007917D /* Sec11_HistogramEqualization */,
+				6314C3D52850398F00EF2C13 /* Sec12_VideoCompositing */,
+				6314C3F52850C64300EF2C13 /* Sec13_ColorLookupTable */,
+				6314C4192851C6CC00EF2C13 /* Sec14_HexagonMosaic */,
+				63EEDAD82857629700E0E4A5 /* Sec15_LoadingObjModel */,
+				63EEDB2D2859BE5F00E0E4A5 /* Sec16_UniformBuffer */,
+				63EEDB7A285AD7C500E0E4A5 /* Sec17_DiffuseReflection */,
+				635949F0285B301E00A8AF6F /* Sec18_SpecularReflection */,
+				63594A13285B4CF000A8AF6F /* Sec19_Ambient */,
+				63594A36285C134A00A8AF6F /* Sec20_BlinnPhong */,
+				63594A59285C24DE00A8AF6F /* Sec21_CookTorrance */,
 			);
 		};
 /* End PBXProject section */
@@ -2109,7 +2109,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 02_Transformation/Info.plist;
+				INFOPLIST_FILE = Sec02_Transformation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2120,10 +2120,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-2-Tranformation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "02_Transformation/02_Transformation-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec02_Transformation/Sec02_Transformation-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2138,7 +2138,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 02_Transformation/Info.plist;
+				INFOPLIST_FILE = Sec02_Transformation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2149,10 +2149,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-2-Tranformation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "02_Transformation/02_Transformation-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec02_Transformation/Sec02_Transformation-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2167,7 +2167,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 12_VideoCompositing/Info.plist;
+				INFOPLIST_FILE = Sec12_VideoCompositing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2178,10 +2178,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-2-VideoCompositing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "12_VideoCompositing/VideoCompositing-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec12_VideoCompositing/Sec12_VideoCompositing-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2196,7 +2196,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 12_VideoCompositing/Info.plist;
+				INFOPLIST_FILE = Sec12_VideoCompositing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2207,10 +2207,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-2-VideoCompositing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "12_VideoCompositing/VideoCompositing-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec12_VideoCompositing/Sec12_VideoCompositing-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2225,7 +2225,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 13_ColorLookupTable/Info.plist;
+				INFOPLIST_FILE = Sec13_ColorLookupTable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2236,10 +2236,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-3-ColorLookupTable";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "13_ColorLookupTable/ColorLookupTable-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec13_ColorLookupTable/Sec13_ColorLookupTable-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2254,7 +2254,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 13_ColorLookupTable/Info.plist;
+				INFOPLIST_FILE = Sec13_ColorLookupTable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2265,10 +2265,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-3-ColorLookupTable";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "13_ColorLookupTable/ColorLookupTable-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec13_ColorLookupTable/Sec13_ColorLookupTable-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2283,7 +2283,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 14_HexagonMosaic/Info.plist;
+				INFOPLIST_FILE = Sec14_HexagonMosaic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2294,10 +2294,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-4-HexagonMosaic";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "14_HexagonMosaic/HexagonMosaic-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec14_HexagonMosaic/Sec14_HexagonMosaic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2312,7 +2312,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 14_HexagonMosaic/Info.plist;
+				INFOPLIST_FILE = Sec14_HexagonMosaic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2323,10 +2323,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-4-HexagonMosaic";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "14_HexagonMosaic/HexagonMosaic-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec14_HexagonMosaic/Sec14_HexagonMosaic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2341,7 +2341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 07_RenderVideo/Info.plist;
+				INFOPLIST_FILE = Sec07_RenderVideo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2352,10 +2352,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-7-RenderVideo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec07;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "07_RenderVideo/07_RenderVideo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec07_RenderVideo/Sec07_RenderVideo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2370,7 +2370,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 07_RenderVideo/Info.plist;
+				INFOPLIST_FILE = Sec07_RenderVideo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2381,10 +2381,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-7-RenderVideo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec07;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "07_RenderVideo/07_RenderVideo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec07_RenderVideo/Sec07_RenderVideo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2399,7 +2399,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 08_SobelEdgeDetector/Info.plist;
+				INFOPLIST_FILE = Sec08_SobelEdgeDetector/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2410,10 +2410,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-Sobel";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec08;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "08_SobelEdgeDetector/08_SobelEdgeDetector-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec08_SobelEdgeDetector/Sec08_SobelEdgeDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2428,7 +2428,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 08_SobelEdgeDetector/Info.plist;
+				INFOPLIST_FILE = Sec08_SobelEdgeDetector/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2439,10 +2439,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-Sobel";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec08;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "08_SobelEdgeDetector/08_SobelEdgeDetector-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec08_SobelEdgeDetector/Sec08_SobelEdgeDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2457,7 +2457,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 06_ImageProcessing/Info.plist;
+				INFOPLIST_FILE = Sec06_ImageProcessing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2468,10 +2468,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-6-ImageProcessing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec06;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "06_ImageProcessing/Filters/06_ImageProcessing-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec06_ImageProcessing/Filters/Sec06_ImageProcessing-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2486,7 +2486,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 06_ImageProcessing/Info.plist;
+				INFOPLIST_FILE = Sec06_ImageProcessing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2497,10 +2497,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-6-ImageProcessing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec06;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "06_ImageProcessing/Filters/06_ImageProcessing-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec06_ImageProcessing/Filters/Sec06_ImageProcessing-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2629,7 +2629,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 01_Triangle/Info.plist;
+				INFOPLIST_FILE = Sec01_Triangle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2640,10 +2640,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "01_Triangle/01_Triangle-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec01_Triangle/Sec01_Triangle-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -2659,7 +2659,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 01_Triangle/Info.plist;
+				INFOPLIST_FILE = Sec01_Triangle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2670,10 +2670,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "01_Triangle/01_Triangle-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec01_Triangle/Sec01_Triangle-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -2689,7 +2689,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 18_SpecularReflection/Info.plist;
+				INFOPLIST_FILE = Sec18_SpecularReflection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2700,10 +2700,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-SpecularReflection";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "18_SpecularReflection/SpecularReflection-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec18_SpecularReflection/Sec18_SpecularReflection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2718,7 +2718,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 18_SpecularReflection/Info.plist;
+				INFOPLIST_FILE = Sec18_SpecularReflection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2729,10 +2729,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-8-SpecularReflection";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "18_SpecularReflection/SpecularReflection-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec18_SpecularReflection/Sec18_SpecularReflection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2747,7 +2747,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 19_Ambient/Info.plist;
+				INFOPLIST_FILE = Sec19_Ambient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2758,10 +2758,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-9-Ambient";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec19;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "19_Ambient/Ambient-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec19_Ambient/Sec19_Ambient-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2776,7 +2776,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 19_Ambient/Info.plist;
+				INFOPLIST_FILE = Sec19_Ambient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2787,10 +2787,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-9-Ambient";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec19;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "19_Ambient/Ambient-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec19_Ambient/Sec19_Ambient-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2805,7 +2805,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 20_BlinnPhong/Info.plist;
+				INFOPLIST_FILE = Sec20_BlinnPhong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2816,10 +2816,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-0-BlinnPhong";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "20_BlinnPhong/BlinnPhong-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec20_BlinnPhong/Sec20_BlinnPhong-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2834,7 +2834,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 20_BlinnPhong/Info.plist;
+				INFOPLIST_FILE = Sec20_BlinnPhong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2845,10 +2845,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-0-BlinnPhong";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "20_BlinnPhong/BlinnPhong-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec20_BlinnPhong/Sec20_BlinnPhong-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2863,7 +2863,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 21_CookTorrance/Info.plist;
+				INFOPLIST_FILE = Sec21_CookTorrance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2874,10 +2874,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-1-CookTorrance";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "21_CookTorrance/CookTorrance-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec21_CookTorrance/Sec21_CookTorrance-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2892,7 +2892,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 21_CookTorrance/Info.plist;
+				INFOPLIST_FILE = Sec21_CookTorrance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2903,10 +2903,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-1-CookTorrance";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "21_CookTorrance/CookTorrance-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec21_CookTorrance/Sec21_CookTorrance-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2921,7 +2921,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 11_HistogramEqualization/Info.plist;
+				INFOPLIST_FILE = Sec11_HistogramEqualization/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2932,10 +2932,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-1-HistogramEqualization";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "11_HistogramEqualization/HistogramEqualization-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec11_HistogramEqualization/Sec11_HistogramEqualization-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2950,7 +2950,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 11_HistogramEqualization/Info.plist;
+				INFOPLIST_FILE = Sec11_HistogramEqualization/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -2961,10 +2961,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-1-HistogramEqualization";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "11_HistogramEqualization/HistogramEqualization-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec11_HistogramEqualization/Sec11_HistogramEqualization-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2979,7 +2979,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 03_RenderCamera/Info.plist;
+				INFOPLIST_FILE = Sec03_RenderCamera/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "允许使用相机进行拍摄";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -2991,7 +2991,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-3-RenderCamera";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -3009,7 +3009,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 03_RenderCamera/Info.plist;
+				INFOPLIST_FILE = Sec03_RenderCamera/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "允许使用相机进行拍摄";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -3021,7 +3021,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-3-RenderCamera";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -3039,7 +3039,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 04_ComputeGray/Info.plist;
+				INFOPLIST_FILE = Sec04_ComputeGray/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3050,10 +3050,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-4-ComputeGray";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec04;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "04_ComputeGray/04_ComputeGray-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec04_ComputeGray/Sec04_ComputeGray-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3068,7 +3068,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 04_ComputeGray/Info.plist;
+				INFOPLIST_FILE = Sec04_ComputeGray/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3079,10 +3079,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-4-ComputeGray";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec04;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "04_ComputeGray/04_ComputeGray-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec04_ComputeGray/Sec04_ComputeGray-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3102,7 +3102,7 @@
 					"GLES_SILENCE_DEPRECATION=1",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 10_MetalInteractGLES/Info.plist;
+				INFOPLIST_FILE = Sec10_MetalInteractGLES/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3113,10 +3113,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-0-MetalInteractGLES";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "10_MetalInteractGLES/10_MetalInteractGLES-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec10_MetalInteractGLES/Sec10_MetalInteractGLES-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3131,7 +3131,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 10_MetalInteractGLES/Info.plist;
+				INFOPLIST_FILE = Sec10_MetalInteractGLES/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3142,10 +3142,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-0-MetalInteractGLES";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "10_MetalInteractGLES/10_MetalInteractGLES-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec10_MetalInteractGLES/Sec10_MetalInteractGLES-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3160,7 +3160,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 05_ComputeData/Info.plist;
+				INFOPLIST_FILE = Sec05_ComputeData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3171,7 +3171,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-5-ComputeData";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -3188,7 +3188,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 05_ComputeData/Info.plist;
+				INFOPLIST_FILE = Sec05_ComputeData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3199,7 +3199,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-5-ComputeData";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -3216,7 +3216,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 09_SkyBox2D/Info.plist;
+				INFOPLIST_FILE = Sec09_SkyBox2D/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3228,10 +3228,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-9-SkyBox2D";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "09_SkyBox2D/09_SkyBox2D-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec09_SkyBox2D/Sec09_SkyBox2D-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3246,7 +3246,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 09_SkyBox2D/Info.plist;
+				INFOPLIST_FILE = Sec09_SkyBox2D/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3257,10 +3257,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-9-SkyBox2D";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "09_SkyBox2D/09_SkyBox2D-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec09_SkyBox2D/Sec09_SkyBox2D-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3275,7 +3275,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 15_LoadingObjModel/Info.plist;
+				INFOPLIST_FILE = Sec15_LoadingObjModel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3286,10 +3286,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-5-LoadingObjModel";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "15_LoadingObjModel/LoadingObjModel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec15_LoadingObjModel/Sec15_LoadingObjModel-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3304,7 +3304,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 15_LoadingObjModel/Info.plist;
+				INFOPLIST_FILE = Sec15_LoadingObjModel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3315,10 +3315,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-5-LoadingObjModel";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "15_LoadingObjModel/LoadingObjModel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec15_LoadingObjModel/Sec15_LoadingObjModel-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3329,11 +3329,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 16_UniformBuffer/Info.plist;
+				INFOPLIST_FILE = Sec16_UniformBuffer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3344,10 +3345,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-6-UniformBuffer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "16_UniformBuffer/UniformBuffer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec16_UniformBuffer/Sec16_UniformBuffer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3358,11 +3360,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 16_UniformBuffer/Info.plist;
+				INFOPLIST_FILE = Sec16_UniformBuffer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3373,10 +3376,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-6-UniformBuffer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "16_UniformBuffer/UniformBuffer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec16_UniformBuffer/Sec16_UniformBuffer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3391,7 +3395,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 17_DiffuseReflection/Info.plist;
+				INFOPLIST_FILE = Sec17_DiffuseReflection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3402,10 +3406,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-7-DiffuseReflection";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "17_DiffuseReflection/DiffuseReflection-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec17_DiffuseReflection/Sec17_DiffuseReflection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3420,7 +3424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYJDQ5R465;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 17_DiffuseReflection/Info.plist;
+				INFOPLIST_FILE = Sec17_DiffuseReflection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -3431,10 +3435,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenyuanluo.-7-DiffuseReflection";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenyuanluo.LearnSwiftMetal.Sec17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "17_DiffuseReflection/DiffuseReflection-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sec17_DiffuseReflection/Sec17_DiffuseReflection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3443,7 +3447,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		630A3ACB282A4CDE00693ABB /* Build configuration list for PBXNativeTarget "02_Transformation" */ = {
+		630A3ACB282A4CDE00693ABB /* Build configuration list for PBXNativeTarget "Sec02_Transformation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				630A3AC9282A4CDE00693ABB /* Debug */,
@@ -3452,7 +3456,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6314C3E72850399100EF2C13 /* Build configuration list for PBXNativeTarget "12_VideoCompositing" */ = {
+		6314C3E72850399100EF2C13 /* Build configuration list for PBXNativeTarget "Sec12_VideoCompositing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6314C3E82850399100EF2C13 /* Debug */,
@@ -3461,7 +3465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6314C4092850C64500EF2C13 /* Build configuration list for PBXNativeTarget "13_ColorLookupTable" */ = {
+		6314C4092850C64500EF2C13 /* Build configuration list for PBXNativeTarget "Sec13_ColorLookupTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6314C4072850C64500EF2C13 /* Debug */,
@@ -3470,7 +3474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6314C42D2851C6CE00EF2C13 /* Build configuration list for PBXNativeTarget "14_HexagonMosaic" */ = {
+		6314C42D2851C6CE00EF2C13 /* Build configuration list for PBXNativeTarget "Sec14_HexagonMosaic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6314C42B2851C6CE00EF2C13 /* Debug */,
@@ -3479,7 +3483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63292B3C283DD30A00618D78 /* Build configuration list for PBXNativeTarget "07_RenderVideo" */ = {
+		63292B3C283DD30A00618D78 /* Build configuration list for PBXNativeTarget "Sec07_RenderVideo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63292B3A283DD30A00618D78 /* Debug */,
@@ -3488,7 +3492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63292B5B283E09AB00618D78 /* Build configuration list for PBXNativeTarget "08_SobelEdgeDetector" */ = {
+		63292B5B283E09AB00618D78 /* Build configuration list for PBXNativeTarget "Sec08_SobelEdgeDetector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63292B59283E09AB00618D78 /* Debug */,
@@ -3497,7 +3501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6354EA052833CF69001AE840 /* Build configuration list for PBXNativeTarget "06_ImageProcessing" */ = {
+		6354EA052833CF69001AE840 /* Build configuration list for PBXNativeTarget "Sec06_ImageProcessing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6354EA032833CF69001AE840 /* Debug */,
@@ -3515,7 +3519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63577A32281BEAAF008E3037 /* Build configuration list for PBXNativeTarget "01_Triangle" */ = {
+		63577A32281BEAAF008E3037 /* Build configuration list for PBXNativeTarget "Sec01_Triangle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63577A33281BEAAF008E3037 /* Debug */,
@@ -3524,7 +3528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63594A02285B301F00A8AF6F /* Build configuration list for PBXNativeTarget "18_SpecularReflection" */ = {
+		63594A02285B301F00A8AF6F /* Build configuration list for PBXNativeTarget "Sec18_SpecularReflection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63594A03285B301F00A8AF6F /* Debug */,
@@ -3533,7 +3537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63594A27285B4CF100A8AF6F /* Build configuration list for PBXNativeTarget "19_Ambient" */ = {
+		63594A27285B4CF100A8AF6F /* Build configuration list for PBXNativeTarget "Sec19_Ambient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63594A25285B4CF100A8AF6F /* Debug */,
@@ -3542,7 +3546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63594A48285C134C00A8AF6F /* Build configuration list for PBXNativeTarget "20_BlinnPhong" */ = {
+		63594A48285C134C00A8AF6F /* Build configuration list for PBXNativeTarget "Sec20_BlinnPhong" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63594A49285C134C00A8AF6F /* Debug */,
@@ -3551,7 +3555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63594A6B285C24DF00A8AF6F /* Build configuration list for PBXNativeTarget "21_CookTorrance" */ = {
+		63594A6B285C24DF00A8AF6F /* Build configuration list for PBXNativeTarget "Sec21_CookTorrance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63594A6C285C24DF00A8AF6F /* Debug */,
@@ -3560,7 +3564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63988A2C2844EF070007917D /* Build configuration list for PBXNativeTarget "11_HistogramEqualization" */ = {
+		63988A2C2844EF070007917D /* Build configuration list for PBXNativeTarget "Sec11_HistogramEqualization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63988A2A2844EF070007917D /* Debug */,
@@ -3569,7 +3573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63A34375282CED7D009E542A /* Build configuration list for PBXNativeTarget "03_RenderCamera" */ = {
+		63A34375282CED7D009E542A /* Build configuration list for PBXNativeTarget "Sec03_RenderCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63A34373282CED7D009E542A /* Debug */,
@@ -3578,7 +3582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63A3438F282D2A1A009E542A /* Build configuration list for PBXNativeTarget "04_ComputeGray" */ = {
+		63A3438F282D2A1A009E542A /* Build configuration list for PBXNativeTarget "Sec04_ComputeGray" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63A34390282D2A1A009E542A /* Debug */,
@@ -3587,7 +3591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63A4FE1D2840732E009E1A28 /* Build configuration list for PBXNativeTarget "10_MetalInteractGLES" */ = {
+		63A4FE1D2840732E009E1A28 /* Build configuration list for PBXNativeTarget "Sec10_MetalInteractGLES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63A4FE1B2840732E009E1A28 /* Debug */,
@@ -3596,7 +3600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63BFDC64282E78F4006E7909 /* Build configuration list for PBXNativeTarget "05_ComputeData" */ = {
+		63BFDC64282E78F4006E7909 /* Build configuration list for PBXNativeTarget "Sec05_ComputeData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63BFDC62282E78F4006E7909 /* Debug */,
@@ -3605,7 +3609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63E096E4283F57FF006FD641 /* Build configuration list for PBXNativeTarget "09_SkyBox2D" */ = {
+		63E096E4283F57FF006FD641 /* Build configuration list for PBXNativeTarget "Sec09_SkyBox2D" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63E096E2283F57FF006FD641 /* Debug */,
@@ -3614,7 +3618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63EEDAEC2857629900E0E4A5 /* Build configuration list for PBXNativeTarget "15_LoadingObjModel" */ = {
+		63EEDAEC2857629900E0E4A5 /* Build configuration list for PBXNativeTarget "Sec15_LoadingObjModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63EEDAEA2857629900E0E4A5 /* Debug */,
@@ -3623,7 +3627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63EEDB3F2859BE6100E0E4A5 /* Build configuration list for PBXNativeTarget "16_UniformBuffer" */ = {
+		63EEDB3F2859BE6100E0E4A5 /* Build configuration list for PBXNativeTarget "Sec16_UniformBuffer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63EEDB402859BE6100E0E4A5 /* Debug */,
@@ -3632,7 +3636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63EEDB8C285AD7C600E0E4A5 /* Build configuration list for PBXNativeTarget "17_DiffuseReflection" */ = {
+		63EEDB8C285AD7C600E0E4A5 /* Build configuration list for PBXNativeTarget "Sec17_DiffuseReflection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63EEDB8D285AD7C600E0E4A5 /* Debug */,
