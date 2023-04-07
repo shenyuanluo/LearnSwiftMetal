@@ -8,11 +8,6 @@
 import Foundation
 import Metal
 
-let kArrayRow: Int = 1920
-let kArrayCol: Int = 1440
-let kArrayLen: Int = kArrayRow * kArrayCol // 1_000_000
-let kIsRotateLeft: Int = 0
-
 class SYMetalAdder {
     private var device: MTLDevice                           // 用来渲染的设备（即，GPU）
     private var computePipeline: MTLComputePipelineState!   // 内核计算管线
@@ -51,15 +46,14 @@ class SYMetalAdder {
     // 准备数据
     func prepareData() {
         for i in 0..<kArrayLen {
-            inArray[i] = Float.random(in: 0...1)
+            inArray[i] = Float(i + 1)
         }
         // 将内容 copy 到一块新的内存区，来创建 buffer
         self.inBuffer = self.device.makeBuffer(bytes: inArray,
-                                                length: MemoryLayout<Float>.size * kArrayLen,
+                                               length: MemoryLayout<Float>.size * kArrayLen,
+                                               options: .storageModeShared)     // 使用共享内存(storageModeShared)， CPU 和 GPU都可以访问
+        self.outBuffer = self.device.makeBuffer(length: MemoryLayout<Float>.size * kArrayLen,
                                                 options: .storageModeShared)    // 使用共享内存(storageModeShared)， CPU 和 GPU都可以访问
-        self.outBuffer = self.device.makeBuffer(bytes: result,
-                                                   length: MemoryLayout<Float>.size * kArrayLen,
-                                                   options: .storageModeShared)
     }
     
     // 发送计算命令
@@ -79,22 +73,30 @@ class SYMetalAdder {
         // 写入数据
         var row = kArrayRow
         var col = kArrayCol
-        var isLeft = kIsRotateLeft
+        var isRight = kIsRotateRight
         computeEncoder.setBytes(&row, length: MemoryLayout<Int>.stride, index: 11)
         computeEncoder.setBytes(&col, length: MemoryLayout<Int>.stride, index: 12)
-        computeEncoder.setBytes(&isLeft, length: MemoryLayout<Int>.stride, index: 13)
+        computeEncoder.setBytes(&isRight, length: MemoryLayout<Int>.stride, index: 13)
         computeEncoder.setBuffer(self.inBuffer, offset: 0, index: 0)
         computeEncoder.setBuffer(self.outBuffer, offset: 0, index: 1)
         
-        let executeWidth = self.computePipeline.threadExecutionWidth
-        let groupSize    = MTLSize(width: executeWidth, height: 1, depth: 1)   // 一维数据 height、depth 都是 1
-        let groupCount   = MTLSize(width: (kArrayLen + groupSize.width - 1) / groupSize.width,
-                                   height: 1, depth: 1)   // 一维数据 height、depth 都是 1
-        
+#if true
+        let gridSize   = MTLSize(width: kArrayLen, height: 1, depth: 1)
+        var maxThreads = self.computePipeline.maxTotalThreadsPerThreadgroup
+        if maxThreads > kArrayLen {
+            maxThreads = kArrayLen
+        }
+        let threadSize = MTLSize(width: maxThreads, height: 1, depth: 1)
         // 设置计算区域（使用非均匀线程组的网格编码计算命令,该方法能够更有效的利用GPU资源， 但是该方法最低支持到A11处理器(芯片)）
-//        computeEncoder.dispatchThreads(groupCount, threadsPerThreadgroup: groupSize)
-        // 使用均匀线程组边界的网格编码计算命令
-        computeEncoder.dispatchThreadgroups(groupCount, threadsPerThreadgroup: groupSize)
+        computeEncoder.dispatchThreads(gridSize, threadsPerThreadgroup: threadSize)
+#else
+        // 使用均匀线程组边界的网格编码计算命令（shader 内部需要判断 thread pos 越界问题）
+        let execWidth  = self.computePipeline.threadExecutionWidth
+        let threadSize = MTLSize(width: execWidth * 2, height: 1, depth: 1)   // 一维数据 height、depth 都是 1
+        let groupSize  = MTLSize(width: (kArrayLen + threadSize.width - 1) / threadSize.width, height: 1, depth: 1)   // 一维数据 height、depth 都是 1
+        computeEncoder.dispatchThreadgroups(groupSize, threadsPerThreadgroup: threadSize)
+#endif
+         
 
         // 设置处理完成回调
         commandBuffer.addCompletedHandler { buff in
@@ -106,25 +108,27 @@ class SYMetalAdder {
             }
             
             // 打印结果
-//            print("原始数组: ")
-//            for i in 0..<kArrayRow {
-//                for j in 0..<kArrayCol {
-//                    let idx = i * kArrayCol + j
-//                    print(self.inArray[idx], separator: "", terminator: ", ")
-//                }
-//                print("")
-//            }
-//            print("")
-//
-//            print("结果数组: ")
-//            for i in 0..<kArrayCol {
-//                for j in 0..<kArrayRow {
-//                    let idx = i * kArrayRow + j
-//                    print(self.result[idx], separator: "", terminator: ", ")
-//                }
-//                print("")
-//            }
-//            print("")
+            if 1 == kIsPrintResult {
+                print("原始数组: ")
+                for i in 0..<kArrayRow {
+                    for j in 0..<kArrayCol {
+                        let idx = i * kArrayCol + j
+                        print(self.inArray[idx], separator: "", terminator: ", ")
+                    }
+                    print("")
+                }
+                print("")
+                
+                print("结果数组: ")
+                for i in 0..<kArrayCol {
+                    for j in 0..<kArrayRow {
+                        let idx = i * kArrayRow + j
+                        print(self.result[idx], separator: "", terminator: ", ")
+                    }
+                    print("")
+                }
+                print("")
+            }
         }
         // 结束编码过程以关闭计算传递
         computeEncoder.endEncoding()

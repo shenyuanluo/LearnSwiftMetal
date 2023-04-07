@@ -12,23 +12,20 @@ using namespace metal;
 // 以 kernel 关键字声明一个计算函数（kernel 声明返回值必须是 void）
 kernel void
 RotateArray(device const float* inArr,
-            device float* result,
-            constant int &row [[ buffer(11) ]],
-            constant int &col [[ buffer(12) ]],
-            constant int &isLeft [[ buffer(13) ]],
-            uint index [[ thread_position_in_grid ]])
+            device float*       result,
+            constant int&       row     [[ buffer(11) ]],               // 二维数组「行」数
+            constant int&       col     [[ buffer(12) ]],               // 二维数组「列」数
+            constant int&       isRight [[ buffer(13) ]],               // 是否向「右」选择（0：左；1：右）
+            uint index                  [[ thread_position_in_grid ]]
+            )
 {
-    for (int i = 0; i < row; i++)   // 遍历所有「行」
+    int i = index/col;
+    int j = index - (i * col);
+    int srcIdx = i * col + j;               // 「原始」数组下标
+    int dstIdx = (col - j - 1) * row + i;   // 「结果」数组下标（「左」旋转 90 度）
+    if (isRight)    // 「右」旋转 90 度
     {
-        for (int j = 0; j < col; j++)   // 遍历所有「列」
-        {
-            int oriIdx = i * col + j;               // 「原始」数组下标
-            int retIdx = (col - j - 1) * row + i;   // 「结果」数组下标（「左」旋转 90 度）
-            if (!isLeft)    // 「右」旋转 90 度
-            {
-                retIdx = j * row + (row - i - 1);
-            }
-            result[retIdx] = inArr[oriIdx];
-        }
+        dstIdx = j * row + (row - i - 1);
     }
+    result[dstIdx] = inArr[srcIdx];
 }

@@ -7,6 +7,12 @@
 
 import UIKit
 
+let kArrayRow: Int = 1920
+let kArrayCol: Int = 1440
+let kArrayLen: Int = kArrayRow * kArrayCol
+let kIsRotateRight: Int = 0
+let kIsPrintResult: Int = 0
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -17,13 +23,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        for i in 0..<10 {
-//            DispatchQueue.global().async {
-                self.computeDataOnCpu()
-                
-                self.computeDataOnGpu()
-//            }
-//        }
+        self.computeDataOnCpu()
+        
+        self.computeDataOnGpu()
     }
     
     private func computeDataOnCpu(_ loop: Int = 0) {
@@ -31,7 +33,7 @@ class ViewController: UIViewController {
         var inArray: [Float]  = Array(repeating: 0, count: kArrayLen)
         var result: [Float] = Array(repeating: 0, count: kArrayLen)
         for i in 0..<kArrayLen {
-            inArray[i] = Float.random(in: 0...1)
+            inArray[i] = Float(i + 1)
         }
         let start = Date()
         // 开始旋转
@@ -39,7 +41,7 @@ class ViewController: UIViewController {
             for j in 0..<kArrayCol {
                 let oriIdx = i * kArrayCol + j
                 var tarIdx = (kArrayCol - j - 1) * kArrayRow + i
-                if 1 != kIsRotateLeft {
+                if 1 == kIsRotateRight {
                     tarIdx = j * kArrayRow + (kArrayRow - i - 1)
                 }
                 result[tarIdx] = inArray[oriIdx]
@@ -48,25 +50,27 @@ class ViewController: UIViewController {
         let end = Date()
         print("CPU-耗时: \(end.timeIntervalSinceReferenceDate - start.timeIntervalSinceReferenceDate)")
         // 打印结果
-//        print("原始数组: ")
-//        for i in 0..<kArrayRow {
-//            for j in 0..<kArrayCol {
-//                let idx = i * kArrayCol + j
-//                print(inArray[idx], separator: "", terminator: ", ")
-//            }
-//            print("")
-//        }
-//        print("")
-//        
-//        print("结果数组: ")
-//        for i in 0..<kArrayCol {
-//            for j in 0..<kArrayRow {
-//                let idx = i * kArrayRow + j
-//                print(result[idx], separator: "", terminator: ", ")
-//            }
-//            print("")
-//        }
-//        print("")
+        if 1 == kIsPrintResult {
+            print("原始数组: ")
+            for i in 0..<kArrayRow {
+                for j in 0..<kArrayCol {
+                    let idx = i * kArrayCol + j
+                    print(inArray[idx], separator: "", terminator: ", ")
+                }
+                print("")
+            }
+            print("")
+            
+            print("结果数组: ")
+            for i in 0..<kArrayCol {
+                for j in 0..<kArrayRow {
+                    let idx = i * kArrayRow + j
+                    print(result[idx], separator: "", terminator: ", ")
+                }
+                print("")
+            }
+        }
+        print("")
     }
 
     private func computeDataOnGpu(_ loop: Int = 0) {
