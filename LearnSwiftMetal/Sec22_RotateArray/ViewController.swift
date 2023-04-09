@@ -7,13 +7,10 @@
 
 import UIKit
 
-let kArrayRow: Int = 1920
-let kArrayCol: Int = 1440
-let kArrayLen: Int = kArrayRow * kArrayCol
-let kIsRotateRight: Int = 0
-let kIsPrintResult: Int = 0
-
 class ViewController: UIViewController {
+    private lazy var rotater: SYMetalRotater = {
+        return SYMetalRotater()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,69 +20,94 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.computeDataOnCpu()
-        
-        self.computeDataOnGpu()
+        self.testRotateArray()
+        self.testRotateNV12()
     }
     
-    private func computeDataOnCpu(_ loop: Int = 0) {
-        print("Rotate array on CPU...(\(loop))")
-        var inArray: [Float]  = Array(repeating: 0, count: kArrayLen)
-        var result: [Float] = Array(repeating: 0, count: kArrayLen)
-        for i in 0..<kArrayLen {
-            inArray[i] = Float(i + 1)
+    /// 测试旋转数组数据
+    private func testRotateArray() {
+        let row      = 10
+        let col      = 50
+        let arrayLen = row * col
+        let isRight  = 0
+        var data     = Array<Float>(repeating: 0, count: arrayLen)
+        for i in 0..<arrayLen {
+            data[i] = Float(i + 1)
         }
-        let start = Date()
-        // 开始旋转
-        for i in 0..<kArrayRow {
-            for j in 0..<kArrayCol {
-                let oriIdx = i * kArrayCol + j
-                var tarIdx = (kArrayCol - j - 1) * kArrayRow + i
-                if 1 == kIsRotateRight {
-                    tarIdx = j * kArrayRow + (kArrayRow - i - 1)
-                }
-                result[tarIdx] = inArray[oriIdx]
-            }
-        }
-        let end = Date()
-        print("CPU-耗时: \(end.timeIntervalSinceReferenceDate - start.timeIntervalSinceReferenceDate)")
-        // 打印结果
-        if 1 == kIsPrintResult {
-            print("原始数组: ")
-            for i in 0..<kArrayRow {
-                for j in 0..<kArrayCol {
-                    let idx = i * kArrayCol + j
-                    print(inArray[idx], separator: "", terminator: ", ")
+        self.rotater.rotateArray(data: data, row: row, col: col, isRight: isRight) { buff in
+            // 拷贝数据到结果数组 result
+            if let buff = buff {
+                print("原始数组: ")
+                for i in 0..<row {
+                    for j in 0..<col {
+                        let idx = i * col + j
+                        print(data[idx], separator: "", terminator: ", ")
+                    }
+                    print("")
                 }
                 print("")
-            }
-            print("")
-            
-            print("结果数组: ")
-            for i in 0..<kArrayCol {
-                for j in 0..<kArrayRow {
-                    let idx = i * kArrayRow + j
-                    print(result[idx], separator: "", terminator: ", ")
+                
+                print("结果数组: ")
+                for i in 0..<col {
+                    for j in 0..<row {
+                        let idx = i * row + j
+                        let val = buff.load(fromByteOffset: idx * MemoryLayout<Float>.size, as: Float.self)
+                        print(val, separator: "", terminator: ", ")
+                    }
+                    print("")
                 }
                 print("")
             }
         }
-        print("")
     }
-
-    private func computeDataOnGpu(_ loop: Int = 0) {
-        guard let device = MTLCreateSystemDefaultDevice() else {    // 设备不支持 Metal
-            print("Metal is not support on this device.")
-            return
+    
+    /// 测试旋转 NV12 图像
+    private func testRotateNV12() {
+        let fn  = "1920_1440_nv12"
+        let ofp = SYSandboxTools.documentPath() + "/" + fn + "rotate_right.yuv"
+        if SYSandboxTools.isExistFile(at: ofp) {
+            SYSandboxTools.deleteFile(at: ofp)
         }
-        print("Rotate array on GPU...(\(loop))")
-        let adder = SYMetalAdder(device)
-        adder.prepareData()
-        let start = Date()
-        adder.sendComputeCommand {
-            let end = Date()
-            print("GPU-耗时: \(end.timeIntervalSinceReferenceDate - start.timeIntervalSinceReferenceDate)")
+        guard let ifp = Bundle.main.path(forResource: fn, ofType: "yuv"),
+              let ips = InputStream(fileAtPath: ifp),
+              let ops = OutputStream(toFileAtPath: ofp, append: false)else {
+            fatalError("Can not find NV12 file path")
         }
+        var srcCnt  = 0
+        var dstCnt  = 0
+        let isRight = 1
+        let width   = 1920
+        let height  = 1440
+        let buffLen = Int(Float(width * height) * 1.5)
+        let pointer = UnsafeMutableRawPointer.allocate(byteCount: buffLen, alignment: 1)
+        pointer.initializeMemory(as: UInt8.self, repeating: 0, count: buffLen)
+        ips.open()
+        ops.open()
+        while ips.streamStatus != .atEnd {
+            let rSize = ips.read(pointer, maxLength: buffLen)
+            if rSize != buffLen {
+                continue
+            }
+            srcCnt += 1
+            let start  = Date()
+            self.rotater.rotateNV12(data: pointer,
+                                    width: width,
+                                    height: height,
+                                    isRight: isRight) { buff in
+                if let buff = buff {
+                    let wSize = ops.write(buff, maxLength: buffLen)
+                    dstCnt   += 1
+                    let duration = Date().timeIntervalSince1970 - start.timeIntervalSince1970
+                    print("旋转并写入: \(wSize)，耗时: \(duration)s")
+                    if dstCnt == srcCnt {
+                        pointer.deallocate()
+                        ops.close()
+                        print("旋转 NV12 完成")
+                    }
+                }
+            }
+        }
+        ips.close()
     }
     
     
